@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12DB9FBB-C867-4527-A63B-ABF9223B3325}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infosys.WEM.Service.Implementation</RootNamespace>
+    <AssemblyName>WEM.ServiceImplementation</AssemblyName>
+    <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <XsdCodeGenEnabled>True</XsdCodeGenEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <XsdCodeGenSerializerMode>XmlSerializer</XsdCodeGenSerializerMode>
+    <XsdCodeGenReuseTypesFlag>True</XsdCodeGenReuseTypesFlag>
+    <XsdCodeGenReuseTypesMode>All</XsdCodeGenReuseTypesMode>
+    <XsdCodeGenReferences />
+    <XsdCodeGenNamespaceMappings>%2a, Infosys.WEM.Service.Implementation.ContractTypes</XsdCodeGenNamespaceMappings>
+    <XsdCodeGenCollectionTypes>System.Array%3bSystem.Collections.Generic.Dictionary`2</XsdCodeGenCollectionTypes>
+    <XsdCodeGenExcludedTypes />
+    <XsdCodeGenImportXmlTypes>True</XsdCodeGenImportXmlTypes>
+    <XsdCodeGenGenerateSerializableTypes>True</XsdCodeGenGenerateSerializableTypes>
+    <XsdCodeGenGenerateInternalTypes>False</XsdCodeGenGenerateInternalTypes>
+    <XsdCodeGenEnableDataBinding>False</XsdCodeGenEnableDataBinding>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\References\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WEM.AutomationTracker.Contracts">
+      <HintPath>..\WEM.AutomationTracker.Contracts\bin\Debug\WEM.AutomationTracker.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Client">
+      <HintPath>..\References\WEM.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Observer.Contracts">
+      <HintPath>..\WEM.Observer.Contracts\bin\Debug\WEM.Observer.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Scripts.Contracts">
+      <HintPath>..\WEM.Scripts.Contracts\bin\Debug\WEM.Scripts.Contracts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutomationTrackerRepository.cs" />
+    <Compile Include="CommonRepository.cs" />
+    <Compile Include="ExportRepository.cs" />
+    <Compile Include="ECRServices.cs" />
+    <Compile Include="RegisteredNodes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScheduledRequest.cs" />
+    <Compile Include="ScriptExecuteObserver.cs" />
+    <Compile Include="ScriptRepository.cs" />
+    <Compile Include="Search.cs" />
+    <Compile Include="SecurityAccess.cs" />
+    <Compile Include="Security\AccessProvider.cs" />
+    <Compile Include="SemanticCluster.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="Translators\AutomationTracker\ScriptExecuteRequestSE_DE.cs" />
+    <Compile Include="Translators\AutomationTracker\ScriptExecuteResponseSE_DE.cs" />
+    <Compile Include="Translators\AutomationWorkflowSEToManageWorkflowBE.cs" />
+    <Compile Include="Translators\AutomationWorkflowSEToWorkflowExecutionStoreDE.cs" />
+    <Compile Include="Translators\CategoryWorkflowMapSE_DE.cs" />
+    <Compile Include="Translators\Common\APIServiceSE_DE.cs" />
+    <Compile Include="Translators\Common\CategorySE_DE.cs" />
+    <Compile Include="Translators\Common\ModuleDE_SE.cs" />
+    <Compile Include="Translators\Export\ExportConfigurationMasterSE_DE.cs" />
+    <Compile Include="Translators\Export\ExportJobProcessingHistorySE_DE.cs" />
+    <Compile Include="Translators\Export\ExportScriptConfigurationDetailsSE_DE.cs" />
+    <Compile Include="Translators\Export\ExportScriptTransactionSE_DE.cs" />
+    <Compile Include="Translators\Export\ExportServerSE_DE.cs" />
+    <Compile Include="Translators\Export\ExportSourceTargetMappingSE_DE.cs" />
+    <Compile Include="Translators\Export\TargetSystemDetailsDE_SE.cs" />
+    <Compile Include="Translators\GroupSE_DE.cs" />
+    <Compile Include="Translators\Observer\NotificationCallBack.cs" />
+    <Compile Include="Translators\Observer\ObserverAutomationTrackerTransalator.cs" />
+    <Compile Include="Translators\RegisteredNodes\ActiveRegisteredNodes_SE_DE.cs" />
+    <Compile Include="Translators\RegisteredNodes\RegisteredNodes_SE_DE.cs" />
+    <Compile Include="Translators\RegisteredNodes\ScheduledRequestActivities_SE_DE.cs" />
+    <Compile Include="Translators\RegisteredNodes\ScheduledRequest_SE_DE.cs" />
+    <Compile Include="Translators\RegisteredNodes\SemanticCluster_SE_DE.cs" />
+    <Compile Include="Translators\RegisteredNodes\SemanticNodeCluster_SE_DE.cs" />
+    <Compile Include="Translators\RoleSE_DE.cs" />
+    <Compile Include="Translators\Scripts\CategorySE_DE.cs" />
+    <Compile Include="Translators\Scripts\ScriptParamsSE_DE.cs" />
+    <Compile Include="Translators\Scripts\ScriptSE_DE.cs" />
+    <Compile Include="Translators\Scripts\ScriptSE_DocumentEntity.cs" />
+    <Compile Include="Translators\TransactionSE_DE.cs" />
+    <Compile Include="Translators\UserSE_DE.cs" />
+    <Compile Include="Translators\WorkflowCategoryMasterSE_DE.cs" />
+    <Compile Include="Translators\WorkflowMasterSE_BE.cs" />
+    <Compile Include="Translators\WorkflowMasterSE_DE.cs" />
+    <Compile Include="Translators\WorkflowParamsSE_DE.cs" />
+    <Compile Include="WorkflowAutomation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{9f024ce0-9ca5-49bf-9990-4fdd0397740d}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NiaRestClient\NiaRestClient.csproj">
+      <Project>{ba2914a4-7855-423b-9a40-5e3f82cf876a}</Project>
+      <Name>NiaRestClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecurityCore\SecurityCore.csproj">
+      <Project>{65d1643f-c8c4-4635-9fb2-71f15b85a6a6}</Project>
+      <Name>SecurityCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.BusinessComponent\WEM.BusinessComponent.csproj">
+      <Project>{b7a807f8-4589-4938-b4f9-a4665c6b026c}</Project>
+      <Name>WEM.BusinessComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.BusinessEntity\WEM.BusinessEntity.csproj">
+      <Project>{d591549d-c86a-4923-89a6-ff7e94f70948}</Project>
+      <Name>WEM.BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.Common.Contracts\WEM.Common.Contracts.csproj">
+      <Project>{cfde305a-82f1-41cf-86a8-530c2573de72}</Project>
+      <Name>WEM.Common.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.Contracts\WEM.Contracts.csproj">
+      <Project>{15b3e0d2-6217-493a-a690-158c497f5318}</Project>
+      <Name>WEM.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.DataAccess\WEM.DataAccess.csproj">
+      <Project>{a4c3d44e-138f-466b-b065-41a8fef9bdf0}</Project>
+      <Name>WEM.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.DataEntity\WEM.DataEntity.csproj">
+      <Project>{35984c47-4f54-466e-9563-00f36fc44ef4}</Project>
+      <Name>WEM.DataEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.Export.Contracts\WEM.Export.Contracts.csproj">
+      <Project>{eb9283a9-a9b9-4342-8155-96b4da943efa}</Project>
+      <Name>WEM.Export.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.Export.DataAccess\WEM.Export.DataAccess.csproj">
+      <Project>{8b9139b6-6c88-4395-a8a9-76dc9b486e8f}</Project>
+      <Name>WEM.Export.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.IDataAccess\WEM.IDataAccess.csproj">
+      <Project>{ebd4ae9a-d6a4-4ed6-8cba-7d97f6d4de5d}</Project>
+      <Name>WEM.IDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.Nia.Contracts\WEM.Nia.Contracts.csproj">
+      <Project>{0ae672ed-9fac-41d5-9752-559f1cb76d91}</Project>
+      <Name>WEM.Nia.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.Node.Contracts\WEM.Node.Contracts.csproj">
+      <Project>{4e9738a8-e8b3-47da-9bb9-122e6b81349a}</Project>
+      <Name>WEM.Node.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.Scripts.DataAccess\WEM.Scripts.DataAccess.csproj">
+      <Project>{ac672ad1-91d9-499d-bd72-a9cc7947cffc}</Project>
+      <Name>WEM.Scripts.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.Search.Contracts\WEM.Search.Contracts.csproj">
+      <Project>{49c859d5-d9f8-4ad9-8f79-0d92c43447f0}</Project>
+      <Name>WEM.Search.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.SecurityAccess.Contracts\WEM.SecurityAccess.Contracts.csproj">
+      <Project>{971d53bd-3257-4189-b01e-d41e85868e36}</Project>
+      <Name>WEM.SecurityAccess.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VSToolsPath Condition="'$(VSToolsPath)' == '' and '$(VisualStudioVersion)' != '' and '$(VisualStudioVersion)' != '11.0'">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio</VSToolsPath>
+    <WcfServiceModelTargetPath>$(VSToolsPath)\WCF</WcfServiceModelTargetPath>
+  </PropertyGroup>
+  <Import Project="$(WcfServiceModelTargetPath)\Microsoft.VisualStudio.ServiceModel.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{3D9AD99F-2412-4246-B90B-4EAA41C64699}">
+        <WcfProjectProperties>
+          <AutoStart>False</AutoStart>
+        </WcfProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

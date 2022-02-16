@@ -1,0 +1,30 @@
+<UpdateScriptReqMsg xmlns="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+<Script xmlns:a="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Data">
+<a:ArgString i:nil="true"/>
+<a:BelongsToAccount i:nil="true"/>
+<a:BelongsToOrg>1</a:BelongsToOrg>
+<a:BelongsToTrack i:nil="true"/>
+<a:CallMethod i:nil="true"/>
+<a:CategoryId>131</a:CategoryId>
+<a:CreatedBy i:nil="true"/>
+<a:CreatedOn>0001-01-01T00:00:00</a:CreatedOn>
+<a:Description>Test for gugan</a:Description>
+<a:IfeaScriptName i:nil="true"/>
+<a:IsDeleted>false</a:IsDeleted>
+<a:ModifiedBy>admin</a:ModifiedBy>
+<a:ModifiedOn i:nil="true"/>
+<a:Name>PassArg</a:Name>
+<a:Parameters></a:Parameters>
+<a:RunAsAdmin>false</a:RunAsAdmin>
+<a:ScriptContent i:nil="true"/>
+<a:ScriptFileVersion>0</a:ScriptFileVersion>
+<a:ScriptId>162</a:ScriptId>
+<a:ScriptType>ps1</a:ScriptType>
+<a:ScriptURL>/iapscriptstore/S_00001_162/S00162_1.ps1</a:ScriptURL>
+<a:StorageBaseUrl>https://scc-servername</a:StorageBaseUrl>
+<a:TaskCmd i:nil="true"/>
+<a:TaskType>File</a:TaskType>
+<a:UsesUIAutomation>false</a:UsesUIAutomation>
+<a:WorkingDir/>
+</Script>
+</UpdateScriptReqMsg>

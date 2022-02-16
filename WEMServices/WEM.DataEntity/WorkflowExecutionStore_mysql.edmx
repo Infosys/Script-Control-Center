@@ -1,0 +1,1819 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Infosys.WEM.Resource.Entity.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="InfosysWEMResourceEntityStoreContainer">
+          <EntitySet Name="account" EntityType="Infosys.WEM.Resource.Entity.Store.account" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="activeregisterednodes" EntityType="Infosys.WEM.Resource.Entity.Store.activeregisterednodes" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="category" EntityType="Infosys.WEM.Resource.Entity.Store.category" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="categoryworkflowmap" EntityType="Infosys.WEM.Resource.Entity.Store.categoryworkflowmap" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="companies" EntityType="Infosys.WEM.Resource.Entity.Store.companies" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="failednodes" EntityType="Infosys.WEM.Resource.Entity.Store.failednodes" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="group" EntityType="Infosys.WEM.Resource.Entity.Store.group" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="groupaccess" EntityType="Infosys.WEM.Resource.Entity.Store.groupaccess" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="module" EntityType="Infosys.WEM.Resource.Entity.Store.module" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="objectmodelmaster" EntityType="Infosys.WEM.Resource.Entity.Store.objectmodelmaster" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="organization" EntityType="Infosys.WEM.Resource.Entity.Store.organization" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="registerrednodes" EntityType="Infosys.WEM.Resource.Entity.Store.registerrednodes" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="role" EntityType="Infosys.WEM.Resource.Entity.Store.role" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="scheduledrequest" EntityType="Infosys.WEM.Resource.Entity.Store.scheduledrequest" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="scheduledrequestactivities" EntityType="Infosys.WEM.Resource.Entity.Store.scheduledrequestactivities" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="script" EntityType="Infosys.WEM.Resource.Entity.Store.script" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="scriptinstance" EntityType="Infosys.WEM.Resource.Entity.Store.scriptinstance" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="scriptparams" EntityType="Infosys.WEM.Resource.Entity.Store.scriptparams" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="semanticcategory" EntityType="Infosys.WEM.Resource.Entity.Store.semanticcategory" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="semanticcluster" EntityType="Infosys.WEM.Resource.Entity.Store.semanticcluster" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="semanticnodecluster" EntityType="Infosys.WEM.Resource.Entity.Store.semanticnodecluster" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="superadmin" EntityType="Infosys.WEM.Resource.Entity.Store.superadmin" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="track" EntityType="Infosys.WEM.Resource.Entity.Store.track" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="type" EntityType="Infosys.WEM.Resource.Entity.Store.type" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="user" EntityType="Infosys.WEM.Resource.Entity.Store.user" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="workflowcategorymaster" EntityType="Infosys.WEM.Resource.Entity.Store.workflowcategorymaster" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="workflowmaster" EntityType="Infosys.WEM.Resource.Entity.Store.workflowmaster" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="workflowparams" EntityType="Infosys.WEM.Resource.Entity.Store.workflowparams" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="workflowtrackingdetails" EntityType="Infosys.WEM.Resource.Entity.Store.workflowtrackingdetails" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+          <EntitySet Name="workflowtrackingmaster" EntityType="Infosys.WEM.Resource.Entity.Store.workflowtrackingmaster" store:Type="Tables" Schema="iap_workflowexecutionstore" />
+        </EntityContainer>
+        <EntityType Name="account">
+          <Key>
+            <PropertyRef Name="PartitonKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitonKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="AccountId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Description" Type="varchar" MaxLength="100" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="ModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="IsDeleted" Type="bool" Nullable="false" />
+        </EntityType>
+        <EntityType Name="activeregisterednodes">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="MachineName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="DomainName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="CompanyId" Type="int" />
+        </EntityType>
+        <EntityType Name="category">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="longtext" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="ModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="IsDeleted" Type="bool" Nullable="false" />
+          <Property Name="ParentId" Type="int" />
+          <Property Name="CompanyId" Type="int" />
+          <Property Name="ModuleID" Type="int" />
+        </EntityType>
+        <EntityType Name="categoryworkflowmap">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="WorkflowId" Type="guid" Nullable="false" />
+          <Property Name="ActiveWorkflowVersion" Type="int" Nullable="false" />
+          <Property Name="WorkflowName" Type="varchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="companies">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CompanyId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="longtext" />
+          <Property Name="CompanyURL" Type="longtext" />
+          <Property Name="LogoURL" Type="longtext" />
+          <Property Name="NormalizedName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="StorageBaseUrl" Type="longtext" Nullable="false" />
+          <Property Name="DeploymentBaseUrl" Type="longtext" />
+          <Property Name="Region" Type="varchar" MaxLength="15" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" Precision="6" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="RemoteShareUrl" Type="longtext" />
+        </EntityType>
+        <EntityType Name="failednodes">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="MachineName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="DomainName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Cause" Type="longtext" Nullable="false" />
+        </EntityType>
+        <EntityType Name="group">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="RowKey" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="Timestamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="char" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="char" MaxLength="100" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" Precision="6" />
+          <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="IsActive" Type="bool" />
+          <Property Name="CompanyId" Type="int" Nullable="false" />
+          <Property Name="ParentId" Type="int" />
+        </EntityType>
+        <EntityType Name="groupaccess">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="RowKey" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="GroupId" Type="int" Nullable="false" />
+          <Property Name="ParentId" Type="int" Nullable="false" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" Precision="6" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="IsActive" Type="bool" Nullable="false" />
+        </EntityType>
+        <EntityType Name="module">
+          <Key>
+            <PropertyRef Name="ModuleID" />
+          </Key>
+          <Property Name="ModuleID" Type="int" Nullable="false" />
+          <Property Name="ModuleName" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="objectmodelmaster">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Timestamp" Type="datetime" Nullable="false" Precision="6" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="Id" Type="guid" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Description" Type="longtext" />
+          <Property Name="ObjectModelVer" Type="int" Nullable="false" />
+          <Property Name="ObjectModelUri" Type="longtext" Nullable="false" />
+          <Property Name="PublishedOn" Type="datetime" Precision="6" />
+          <Property Name="CreatedBy" Type="varchar" MaxLength="100" />
+          <Property Name="SourceIPAddress" Type="varchar" MaxLength="50" />
+          <Property Name="Client" Type="varchar" MaxLength="100" />
+          <Property Name="ClientVersion" Type="varchar" MaxLength="10" />
+          <Property Name="SourceMachineName" Type="varchar" MaxLength="100" />
+          <Property Name="FileSizeKB" Type="int" />
+          <Property Name="IsActive" Type="bool" />
+          <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+        </EntityType>
+        <EntityType Name="organization">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="OrgId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Description" Type="varchar" MaxLength="100" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="ModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="IsDeleted" Type="bool" Nullable="false" />
+        </EntityType>
+        <EntityType Name="registerrednodes">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="RegisteredOn" Type="datetime" Nullable="false" Precision="6" />
+          <Property Name="UnRegisteredOn" Type="datetime" Precision="6" />
+          <Property Name="IsActive" Type="bool" Nullable="false" />
+          <Property Name="HttpPort" Type="int" />
+          <Property Name="TcpPort" Type="int" />
+          <Property Name="MachineName" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="DomainName" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="State" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="OSVersion" Type="varchar" MaxLength="200" />
+          <Property Name="Is64Bit" Type="bool" Nullable="false" />
+          <Property Name="WorkflowServiceVersion" Type="varchar" MaxLength="20" />
+          <Property Name="DotNetVersion" Type="varchar" MaxLength="50" />
+          <Property Name="ExecutionEngineSupported" Type="int" Nullable="false" />
+          <Property Name="CreatedOn" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="CompanyId" Type="int" />
+        </EntityType>
+        <EntityType Name="role">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="RowKey" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="char" Nullable="false" MaxLength="25" />
+          <Property Name="Description" Type="varchar" MaxLength="250" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" Precision="6" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="LastModified" Type="datetime" Precision="6" />
+          <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="IsActive" Type="bool" />
+          <Property Name="CompanyId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="scheduledrequest">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="ModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="Id" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="MachineName" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="RequestVersion" Type="int" />
+          <Property Name="InputParameters" Type="longtext" />
+          <Property Name="OutputParameters" Type="longtext" />
+          <Property Name="ExecuteOn" Type="datetime" Precision="6" />
+          <Property Name="Message" Type="longtext" />
+          <Property Name="State" Type="int" />
+          <Property Name="RequestType" Type="int" Nullable="false" />
+          <Property Name="RequestId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Priority" Type="int" Nullable="false" />
+          <Property Name="AssignedTo" Type="varchar" MaxLength="20" />
+          <Property Name="Executor" Type="varchar" MaxLength="20" />
+          <Property Name="ParentId" Type="varchar" MaxLength="50" />
+          <Property Name="StopType" Type="int" />
+          <Property Name="IterationSetRoot" Type="varchar" MaxLength="50" />
+          <Property Name="IsIterationSetRoot" Type="bool" />
+          <Property Name="CompanyId" Type="int" />
+        </EntityType>
+        <EntityType Name="scheduledrequestactivities">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="ParentScheduledRequestId" Type="varchar" MaxLength="50" />
+          <Property Name="ScheduledRequestId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="IterationSetRoot" Type="varchar" MaxLength="50" />
+          <Property Name="CompanyId" Type="int" />
+        </EntityType>
+        <EntityType Name="script">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="ScriptId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="longtext" />
+          <Property Name="ScriptType" Type="varchar" MaxLength="50" />
+          <Property Name="TaskType" Type="varchar" MaxLength="10" />
+          <Property Name="TaskCmd" Type="longtext" />
+          <Property Name="ScriptURL" Type="varchar" MaxLength="300" />
+          <Property Name="ArgString" Type="longtext" />
+          <Property Name="WorkingDir" Type="varchar" MaxLength="200" />
+          <Property Name="BelongsToOrg" Type="varchar" MaxLength="5" />
+          <Property Name="BelongsToAccount" Type="varchar" MaxLength="5" />
+          <Property Name="BelongsToTrack" Type="varchar" MaxLength="5" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="ModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="Version" Type="int" Nullable="false" />
+          <Property Name="IsDeleted" Type="bool" Nullable="false" />
+          <Property Name="RunAsAdmin" Type="bool" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="UsesUIAutomation" Type="bool" />
+        </EntityType>
+        <EntityType Name="scriptinstance">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="InstanceId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="RunAsUser" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ArgString" Type="longtext" />
+          <Property Name="StartDateTime" Type="datetime" Nullable="false" Precision="6" />
+          <Property Name="EndDateTime" Type="datetime" Nullable="false" Precision="6" />
+          <Property Name="VerboseLog" Type="longtext" />
+          <Property Name="ExecutionStatus" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="scriptparams">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="ParamId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="DefaultValue" Type="longtext" />
+          <Property Name="AllowedValues" Type="longtext" />
+          <Property Name="IsMandatory" Type="bool" Nullable="false" />
+          <Property Name="ParamType" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="ModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="IsDeleted" Type="bool" Nullable="false" />
+          <Property Name="IsSecret" Type="bool" Nullable="false" />
+          <Property Name="IsUnnamed" Type="bool" Nullable="false" />
+        </EntityType>
+        <EntityType Name="semanticcategory">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="RowKey" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="SemanticClusterId" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="SemanticClusterName" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="IsActive" Type="bool" Nullable="false" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" Precision="6" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="LastModifiedBy" Type="varchar" MaxLength="50" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+        </EntityType>
+        <EntityType Name="semanticcluster">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="IsDeleted" Type="bool" Nullable="false" />
+          <Property Name="ClusterName" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="Id" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="Description" Type="longtext" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="CompanyId" Type="int" />
+        </EntityType>
+        <EntityType Name="semanticnodecluster">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="IsDeleted" Type="bool" Nullable="false" />
+          <Property Name="ClusterId" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="IapNodeId" Type="varchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="superadmin">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="105" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Alias" Type="varchar" Nullable="false" MaxLength="105" />
+          <Property Name="CompanyId" Type="int" Nullable="false" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="105" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" Precision="6" />
+          <Property Name="ModifiedBy" Type="varchar" MaxLength="105" />
+          <Property Name="ModifiedOn" Type="datetime" Precision="6" />
+        </EntityType>
+        <EntityType Name="track">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="TrackId" Type="int" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="100" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="ModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="IsDeleted" Type="bool" Nullable="false" />
+        </EntityType>
+        <EntityType Name="type">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="RowKey" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="char" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="varchar" MaxLength="100" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" Precision="6" />
+          <Property Name="LastModifiedBy" Type="int" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="IsActive" Type="bool" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="105" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CompanyId" Type="int" Nullable="false" />
+          <Property Name="Alias" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Role" Type="int" Nullable="false" />
+          <Property Name="CategoryId" Type="int" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" Precision="6" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="IsActive" Type="bool" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="DisplayName" Type="varchar" MaxLength="100" />
+          <Property Name="IsDL" Type="bool" />
+          <Property Name="GroupId" Type="int" />
+          <Property Name="IsActiveGroup" Type="bool" />
+        </EntityType>
+        <EntityType Name="workflowcategorymaster">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="CompanyId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Description" Type="longtext" />
+          <Property Name="Type" Type="int" Nullable="false" />
+          <Property Name="IsActive" Type="bool" />
+          <Property Name="CreatedOn" Type="datetime" Precision="6" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="ParentId" Type="int" />
+        </EntityType>
+        <EntityType Name="workflowmaster">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="Id" Type="guid" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Description" Type="longtext" />
+          <Property Name="WorkflowVer" Type="int" Nullable="false" />
+          <Property Name="WorkflowURI" Type="longtext" Nullable="false" />
+          <Property Name="ImageURI" Type="longtext" />
+          <Property Name="PublishedOn" Type="datetime" Precision="6" />
+          <Property Name="CreatedBy" Type="varchar" MaxLength="100" />
+          <Property Name="SourceIPAddress" Type="varchar" MaxLength="50" />
+          <Property Name="Client" Type="varchar" MaxLength="100" />
+          <Property Name="ClientVersion" Type="varchar" MaxLength="10" />
+          <Property Name="SourceMachineName" Type="varchar" MaxLength="100" />
+          <Property Name="FileSizeKB" Type="int" />
+          <Property Name="IsActive" Type="bool" />
+          <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="UsesUIAutomation" Type="bool" />
+        </EntityType>
+        <EntityType Name="workflowparams">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="ParamId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="DefaultValue" Type="longtext" />
+          <Property Name="IsMandatory" Type="bool" Nullable="false" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedOn" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+          <Property Name="ModifiedOn" Type="datetime" Precision="6" />
+          <Property Name="IsDeleted" Type="bool" Nullable="false" />
+          <Property Name="AllowedValues" Type="longtext" />
+          <Property Name="IsSecret" Type="bool" Nullable="false" />
+          <Property Name="ParamType" Type="varchar" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="workflowtrackingdetails">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="WorkflowInstanceId" Type="guid" />
+          <Property Name="ActivityStepCount" Type="decimal" Precision="8" Scale="4" />
+          <Property Name="ActivityId" Type="longtext" />
+          <Property Name="ActivityDisplayName" Type="longtext" />
+          <Property Name="ActivityParameters" Type="longtext" />
+          <Property Name="ActivityState" Type="varchar" MaxLength="50" />
+          <Property Name="StartedOn" Type="datetime" Precision="6" />
+          <Property Name="EndedOn" Type="datetime" Precision="6" />
+          <Property Name="StatusDescription" Type="longtext" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+        </EntityType>
+        <EntityType Name="workflowtrackingmaster">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="RowKey" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="WorkflowId" Type="guid" Nullable="false" />
+          <Property Name="WorkflowVer" Type="int" Nullable="false" />
+          <Property Name="InstanceId" Type="guid" Nullable="false" />
+          <Property Name="State" Type="varchar" MaxLength="20" />
+          <Property Name="StatusDescription" Type="longtext" />
+          <Property Name="RequestorId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="RequestorSourceIP" Type="varchar" MaxLength="50" />
+          <Property Name="StartedOn" Type="datetime" Precision="6" />
+          <Property Name="RunAtIPAddress" Type="varchar" MaxLength="50" />
+          <Property Name="RunAtMachineName" Type="varchar" MaxLength="100" />
+          <Property Name="CompletedOn" Type="datetime" Precision="6" />
+          <Property Name="LastModifiedOn" Type="datetime" Precision="6" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Infosys.WEM.Resource.Entity" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DataEntity" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Account" EntityType="Infosys.WEM.Resource.Entity.Account" />
+          <EntitySet Name="ActiveRegisteredNodes" EntityType="Infosys.WEM.Resource.Entity.ActiveRegisteredNodes" />
+          <EntitySet Name="Category" EntityType="Infosys.WEM.Resource.Entity.Category" />
+          <EntitySet Name="CategoryWorkflowMap" EntityType="Infosys.WEM.Resource.Entity.CategoryWorkflowMap" />
+          <EntitySet Name="Companies" EntityType="Infosys.WEM.Resource.Entity.Companies" />
+          <EntitySet Name="FailedNodes" EntityType="Infosys.WEM.Resource.Entity.FailedNodes" />
+          <EntitySet Name="Group" EntityType="Infosys.WEM.Resource.Entity.Group" />
+          <EntitySet Name="GroupAccess" EntityType="Infosys.WEM.Resource.Entity.GroupAccess" />
+          <EntitySet Name="Module" EntityType="Infosys.WEM.Resource.Entity.Module" />
+          <EntitySet Name="ObjectModelMaster" EntityType="Infosys.WEM.Resource.Entity.ObjectModelMaster" />
+          <EntitySet Name="Organization" EntityType="Infosys.WEM.Resource.Entity.Organization" />
+          <EntitySet Name="RegisterredNodes" EntityType="Infosys.WEM.Resource.Entity.RegisterredNodes" />
+          <EntitySet Name="Role" EntityType="Infosys.WEM.Resource.Entity.Role" />
+          <EntitySet Name="ScheduledRequest" EntityType="Infosys.WEM.Resource.Entity.ScheduledRequest" />
+          <EntitySet Name="ScheduledRequestActivities" EntityType="Infosys.WEM.Resource.Entity.ScheduledRequestActivities" />
+          <EntitySet Name="Script" EntityType="Infosys.WEM.Resource.Entity.Script" />
+          <EntitySet Name="ScriptInstance" EntityType="Infosys.WEM.Resource.Entity.ScriptInstance" />
+          <EntitySet Name="ScriptParams" EntityType="Infosys.WEM.Resource.Entity.ScriptParams" />
+          <EntitySet Name="SemanticCategory" EntityType="Infosys.WEM.Resource.Entity.SemanticCategory" />
+          <EntitySet Name="SemanticCluster" EntityType="Infosys.WEM.Resource.Entity.SemanticCluster" />
+          <EntitySet Name="SemanticNodeCluster" EntityType="Infosys.WEM.Resource.Entity.SemanticNodeCluster" />
+          <EntitySet Name="SuperAdmin" EntityType="Infosys.WEM.Resource.Entity.SuperAdmin" />
+          <EntitySet Name="Track" EntityType="Infosys.WEM.Resource.Entity.Track" />
+          <EntitySet Name="Type" EntityType="Infosys.WEM.Resource.Entity.Type" />
+          <EntitySet Name="User" EntityType="Infosys.WEM.Resource.Entity.User" />
+          <EntitySet Name="WorkflowCategoryMaster" EntityType="Infosys.WEM.Resource.Entity.WorkflowCategoryMaster" />
+          <EntitySet Name="WorkflowMaster" EntityType="Infosys.WEM.Resource.Entity.WorkflowMaster" />
+          <EntitySet Name="WorkflowParams" EntityType="Infosys.WEM.Resource.Entity.WorkflowParams" />
+          <EntitySet Name="WorkflowTrackingDetails" EntityType="Infosys.WEM.Resource.Entity.WorkflowTrackingDetails" />
+          <EntitySet Name="WorkflowTrackingMaster" EntityType="Infosys.WEM.Resource.Entity.WorkflowTrackingMaster" />
+        </EntityContainer>
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="PartitonKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitonKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="AccountId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ActiveRegisteredNodes">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="MachineName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DomainName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CompanyId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="ParentId" Type="Int32" />
+          <Property Name="CompanyId" Type="Int32" />
+          <Property Name="ModuleID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CategoryWorkflowMap">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <Property Name="WorkflowId" Type="Guid" Nullable="false" />
+          <Property Name="ActiveWorkflowVersion" Type="Int32" Nullable="false" />
+          <Property Name="WorkflowName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Companies">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CompanyId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="CompanyURL" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="LogoURL" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="NormalizedName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="StorageBaseUrl" Type="String" Nullable="false" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="DeploymentBaseUrl" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="Region" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+          <Property Name="RemoteShareUrl" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="FailedNodes">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="MachineName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DomainName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Cause" Type="String" Nullable="false" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Group">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CompanyId" Type="Int32" Nullable="false" />
+          <Property Name="ParentId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="GroupAccess">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="GroupId" Type="Int32" Nullable="false" />
+          <Property Name="ParentId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Module">
+          <Key>
+            <PropertyRef Name="ModuleID" />
+          </Key>
+          <Property Name="ModuleID" Type="Int32" Nullable="false" />
+          <Property Name="ModuleName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="ObjectModelMaster">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="ObjectModelVer" Type="Int32" Nullable="false" />
+          <Property Name="ObjectModelUri" Type="String" Nullable="false" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="PublishedOn" Type="DateTime" />
+          <Property Name="CreatedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="SourceIPAddress" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Client" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ClientVersion" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="SourceMachineName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="FileSizeKB" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="Organization">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="OrgId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RegisterredNodes">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="RegisteredOn" Type="DateTime" Nullable="false" />
+          <Property Name="UnRegisteredOn" Type="DateTime" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="HttpPort" Type="Int32" />
+          <Property Name="TcpPort" Type="Int32" />
+          <Property Name="MachineName" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="DomainName" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="State" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="OSVersion" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Is64Bit" Type="Boolean" Nullable="false" />
+          <Property Name="WorkflowServiceVersion" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="DotNetVersion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ExecutionEngineSupported" Type="Int32" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+          <Property Name="CompanyId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="LastModified" Type="DateTime" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CompanyId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ScheduledRequest">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MachineName" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <Property Name="RequestVersion" Type="Int32" />
+          <Property Name="InputParameters" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="OutputParameters" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="ExecuteOn" Type="DateTime" />
+          <Property Name="Message" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="State" Type="Int32" />
+          <Property Name="RequestType" Type="Int32" Nullable="false" />
+          <Property Name="RequestId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Priority" Type="Int32" Nullable="false" />
+          <Property Name="AssignedTo" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Executor" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="ParentId" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="StopType" Type="Int32" />
+          <Property Name="IterationSetRoot" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IsIterationSetRoot" Type="Boolean" />
+          <Property Name="CompanyId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="ScheduledRequestActivities">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="ParentScheduledRequestId" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ScheduledRequestId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="IterationSetRoot" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CompanyId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Script">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="ScriptId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="ScriptType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TaskType" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="TaskCmd" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="ScriptURL" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="ArgString" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="WorkingDir" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="BelongsToOrg" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="BelongsToAccount" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="BelongsToTrack" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="Version" Type="Int32" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="RunAsAdmin" Type="Boolean" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <Property Name="UsesUIAutomation" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ScriptInstance">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="InstanceId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RunAsUser" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ArgString" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="StartDateTime" Type="DateTime" Nullable="false" />
+          <Property Name="EndDateTime" Type="DateTime" Nullable="false" />
+          <Property Name="VerboseLog" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="ExecutionStatus" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="ScriptParams">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="ParamId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DefaultValue" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="AllowedValues" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="IsMandatory" Type="Boolean" Nullable="false" />
+          <Property Name="ParamType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="IsSecret" Type="Boolean" Nullable="false" />
+          <Property Name="IsUnnamed" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SemanticCategory">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <Property Name="SemanticClusterId" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="SemanticClusterName" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="SemanticCluster">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="ClusterName" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="CompanyId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="SemanticNodeCluster">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="ClusterId" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="IapNodeId" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="SuperAdmin">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="105" Unicode="false" FixedLength="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Alias" Type="String" Nullable="false" MaxLength="105" Unicode="false" FixedLength="false" />
+          <Property Name="CompanyId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="105" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="105" Unicode="false" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="Track">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="TrackId" Type="Int32" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Type">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" />
+          <Property Name="LastModifiedBy" Type="Int32" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="105" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CompanyId" Type="Int32" Nullable="false" />
+          <Property Name="Alias" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Role" Type="Int32" Nullable="false" />
+          <Property Name="CategoryId" Type="Int32" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="IsDL" Type="Boolean" />
+          <Property Name="GroupId" Type="Int32" />
+          <Property Name="IsActiveGroup" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="WorkflowCategoryMaster">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="CompanyId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedOn" Type="DateTime" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+          <Property Name="ParentId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="WorkflowMaster">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="WorkflowVer" Type="Int32" Nullable="false" />
+          <Property Name="WorkflowURI" Type="String" Nullable="false" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="ImageURI" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="PublishedOn" Type="DateTime" />
+          <Property Name="CreatedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="SourceIPAddress" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Client" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ClientVersion" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="SourceMachineName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="FileSizeKB" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+          <Property Name="UsesUIAutomation" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="WorkflowParams">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="ParamId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DefaultValue" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="IsMandatory" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="AllowedValues" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="IsSecret" Type="Boolean" Nullable="false" />
+          <Property Name="ParamType" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="WorkflowTrackingDetails">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="WorkflowInstanceId" Type="Guid" />
+          <Property Name="ActivityStepCount" Type="Decimal" />
+          <Property Name="ActivityId" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="ActivityDisplayName" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="ActivityParameters" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="ActivityState" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="StartedOn" Type="DateTime" />
+          <Property Name="EndedOn" Type="DateTime" />
+          <Property Name="StatusDescription" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="WorkflowTrackingMaster">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RowKey" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="WorkflowId" Type="Guid" Nullable="false" />
+          <Property Name="WorkflowVer" Type="Int32" Nullable="false" />
+          <Property Name="InstanceId" Type="Guid" Nullable="false" />
+          <Property Name="State" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="StatusDescription" Type="String" MaxLength="1073741823" Unicode="false" FixedLength="false" />
+          <Property Name="RequestorId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RequestorSourceIP" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="StartedOn" Type="DateTime" />
+          <Property Name="RunAtIPAddress" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RunAtMachineName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CompletedOn" Type="DateTime" />
+          <Property Name="LastModifiedOn" Type="DateTime" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="InfosysWEMResourceEntityStoreContainer" CdmEntityContainer="DataEntity">
+          <EntitySetMapping Name="Account">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.Account">
+              <MappingFragment StoreEntitySet="account">
+                <ScalarProperty Name="PartitonKey" ColumnName="PartitonKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ActiveRegisteredNodes">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.ActiveRegisteredNodes">
+              <MappingFragment StoreEntitySet="activeregisterednodes">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+                <ScalarProperty Name="DomainName" ColumnName="DomainName" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Category">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.Category">
+              <MappingFragment StoreEntitySet="category">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CategoryWorkflowMap">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.CategoryWorkflowMap">
+              <MappingFragment StoreEntitySet="categoryworkflowmap">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+                <ScalarProperty Name="ActiveWorkflowVersion" ColumnName="ActiveWorkflowVersion" />
+                <ScalarProperty Name="WorkflowName" ColumnName="WorkflowName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Companies">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.Companies">
+              <MappingFragment StoreEntitySet="companies">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CompanyURL" ColumnName="CompanyURL" />
+                <ScalarProperty Name="LogoURL" ColumnName="LogoURL" />
+                <ScalarProperty Name="NormalizedName" ColumnName="NormalizedName" />
+                <ScalarProperty Name="StorageBaseUrl" ColumnName="StorageBaseUrl" />
+                <ScalarProperty Name="DeploymentBaseUrl" ColumnName="DeploymentBaseUrl" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+                <ScalarProperty Name="RemoteShareUrl" ColumnName="RemoteShareUrl" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FailedNodes">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.FailedNodes">
+              <MappingFragment StoreEntitySet="failednodes">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+                <ScalarProperty Name="DomainName" ColumnName="DomainName" />
+                <ScalarProperty Name="Cause" ColumnName="Cause" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Group">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.Group">
+              <MappingFragment StoreEntitySet="group">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GroupAccess">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.GroupAccess">
+              <MappingFragment StoreEntitySet="groupaccess">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Module">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.Module">
+              <MappingFragment StoreEntitySet="module">
+                <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+                <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ObjectModelMaster">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.ObjectModelMaster">
+              <MappingFragment StoreEntitySet="objectmodelmaster">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ObjectModelVer" ColumnName="ObjectModelVer" />
+                <ScalarProperty Name="ObjectModelUri" ColumnName="ObjectModelUri" />
+                <ScalarProperty Name="PublishedOn" ColumnName="PublishedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="SourceIPAddress" ColumnName="SourceIPAddress" />
+                <ScalarProperty Name="Client" ColumnName="Client" />
+                <ScalarProperty Name="ClientVersion" ColumnName="ClientVersion" />
+                <ScalarProperty Name="SourceMachineName" ColumnName="SourceMachineName" />
+                <ScalarProperty Name="FileSizeKB" ColumnName="FileSizeKB" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Organization">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.Organization">
+              <MappingFragment StoreEntitySet="organization">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="OrgId" ColumnName="OrgId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RegisterredNodes">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.RegisterredNodes">
+              <MappingFragment StoreEntitySet="registerrednodes">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="RegisteredOn" ColumnName="RegisteredOn" />
+                <ScalarProperty Name="UnRegisteredOn" ColumnName="UnRegisteredOn" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="HttpPort" ColumnName="HttpPort" />
+                <ScalarProperty Name="TcpPort" ColumnName="TcpPort" />
+                <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+                <ScalarProperty Name="DomainName" ColumnName="DomainName" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="OSVersion" ColumnName="OSVersion" />
+                <ScalarProperty Name="Is64Bit" ColumnName="Is64Bit" />
+                <ScalarProperty Name="WorkflowServiceVersion" ColumnName="WorkflowServiceVersion" />
+                <ScalarProperty Name="DotNetVersion" ColumnName="DotNetVersion" />
+                <ScalarProperty Name="ExecutionEngineSupported" ColumnName="ExecutionEngineSupported" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Role">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.Role">
+              <MappingFragment StoreEntitySet="role">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ScheduledRequest">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.ScheduledRequest">
+              <MappingFragment StoreEntitySet="scheduledrequest">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="RequestVersion" ColumnName="RequestVersion" />
+                <ScalarProperty Name="InputParameters" ColumnName="InputParameters" />
+                <ScalarProperty Name="OutputParameters" ColumnName="OutputParameters" />
+                <ScalarProperty Name="ExecuteOn" ColumnName="ExecuteOn" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+                <ScalarProperty Name="RequestId" ColumnName="RequestId" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+                <ScalarProperty Name="Executor" ColumnName="Executor" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="StopType" ColumnName="StopType" />
+                <ScalarProperty Name="IterationSetRoot" ColumnName="IterationSetRoot" />
+                <ScalarProperty Name="IsIterationSetRoot" ColumnName="IsIterationSetRoot" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ScheduledRequestActivities">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.ScheduledRequestActivities">
+              <MappingFragment StoreEntitySet="scheduledrequestactivities">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ParentScheduledRequestId" ColumnName="ParentScheduledRequestId" />
+                <ScalarProperty Name="ScheduledRequestId" ColumnName="ScheduledRequestId" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="IterationSetRoot" ColumnName="IterationSetRoot" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Script">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.Script">
+              <MappingFragment StoreEntitySet="script">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="ScriptId" ColumnName="ScriptId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ScriptType" ColumnName="ScriptType" />
+                <ScalarProperty Name="TaskType" ColumnName="TaskType" />
+                <ScalarProperty Name="TaskCmd" ColumnName="TaskCmd" />
+                <ScalarProperty Name="ScriptURL" ColumnName="ScriptURL" />
+                <ScalarProperty Name="ArgString" ColumnName="ArgString" />
+                <ScalarProperty Name="WorkingDir" ColumnName="WorkingDir" />
+                <ScalarProperty Name="BelongsToOrg" ColumnName="BelongsToOrg" />
+                <ScalarProperty Name="BelongsToAccount" ColumnName="BelongsToAccount" />
+                <ScalarProperty Name="BelongsToTrack" ColumnName="BelongsToTrack" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="RunAsAdmin" ColumnName="RunAsAdmin" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="UsesUIAutomation" ColumnName="UsesUIAutomation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ScriptInstance">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.ScriptInstance">
+              <MappingFragment StoreEntitySet="scriptinstance">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="InstanceId" ColumnName="InstanceId" />
+                <ScalarProperty Name="RunAsUser" ColumnName="RunAsUser" />
+                <ScalarProperty Name="ArgString" ColumnName="ArgString" />
+                <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+                <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+                <ScalarProperty Name="VerboseLog" ColumnName="VerboseLog" />
+                <ScalarProperty Name="ExecutionStatus" ColumnName="ExecutionStatus" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ScriptParams">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.ScriptParams">
+              <MappingFragment StoreEntitySet="scriptparams">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="ParamId" ColumnName="ParamId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+                <ScalarProperty Name="AllowedValues" ColumnName="AllowedValues" />
+                <ScalarProperty Name="IsMandatory" ColumnName="IsMandatory" />
+                <ScalarProperty Name="ParamType" ColumnName="ParamType" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="IsSecret" ColumnName="IsSecret" />
+                <ScalarProperty Name="IsUnnamed" ColumnName="IsUnnamed" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SemanticCategory">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.SemanticCategory">
+              <MappingFragment StoreEntitySet="semanticcategory">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="SemanticClusterId" ColumnName="SemanticClusterId" />
+                <ScalarProperty Name="SemanticClusterName" ColumnName="SemanticClusterName" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SemanticCluster">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.SemanticCluster">
+              <MappingFragment StoreEntitySet="semanticcluster">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="ClusterName" ColumnName="ClusterName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SemanticNodeCluster">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.SemanticNodeCluster">
+              <MappingFragment StoreEntitySet="semanticnodecluster">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="ClusterId" ColumnName="ClusterId" />
+                <ScalarProperty Name="IapNodeId" ColumnName="IapNodeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SuperAdmin">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.SuperAdmin">
+              <MappingFragment StoreEntitySet="superadmin">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Track">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.Track">
+              <MappingFragment StoreEntitySet="track">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="TrackId" ColumnName="TrackId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Type">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.Type">
+              <MappingFragment StoreEntitySet="type">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.User">
+              <MappingFragment StoreEntitySet="user">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="IsDL" ColumnName="IsDL" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="IsActiveGroup" ColumnName="IsActiveGroup" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WorkflowCategoryMaster">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.WorkflowCategoryMaster">
+              <MappingFragment StoreEntitySet="workflowcategorymaster">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WorkflowMaster">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.WorkflowMaster">
+              <MappingFragment StoreEntitySet="workflowmaster">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="WorkflowVer" ColumnName="WorkflowVer" />
+                <ScalarProperty Name="WorkflowURI" ColumnName="WorkflowURI" />
+                <ScalarProperty Name="ImageURI" ColumnName="ImageURI" />
+                <ScalarProperty Name="PublishedOn" ColumnName="PublishedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="SourceIPAddress" ColumnName="SourceIPAddress" />
+                <ScalarProperty Name="Client" ColumnName="Client" />
+                <ScalarProperty Name="ClientVersion" ColumnName="ClientVersion" />
+                <ScalarProperty Name="SourceMachineName" ColumnName="SourceMachineName" />
+                <ScalarProperty Name="FileSizeKB" ColumnName="FileSizeKB" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+                <ScalarProperty Name="UsesUIAutomation" ColumnName="UsesUIAutomation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WorkflowParams">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.WorkflowParams">
+              <MappingFragment StoreEntitySet="workflowparams">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="ParamId" ColumnName="ParamId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+                <ScalarProperty Name="IsMandatory" ColumnName="IsMandatory" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="AllowedValues" ColumnName="AllowedValues" />
+                <ScalarProperty Name="IsSecret" ColumnName="IsSecret" />
+                <ScalarProperty Name="ParamType" ColumnName="ParamType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WorkflowTrackingDetails">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.WorkflowTrackingDetails">
+              <MappingFragment StoreEntitySet="workflowtrackingdetails">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="WorkflowInstanceId" ColumnName="WorkflowInstanceId" />
+                <ScalarProperty Name="ActivityStepCount" ColumnName="ActivityStepCount" />
+                <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+                <ScalarProperty Name="ActivityDisplayName" ColumnName="ActivityDisplayName" />
+                <ScalarProperty Name="ActivityParameters" ColumnName="ActivityParameters" />
+                <ScalarProperty Name="ActivityState" ColumnName="ActivityState" />
+                <ScalarProperty Name="StartedOn" ColumnName="StartedOn" />
+                <ScalarProperty Name="EndedOn" ColumnName="EndedOn" />
+                <ScalarProperty Name="StatusDescription" ColumnName="StatusDescription" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WorkflowTrackingMaster">
+            <EntityTypeMapping TypeName="Infosys.WEM.Resource.Entity.WorkflowTrackingMaster">
+              <MappingFragment StoreEntitySet="workflowtrackingmaster">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+                <ScalarProperty Name="WorkflowVer" ColumnName="WorkflowVer" />
+                <ScalarProperty Name="InstanceId" ColumnName="InstanceId" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="StatusDescription" ColumnName="StatusDescription" />
+                <ScalarProperty Name="RequestorId" ColumnName="RequestorId" />
+                <ScalarProperty Name="RequestorSourceIP" ColumnName="RequestorSourceIP" />
+                <ScalarProperty Name="StartedOn" ColumnName="StartedOn" />
+                <ScalarProperty Name="RunAtIPAddress" ColumnName="RunAtIPAddress" />
+                <ScalarProperty Name="RunAtMachineName" ColumnName="RunAtMachineName" />
+                <ScalarProperty Name="CompletedOn" ColumnName="CompletedOn" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

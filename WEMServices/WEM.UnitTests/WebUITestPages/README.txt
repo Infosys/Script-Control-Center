@@ -1,0 +1,1 @@
+Create a virtual application in iis and copy all the files in this directory to the directory location mapped to the virtual folder

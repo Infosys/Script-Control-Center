@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4C3D44E-138F-466B-B065-41A8FEF9BDF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infosys.WEM.Resource.DataAccess</RootNamespace>
+    <AssemblyName>WEM.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Infosys.Lif.LegacyCommon">
+      <HintPath>..\References\Infosys.Lif.LegacyCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Infosys.Lif.LegacyIntegrator">
+      <HintPath>..\References\Infosys.Lif.LegacyIntegrator.dll</HintPath>
+    </Reference>
+    <Reference Include="Infosys.Lif.LegacyIntegratorService">
+      <HintPath>..\References\Infosys.Lif.LegacyIntegratorService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\WEM.ServiceImplementation\Security\AccessProvider.cs">
+      <Link>Utility\AccessProvider.cs</Link>
+    </Compile>
+    <Compile Include="ActiveRegisteredNodesDS.cs" />
+    <Compile Include="CategoryWorkflowMapDS.cs" />
+    <Compile Include="CompaniesDS.cs" />
+    <Compile Include="Document\WorkflowDS.cs" />
+    <Compile Include="GroupAccessDS.cs" />
+    <Compile Include="GroupDS.cs" />
+    <Compile Include="GroupExtension.cs" />
+    <Compile Include="ReferenceDataDS.cs" />
+    <Compile Include="RegisteredNodesDS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleDS.cs" />
+    <Compile Include="RoleExtension.cs" />
+    <Compile Include="ScheduledRequestActivitiesDS.cs" />
+    <Compile Include="ScheduledRequestDS.cs" />
+    <Compile Include="ScriptExecuteRequestDS.cs" />
+    <Compile Include="ScriptExecuteResponseDS.cs" />
+    <Compile Include="SemanticCategoryDS.cs" />
+    <Compile Include="SemanticClusterDS.cs" />
+    <Compile Include="SemanticNodeClusterDS.cs" />
+    <Compile Include="SuperAdminDS.cs" />
+    <Compile Include="TransactionDS.cs" />
+    <Compile Include="UserDS.cs" />
+    <Compile Include="UserExtension.cs" />
+    <Compile Include="WorkflowCategoryMasterDS.cs" />
+    <Compile Include="WorkflowMasterDS.cs" />
+    <Compile Include="WorkflowParamDS.cs" />
+    <Compile Include="WorkflowTrackingDetailsDS.cs" />
+    <Compile Include="WorkflowTrackingMasterDS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{9f024ce0-9ca5-49bf-9990-4fdd0397740d}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.DataEntity\WEM.DataEntity.csproj">
+      <Project>{35984c47-4f54-466e-9563-00f36fc44ef4}</Project>
+      <Name>WEM.DataEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.IDataAccess\WEM.IDataAccess.csproj">
+      <Project>{ebd4ae9a-d6a4-4ed6-8cba-7d97f6d4de5d}</Project>
+      <Name>WEM.IDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.Scripts.Contracts\WEM.Scripts.Contracts.csproj">
+      <Project>{7af6d328-3f68-446b-9b9c-a455db5163eb}</Project>
+      <Name>WEM.Scripts.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.Scripts.DataAccess\WEM.Scripts.DataAccess.csproj">
+      <Project>{ac672ad1-91d9-499d-bd72-a9cc7947cffc}</Project>
+      <Name>WEM.Scripts.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

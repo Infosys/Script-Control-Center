@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Execute Script</title>
+<script type="text/javascript" src="jquery-1.8.2.js"></script>
+<script type="text/javascript" src="jquery-ui.js"></script>
+<script src="jNotify.jquery.min.js"></script>
+<script src="grid.locale-en.js" type="text/javascript"></script>
+<script type="text/javascript" src="jquery.jqGrid.js"></script>
+<script charset="utf-8" type="text/javascript" src=""></script>
+<script charset="utf-8" type="text/javascript" src="grid.base.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.common.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.formedit.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.inlinedit.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.celledit.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.subgrid.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.treegrid.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.grouping.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.custom.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.tbltogrid.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.import.js"></script>
+<script charset="utf-8" type="text/javascript" src="jquery.fmatter.js"></script>
+<script charset="utf-8" type="text/javascript" src="JsonXml.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.jqueryui.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.filter.js"></script>
+
+<script>
+	var jQuery182 = jQuery.noConflict();
+</script>
+
+<script type="text/javascript" src="viewScripts.js"></script>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	border-spacing: 5px;
+}
+</style>
+</head>
+<body>
+	<div>
+			Server Name :        <input id="serverName" type="text" name="serverName"><br><br>
+  			Category Id : <input id="categoryId" type="text" name="categoryId"><br><br>
+  			Script Id : <input id="scriptId" type="text" name="scriptId"><br><br>
+  			<button onclick="executeScript();">Execute</button><br>
+	</div>
+	<div id="repsonse">
+			Error Message :        <input id="errorMessage" type="text" name="errorMessage"><br><br>
+  			Input Command : <input id="inputCommand" type="text" name="inputCommand"><br><br>
+  			IsSuccess : <input id="isSuccess" type="text" name="isSuccess"><br><br>
+  			Output : <input id="output" type="text" name="output"><br><br>
+	</div>
+</body>
+</html>

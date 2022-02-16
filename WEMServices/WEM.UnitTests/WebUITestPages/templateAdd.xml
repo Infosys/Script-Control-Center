@@ -1,0 +1,30 @@
+<AddScriptReqMsg xmlns="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+<Script xmlns:a="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Data">
+<a:ArgString i:nil="true"/>
+<a:BelongsToAccount i:nil="true"/>
+<a:BelongsToOrg>1</a:BelongsToOrg>
+<a:BelongsToTrack i:nil="true"/>
+<a:CallMethod i:nil="true"/>
+<a:CategoryId>133</a:CategoryId>
+<a:CreatedBy>admin</a:CreatedBy>
+<a:CreatedOn>0001-01-01T00:00:00</a:CreatedOn>
+<a:Description>ForGugan123</a:Description>
+<a:IfeaScriptName i:nil="true"/>
+<a:IsDeleted>false</a:IsDeleted>
+<a:ModifiedBy i:nil="true"/>
+<a:ModifiedOn i:nil="true"/>
+<a:Name>ForGugan123</a:Name>
+<a:Parameters i:nil="true"/>
+<a:RunAsAdmin>false</a:RunAsAdmin>
+<a:ScriptContent>dGVzdHN0</a:ScriptContent>
+<a:ScriptFileVersion>0</a:ScriptFileVersion>
+<a:ScriptId>0</a:ScriptId>
+<a:ScriptType>vbs</a:ScriptType>
+<a:ScriptURL i:nil="true"/>
+<a:StorageBaseUrl>https://scc-servername</a:StorageBaseUrl>
+<a:TaskCmd i:nil="true"/>
+<a:TaskType>File</a:TaskType>
+<a:UsesUIAutomation>false</a:UsesUIAutomation>
+<a:WorkingDir/>
+</Script>
+</AddScriptReqMsg>

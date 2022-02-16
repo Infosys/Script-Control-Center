@@ -1,0 +1,30 @@
+<UpdateScriptReqMsg xmlns="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+<Script xmlns:a="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Data">
+<a:ArgString i:nil="true"/>
+<a:BelongsToAccount i:nil="true"/>
+<a:BelongsToOrg>1</a:BelongsToOrg>
+<a:BelongsToTrack i:nil="true"/>
+<a:CallMethod i:nil="true"/>
+<a:CategoryId>131</a:CategoryId>
+<a:CreatedBy i:nil="true"/>
+<a:CreatedOn>0001-01-01T00:00:00</a:CreatedOn>
+<a:Description>Test for gugan</a:Description>
+<a:IfeaScriptName i:nil="true"/>
+<a:IsDeleted>false</a:IsDeleted>
+<a:ModifiedBy>User</a:ModifiedBy>
+<a:ModifiedOn i:nil="true"/>
+<a:Name>PassArg</a:Name>
+<a:Parameters><a:ScriptParam><a:AllowedValues>Sid,ABC</a:AllowedValues><a:CreatedBy>admin</a:CreatedBy><a:DataType>ps101</a:DataType><a:DefaultValue/><a:IsDeleted>false</a:IsDeleted><a:IsMandatory>false</a:IsMandatory><a:IsSecret>false</a:IsSecret><a:IsUnnamed>true</a:IsUnnamed><a:ModifiedBy>ITLINFOSYS\sidharth_ghag</a:ModifiedBy><a:Name>name</a:Name><a:ParamId>285</a:ParamId><a:ParamType>In</a:ParamType><a:ScriptId>162</a:ScriptId></a:ScriptParam><a:ScriptParam><a:AllowedValues/><a:CreatedBy>ITLINFOSYS\Sidharth_Ghag</a:CreatedBy><a:DataType>ps101</a:DataType><a:DefaultValue>xIva8/e4dDEKtrHjTOqAsjYAMwA1ADcANgAyADcAMwAyADMANQA3ADcAMgA4ADUANQA3AA==162</a:DefaultValue><a:IsDeleted>false</a:IsDeleted><a:IsMandatory>false</a:IsMandatory><a:IsSecret>true</a:IsSecret><a:IsUnnamed>true</a:IsUnnamed><a:ModifiedBy>ITLINFOSYS\sidharth_ghag</a:ModifiedBy><a:Name>age</a:Name><a:ParamId>286</a:ParamId><a:ParamType>In</a:ParamType><a:ScriptId>162</a:ScriptId></a:ScriptParam></a:Parameters>
+<a:RunAsAdmin>false</a:RunAsAdmin>
+<a:ScriptContent i:nil="true"/>
+<a:ScriptFileVersion>0</a:ScriptFileVersion>
+<a:ScriptId>162</a:ScriptId>
+<a:ScriptType>ps1</a:ScriptType>
+<a:ScriptURL>/iapscriptstore/S_00001_162/S00162_1.ps1</a:ScriptURL>
+<a:StorageBaseUrl>https://scc_servername</a:StorageBaseUrl>
+<a:TaskCmd i:nil="true"/>
+<a:TaskType>File</a:TaskType>
+<a:UsesUIAutomation>false</a:UsesUIAutomation>
+<a:WorkingDir/>
+</Script>
+</UpdateScriptReqMsg>

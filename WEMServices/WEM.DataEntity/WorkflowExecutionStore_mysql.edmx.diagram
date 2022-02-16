@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="366800cf50db49e9b830b66ee0249985" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.Account" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.ActiveRegisteredNodes" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.Category" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.CategoryWorkflowMap" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.Companies" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.FailedNodes" Width="1.5" PointX="4.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.Group" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.GroupAccess" Width="1.5" PointX="6.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.Module" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.ObjectModelMaster" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.Organization" Width="1.5" PointX="4.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.RegisterredNodes" Width="1.5" PointX="6.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.Role" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.ScheduledRequest" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.ScheduledRequestActivities" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.Script" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.ScriptInstance" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.ScriptParams" Width="1.5" PointX="12.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.SemanticCategory" Width="1.5" PointX="12.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.SemanticCluster" Width="1.5" PointX="2.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.SemanticNodeCluster" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.SuperAdmin" Width="1.5" PointX="14.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.Track" Width="1.5" PointX="14.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.Type" Width="1.5" PointX="8.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.User" Width="1.5" PointX="10.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.WorkflowCategoryMaster" Width="1.5" PointX="14.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.WorkflowMaster" Width="1.5" PointX="4.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.WorkflowParams" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.WorkflowTrackingDetails" Width="1.5" PointX="16.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Infosys.WEM.Resource.Entity.WorkflowTrackingMaster" Width="1.5" PointX="16.75" PointY="10.75" IsExpanded="true" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

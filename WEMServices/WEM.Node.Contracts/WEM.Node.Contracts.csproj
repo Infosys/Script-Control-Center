@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E9738A8-E8B3-47DA-9BB9-122E6B81349A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infosys.WEM.Node.Service.Contracts</RootNamespace>
+    <AssemblyName>WEM.Node.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF">
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\RegisterredNode.cs" />
+    <Compile Include="Data\ScheduledRequest.cs" />
+    <Compile Include="Data\ScheduledRequestActivity.cs" />
+    <Compile Include="Data\SemanticCategory.cs" />
+    <Compile Include="Data\SemanticCluster.cs" />
+    <Compile Include="Data\Transaction.cs" />
+    <Compile Include="INodes.cs" />
+    <Compile Include="IScheduleRequest.cs" />
+    <Compile Include="ISemanticCluster.cs" />
+    <Compile Include="ITransaction.cs" />
+    <Compile Include="Message\AddScheduledRequestReqMsg.cs" />
+    <Compile Include="Message\AddScheduledRequestResMsg.cs" />
+    <Compile Include="Message\AddSemanticCategoryReqMsg.cs" />
+    <Compile Include="Message\AddSemanticClusterReqMsg.cs" />
+    <Compile Include="Message\AddSemanticNodeClusterReqMsg.cs" />
+    <Compile Include="Message\AddSemanticNodeClusterResMsg.cs" />
+    <Compile Include="Message\AddSemanticCategoryResMsg.cs" />
+    <Compile Include="Message\DeleteSemanticCategoryResMsg.cs" />
+    <Compile Include="Message\DeleteSemanticCategoryReqMsg.cs" />
+    <Compile Include="Message\GetLongInitiatedRequestsResMsg.cs" />
+    <Compile Include="Message\GetTransactionsReqMsg.cs" />
+    <Compile Include="Message\GetTransactionsResMsg.cs" />
+    <Compile Include="Message\LogTransactionReqMsg.cs" />
+    <Compile Include="Message\LogTransactionResMsg.cs" />
+    <Compile Include="Message\UpdateSemanticCategoryResMsg.cs" />
+    <Compile Include="Message\UpdateSemanticCategoryReqMsg.cs" />
+    <Compile Include="Message\GetAllClustersResMsg.cs" />
+    <Compile Include="Message\GetAllNodesByClusterMsg.cs" />
+    <Compile Include="Message\GetExecutionStatusResMsg.cs" />
+    <Compile Include="Message\GetNextRequestResMsg.cs" />
+    <Compile Include="Message\GetScheduledRequestActivitiesResMsg.cs" />
+    <Compile Include="Message\GetNScheduledRequestActivitiesResMsg.cs" />
+    <Compile Include="Message\UpdateSemanticClusterReqMsg.cs" />
+    <Compile Include="Message\UpdateSemanticClusterResMsg.cs" />
+    <Compile Include="Message\UpdateSemanticNodeClusterReqMsg.cs" />
+    <Compile Include="Message\UpdateSemanticNodeClusterResMsg.cs" />
+    <Compile Include="Message\UnRegisterReqMsg.cs" />
+    <Compile Include="Message\UnRegisterResMsg.cs" />
+    <Compile Include="Message\GetRegisteredNodesResMsg.cs" />
+    <Compile Include="Message\RegisterReqMsg.cs" />
+    <Compile Include="Message\RegisterResMsg.cs" />
+    <Compile Include="Message\UpdateRequestExecutionStatusReqMsg.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{9f024ce0-9ca5-49bf-9990-4fdd0397740d}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

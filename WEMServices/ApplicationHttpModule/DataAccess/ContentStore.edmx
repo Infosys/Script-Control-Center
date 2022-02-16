@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ContentStoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Files">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+          <Property Name="RowKey" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Timestamp" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="CompanyId" Type="int" Nullable="false" />
+          <Property Name="FileType" Type="nvarchar" MaxLength="10" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="100" />
+          <Property Name="FilePath" Type="nvarchar" MaxLength="100" />
+          <Property Name="FileExtn" Type="nvarchar" MaxLength="10" />
+          <Property Name="FileContent" Type="varbinary(max)" />
+          <Property Name="FileId" Type="nvarchar" MaxLength="100" />
+          <Property Name="FileVersion" Type="int" />
+          <Property Name="CreatedOn" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastModifiedOn" Type="datetime2" Precision="7" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ContentStoreModelStoreContainer">
+          <EntitySet Name="Files" EntityType="Self.Files" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ContentStoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ContentFile">
+          <Key>
+            <PropertyRef Name="PartitionKey" />
+            <PropertyRef Name="RowKey" />
+          </Key>
+          <Property Name="PartitionKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RowKey" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="CompanyId" Type="Int32" Nullable="false" />
+          <Property Name="FileType" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="FileName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FilePath" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FileExtn" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="FileContent" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="FileId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FileVersion" Type="Int32" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastModifiedOn" Type="DateTime" Precision="7" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ContentStoreEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ContentFiles" EntityType="ContentStoreModel.ContentFile" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ContentStoreModelStoreContainer" CdmEntityContainer="ContentStoreEntities">
+          <EntitySetMapping Name="ContentFiles">
+            <EntityTypeMapping TypeName="ContentStoreModel.ContentFile">
+              <MappingFragment StoreEntitySet="Files">
+                <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+                <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="FileType" ColumnName="FileType" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+                <ScalarProperty Name="FileExtn" ColumnName="FileExtn" />
+                <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+                <ScalarProperty Name="FileId" ColumnName="FileId" />
+                <ScalarProperty Name="FileVersion" ColumnName="FileVersion" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

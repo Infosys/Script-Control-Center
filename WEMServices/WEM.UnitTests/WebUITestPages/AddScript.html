@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Script</title>
+<script type="text/javascript" src="jquery-1.8.2.js"></script>
+<script type="text/javascript" src="jquery-ui.js"></script>
+<script src="jNotify.jquery.min.js"></script>
+<script src="grid.locale-en.js" type="text/javascript"></script>
+<script type="text/javascript" src="jquery.jqGrid.js"></script>
+<script charset="utf-8" type="text/javascript" src=""></script>
+<script charset="utf-8" type="text/javascript" src="grid.base.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.common.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.formedit.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.inlinedit.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.celledit.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.subgrid.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.treegrid.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.grouping.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.custom.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.tbltogrid.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.import.js"></script>
+<script charset="utf-8" type="text/javascript" src="jquery.fmatter.js"></script>
+<script charset="utf-8" type="text/javascript" src="JsonXml.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.jqueryui.js"></script>
+<script charset="utf-8" type="text/javascript" src="grid.filter.js"></script>
+
+<script>
+	var jQuery182 = jQuery.noConflict();
+</script>
+
+<script type="text/javascript" src="viewScripts.js"></script>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	border-spacing: 5px;
+}
+</style>
+</head>
+
+<body>
+
+		<div>
+			<label for="category">Select a Category : </label>
+			<select name="categoryName" id="categoryName" >
+				<option value="select">--SELECT--</option>
+			</select>
+		</div>
+		<br>
+		<div>
+ 	 		Name :        <input id="name" type="text" name="name"><br><br>
+  			Description : <input id="description" type="text" name="description"><br><br>
+  			
+		</div>
+		<div>
+			<label for="scriptType">Script Type : </label>
+			<select name="scriptType" id="scriptType" >
+				<option value="select">--SELECT--</option>
+				<option value="File">File</option>
+			</select>
+		</div>
+		<br>
+		<div>
+			<label for="scriptExtn">Script Extension : </label>
+			<select name="scriptExtn" id="scriptExtn" >
+				<option value="select">--SELECT--</option>
+				<option value="ps1">ps1</option>
+				<option value="py">py</option>
+			</select>
+		</div>
+		<br>
+		<div>
+ 	 		File to be uploaded :  <input type="file" name="filename" id="myFile" accept=".ps1,.py"><br>
+  			
+		</div>
+		<br>
+		<br>
+		<button onclick="addScriptDetails();">Add</button>
+
+</body>
+</html>

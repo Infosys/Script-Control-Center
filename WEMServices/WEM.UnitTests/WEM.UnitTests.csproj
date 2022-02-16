@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3A0E4E1-B2FB-40A4-A5FA-331CA8C339C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infosys.WEM.UnitTests</RootNamespace>
+    <AssemblyName>WEM.UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>True</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WEM.Infrastructure.SecureHandler">
+      <HintPath>..\SecureHandler\bin\Release\WEM.Infrastructure.SecureHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CompanyDS.cs" />
+    <Compile Include="SecurityAccessTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{9F024CE0-9CA5-49BF-9990-4FDD0397740D}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.BusinessComponent\WEM.BusinessComponent.csproj">
+      <Project>{B7A807F8-4589-4938-B4F9-A4665C6B026C}</Project>
+      <Name>WEM.BusinessComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.BusinessEntity\WEM.BusinessEntity.csproj">
+      <Project>{D591549D-C86A-4923-89A6-FF7E94F70948}</Project>
+      <Name>WEM.BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.Contracts\WEM.Contracts.csproj">
+      <Project>{15B3E0D2-6217-493A-A690-158C497F5318}</Project>
+      <Name>WEM.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.DataAccess\WEM.DataAccess.csproj">
+      <Project>{a4c3d44e-138f-466b-b065-41a8fef9bdf0}</Project>
+      <Name>WEM.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.DataEntity\WEM.DataEntity.csproj">
+      <Project>{35984c47-4f54-466e-9563-00f36fc44ef4}</Project>
+      <Name>WEM.DataEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.IDataAccess\WEM.IDataAccess.csproj">
+      <Project>{ebd4ae9a-d6a4-4ed6-8cba-7d97f6d4de5d}</Project>
+      <Name>WEM.IDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.Scripts.Contracts\WEM.Scripts.Contracts.csproj">
+      <Project>{7AF6D328-3F68-446B-9B9C-A455DB5163EB}</Project>
+      <Name>WEM.Scripts.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.Scripts.DataAccess\WEM.Scripts.DataAccess.csproj">
+      <Project>{AC672AD1-91D9-499D-BD72-A9CC7947CFFC}</Project>
+      <Name>WEM.Scripts.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.SecurityAccess.Contracts\WEM.SecurityAccess.Contracts.csproj">
+      <Project>{971D53BD-3257-4189-B01E-D41E85868E36}</Project>
+      <Name>WEM.SecurityAccess.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WEM.ServiceImplementation\WEM.ServiceImplementation.csproj">
+      <Project>{12DB9FBB-C867-4527-A63B-ABF9223B3325}</Project>
+      <Name>WEM.ServiceImplementation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\WEM.DataEntity\App.Config">
+      <Link>App.Config</Link>
+    </None>
+    <None Include="WebUITestPages\web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebUITestPages\AddScript.html" />
+    <Content Include="WebUITestPages\ExecuteScript.html" />
+    <Content Include="WebUITestPages\executeTemplate.xml" />
+    <Content Include="WebUITestPages\grid.base.js" />
+    <Content Include="WebUITestPages\grid.celledit.js" />
+    <Content Include="WebUITestPages\grid.common.js" />
+    <Content Include="WebUITestPages\grid.custom.js" />
+    <Content Include="WebUITestPages\grid.filter.js" />
+    <Content Include="WebUITestPages\grid.formedit.js" />
+    <Content Include="WebUITestPages\grid.grouping.js" />
+    <Content Include="WebUITestPages\grid.import.js" />
+    <Content Include="WebUITestPages\grid.inlinedit.js" />
+    <Content Include="WebUITestPages\grid.jqueryui.js" />
+    <Content Include="WebUITestPages\grid.locale-en.js" />
+    <Content Include="WebUITestPages\grid.subgrid.js" />
+    <Content Include="WebUITestPages\grid.tbltogrid.js" />
+    <Content Include="WebUITestPages\grid.treegrid.js" />
+    <Content Include="WebUITestPages\jNotify.jquery.min.js" />
+    <Content Include="WebUITestPages\jquery-1.8.2.js" />
+    <Content Include="WebUITestPages\jquery-ui.js" />
+    <Content Include="WebUITestPages\jquery.fmatter.js" />
+    <Content Include="WebUITestPages\jquery.jqGrid.js" />
+    <Content Include="WebUITestPages\jquery.jqGrid.min.js" />
+    <Content Include="WebUITestPages\JsonXml.js" />
+    <Content Include="WebUITestPages\README.txt" />
+    <Content Include="WebUITestPages\template.xml" />
+    <Content Include="WebUITestPages\templateAdd.txt" />
+    <Content Include="WebUITestPages\templateAdd.xml" />
+    <Content Include="WebUITestPages\templateNew.xml" />
+    <Content Include="WebUITestPages\ViewScripts.html" />
+    <Content Include="WebUITestPages\viewScripts.js" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
