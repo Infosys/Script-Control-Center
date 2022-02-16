@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>Calculator</name>
+    <baseImageDir>C:\Users\raghavan_mk\Desktop\testimagecapture\uc6</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <appLocationPath>calc</appLocationPath>
+      <applicationType>Win32</applicationType>
+    </appControlConfig>
+    <screenConfig>
+      <name>Screen 1</name>
+      <screenImageConfig />
+      <screenControlConfig />
+      <entityConfig>
+        <name>One</name>
+        <entityControlConfig>
+          <automationId>131</automationId>
+          <controlName>1</controlName>
+          <controlClass>Button</controlClass>
+          <controlPath>/0[0]/1[0]/2[9]</controlPath>
+          <applicationType>Win32</applicationType>
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state>default</state>
+            <centerImageSearchConfig>
+              <imageName>one.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Add</name>
+        <entityControlConfig>
+          <automationId>93</automationId>
+          <controlName>Add</controlName>
+          <controlClass>Button</controlClass>
+          <controlPath>/0[0]/1[0]/2[27]</controlPath>
+          <applicationType>Win32</applicationType>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>Four</name>
+        <entityControlConfig>
+          <automationId>134</automationId>
+          <controlName>4</controlName>
+          <controlClass>Button</controlClass>
+          <applicationType>Win32</applicationType>
+          <controlPath>/0[0]/1[0]/2[8]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>Equals</name>
+        <entityControlConfig>
+          <automationId>121</automationId>
+          <controlName>Equals</controlName>
+          <controlClass>Button</controlClass>
+          <applicationType>Win32</applicationType>
+          <controlPath>/0[0]/1[0]/2[32]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>LCD</name>
+        <entityControlConfig>
+          <automationId>150</automationId>
+          <controlName>0</controlName>
+          <controlClass>Text</controlClass>
+          <applicationType>Win32</applicationType>
+          <controlPath>/0[0]/1[0]/2[3]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>Buttons</name>
+        <entityControlConfig>
+          <automationId></automationId>
+          <controlName></controlName>
+          <controlClass>Button</controlClass>
+          <applicationType>Win32</applicationType>
+          <controlPath></controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+</automationConfig>

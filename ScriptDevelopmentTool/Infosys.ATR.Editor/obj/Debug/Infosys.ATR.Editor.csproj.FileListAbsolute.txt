@@ -1,0 +1,14 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Infosys.ATR.Editor.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Infosys.ATR.Editor.Properties.Resources.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Teboscreen.tips.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Infosys.ATR.Editor.Views.Create.FileCreate.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Infosys.ATR.Editor.Views.Editor.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Infosys.ATR.Editor.Views.ImageEditor.frmImage.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Infosys.ATR.Editor.Views.frmReplay.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Infosys.ATR.Editor.Views.ImageEditor.ImageEditor.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Infosys.ATR.Editor.Views.PropertyEditor.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Infosys.ATR.Editor.Views.AutomationGrid.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Infosys.ATR.Editor.Views.PythonIDE.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Infosys.ATR.Editor.Views.Settings.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Infosys.ATR.Editor.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.Editor\obj\Debug\Infosys.ATR.Editor.csproj.CoreCompileInputs.cache

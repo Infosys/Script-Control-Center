@@ -1,0 +1,5 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\Infosys.JavaAccessBridge.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\Infosys.JavaAccessBridge.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.JavaAccessBridge\obj\Debug\Infosys.JavaAccessBridge.csproj.CoreCompileInputs.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.JavaAccessBridge\obj\Debug\Infosys.JavaAccessBridge.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.JavaAccessBridge\obj\Debug\Infosys.JavaAccessBridge.pdb

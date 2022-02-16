@@ -1,0 +1,8 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\IAPNodeChecker.exe.config
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\IAPNodeChecker.exe
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\IAPNodeChecker.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IAPNodeChecker\obj\Debug\Infosys.ATR.IAPNodeChecker.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IAPNodeChecker\obj\Debug\Infosys.ATR.IAPNodeChecker.csproj.CoreCompileInputs.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IAPNodeChecker\obj\Debug\Infosys.ATR.IAPNodeChecker.csproj.CopyComplete
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IAPNodeChecker\obj\Debug\IAPNodeChecker.exe
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IAPNodeChecker\obj\Debug\IAPNodeChecker.pdb

@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34C9E51C-F2CE-4527-A8DE-38C7EB17D4C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infosys.ATR.ScriptsRepository</RootNamespace>
+    <AssemblyName>Infosys.ATR.ScriptsRepository</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Releasex64|AnyCPU'">
+    <OutputPath>..\bin\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Releasex64|x64'">
+    <OutputPath>..\bin\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseOffline|AnyCPU' ">
+    <OutputPath>..\bin\ReleaseOffline\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseOffline|x64' ">
+    <OutputPath>..\bin\x64ReleaseOffline\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.CompositeUI">
+      <HintPath>..\References\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms">
+      <HintPath>..\References\Microsoft.Practices.CompositeUI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\References\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\References\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2014.4.6.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\release\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Reference Assemblies\Microsoft\WindowsPowerShell\3.0\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WEM.Common.Contracts, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Common.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Contracts, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Infrastructure.Common, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Infrastructure.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Node.Contracts, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Node.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Scripts.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Scripts.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.SecurityAccess.Contracts, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.SecurityAccess.Contracts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\Application.cs" />
+    <Compile Include="Constants\EventTopicNames.cs" />
+    <Compile Include="Constants\UIExtensionSiteNames.cs" />
+    <Compile Include="Constants\WorkspaceNames.cs" />
+    <Compile Include="ScriptRepoWorkItem.cs" />
+    <Compile Include="Models\Category.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="Module.cs" />
+    <Compile Include="ModuleController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Translators\CategoryPE_SE.cs" />
+    <Compile Include="Translators\CategoryTreePE_SE.cs" />
+    <Compile Include="Translators\ScriptParameterPE_SE.cs" />
+    <Compile Include="Translators\ScriptPE_SE.cs" />
+    <Compile Include="Views\IClose.cs" />
+    <Compile Include="Views\PythonIde\IPythonIDE.cs" />
+    <Compile Include="Views\PythonIde\PythonIDE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PythonIde\PythonIDE.Designer.cs">
+      <DependentUpon>PythonIDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PythonIde\PythonIDEPresenter.cs" />
+    <Compile Include="Views\PythonIde\PythonIDESmartpart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Scripts\CategoryDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Scripts\CategoryDetails.Designer.cs">
+      <DependentUpon>CategoryDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scripts\Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Scripts\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scripts\ScriptDesignerSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Scripts\IScriptDesigner.cs" />
+    <Compile Include="Views\Scripts\ScriptDesignerPresenter.cs" />
+    <Compile Include="Views\Scripts\IScripts.cs" />
+    <Compile Include="Views\Scripts\MainRepositoryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Scripts\MainRepositoryView.Designer.cs">
+      <DependentUpon>MainRepositoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scripts\ScriptDesigner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Scripts\ScriptDesigner.Designer.cs">
+      <DependentUpon>ScriptDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scripts\ScriptDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Scripts\ScriptDetails.Designer.cs">
+      <DependentUpon>ScriptDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scripts\ScriptOutputDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Scripts\ScriptOutputDisplay.Designer.cs">
+      <DependentUpon>ScriptOutputDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scripts\ScriptParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Scripts\ScriptParameters.Designer.cs">
+      <DependentUpon>ScriptParameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scripts\ScriptsPresenter.cs" />
+    <Compile Include="Views\Scripts\ScriptsSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Scripts\SubCategoryDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Scripts\SubCategoryDetails.Designer.cs">
+      <DependentUpon>SubCategoryDetails.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonClientLibrary\CommonClientLibrary.csproj">
+      <Project>{1d40198d-f50f-44e4-96e4-107856d049b4}</Project>
+      <Name>CommonClientLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontendAutomation\Infrastructure\Infrastructure.Interface\Infrastructure.Interface.csproj">
+      <Project>{9D628643-05AC-400E-9242-E427CBC86901}</Project>
+      <Name>Infrastructure.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontendAutomation\Infrastructure\Infrastructure.Library\Infrastructure.Library.csproj">
+      <Project>{5F92D5A6-9F6A-4702-8BD5-39C7EC291C4E}</Project>
+      <Name>Infrastructure.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATE.Entities\Infosys.ATR.Entities.csproj">
+      <Project>{3AB4F117-993D-41B3-9823-E93FEDB65774}</Project>
+      <Name>Infosys.ATR.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.AutomationClient\Infosys.ATR.AutomationClient.csproj">
+      <Project>{e4023b67-b1bd-47a0-ad6d-af13f4304655}</Project>
+      <Name>Infosys.ATR.AutomationClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.CommonViews\Infosys.ATR.CommonViews.csproj">
+      <Project>{253c18eb-4d14-460b-ad35-99ec28bb4f18}</Project>
+      <Name>Infosys.ATR.CommonViews</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.Compression\Infosys.ATR.Packaging.csproj">
+      <Project>{0e7e9a78-a05b-4f62-82b1-bf46a95adb44}</Project>
+      <Name>Infosys.ATR.Packaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.IDE\Infosys.ATR.DevelopmentStudio.csproj">
+      <Project>{0948e0fb-6238-4e3a-98b7-917c6390f875}</Project>
+      <Name>Infosys.ATR.DevelopmentStudio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.ScheduleRequestUI\Infosys.ATR.ScheduleRequestUI.csproj">
+      <Project>{b3f27ace-8821-47dd-a831-615d96dfb3cf}</Project>
+      <Name>Infosys.ATR.ScheduleRequestUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.LicenseValidationClient\Infosys.LicenseValidationClient.csproj">
+      <Project>{47929582-7bed-45dd-8dbe-1d4c6086d499}</Project>
+      <Name>Infosys.LicenseValidationClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScintillaNET\ScintillaNET.csproj">
+      <Project>{f9b6dabd-bbc1-4638-8ce6-a5c9506bfdcb}</Project>
+      <Name>ScintillaNET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScriptExecutionLibrary\ScriptExecutionLibrary.csproj">
+      <Project>{7db7b7b9-a485-48c4-9314-1c05a1c4e735}</Project>
+      <Name>ScriptExecutionLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecureHandler\SecureHandler.csproj">
+      <Project>{c3dee115-18ec-405f-a426-40bc1e99f944}</Project>
+      <Name>SecureHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkflowExecutionClientLibrary\WorkflowExecutionClientLibrary.csproj">
+      <Project>{4717ca84-8af6-44d9-bba3-008ceb4c5750}</Project>
+      <Name>WorkflowExecutionClientLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PythonIde\PythonIDE.resx">
+      <DependentUpon>PythonIDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scripts\CategoryDetails.resx">
+      <DependentUpon>CategoryDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scripts\Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scripts\MainRepositoryView.resx">
+      <DependentUpon>MainRepositoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scripts\ScriptDesigner.resx">
+      <DependentUpon>ScriptDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scripts\ScriptDetails.resx">
+      <DependentUpon>ScriptDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scripts\ScriptOutputDisplay.resx">
+      <DependentUpon>ScriptOutputDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scripts\ScriptParameters.resx">
+      <DependentUpon>ScriptParameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scripts\SubCategoryDetails.resx">
+      <DependentUpon>SubCategoryDetails.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\add-category.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Add-Script.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\add.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\del.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\download.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\information.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\play.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\remove.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\script-download.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\search.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

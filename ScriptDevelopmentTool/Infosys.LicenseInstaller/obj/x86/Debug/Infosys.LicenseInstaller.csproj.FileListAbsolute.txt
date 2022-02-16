@@ -1,0 +1,17 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\bin\Debug\KeyValData\KeyVal.data
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\bin\Debug\KeyValData\skval.iap
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\bin\Debug\Infosys.LicenseInstaller.exe.config
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\bin\Debug\Infosys.LicenseInstaller.exe
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\bin\Debug\Infosys.LicenseInstaller.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\bin\Debug\Infosy.LicensingFramework.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\bin\Debug\Infosys.MTC.Licensing.Framework.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\bin\Debug\Infosys.MTC.Licensing.Framework.Common.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\bin\Debug\Infosy.LicensingFramework.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\obj\x86\Debug\Infosys.LicenseInstaller.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\obj\x86\Debug\Infosys.LicenseInstaller.Form1.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\obj\x86\Debug\Infosys.LicenseInstaller.Properties.Resources.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\obj\x86\Debug\Infosys.LicenseInstaller.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\obj\x86\Debug\Infosys.LicenseInstaller.csproj.CoreCompileInputs.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\obj\x86\Debug\Infosys.LicenseInstaller.csproj.CopyComplete
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\obj\x86\Debug\Infosys.LicenseInstaller.exe
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseInstaller\obj\x86\Debug\Infosys.LicenseInstaller.pdb

@@ -1,0 +1,41 @@
+﻿<Activity mc:Ignorable="sads sap" x:Class="{x:Null}" sap:VirtualizedContainerService.HintSize="526,658" mva:VisualBasic.Settings="Assembly references and imported namespaces for internal implementation"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:a="clr-namespace:AutomationActivitiesLibrary;assembly=AutomationActivitiesLibrary"
+ xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Core"
+ xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System"
+ xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence sap:VirtualizedContainerService.HintSize="486,618">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="[&quot;Test&quot;]" Name="ServiceNow_ControlName3" />
+      <Variable x:TypeArguments="scg2:Dictionary(x:String, x:String)" Default="[new Dictionary(Of string,string) from {{&quot;Calculator.ControlName&quot;,&quot;1&quot;},{&quot;Calculator.Action&quot;,&quot;2&quot;},{&quot;AD Lookup.ControlName1&quot;,&quot;3&quot;},{&quot;AD Lookup.Action1&quot;,&quot;4&quot;},{&quot;Desktop.ControlName2&quot;,&quot;5&quot;},{&quot;Desktop.Action2&quot;,&quot;6&quot;},{&quot;ServiceNow.ControlName3&quot;,&quot;7&quot;},{&quot;ServiceNow.Action3&quot;,&quot;8&quot;},{&quot;Sparsh.ControlName&quot;,&quot;9&quot;},{&quot;Sparsh.Action&quot;,&quot;10&quot;},{&quot;Slidestorm.ControlName&quot;,&quot;11&quot;},{&quot;Slidestorm.Action&quot;,&quot;12&quot;},{&quot;Labstorm.ControlName&quot;,&quot;13&quot;},{&quot;Labstorm.Action&quot;,&quot;14&quot;},{&quot;SAP.ControlName5&quot;,&quot;15&quot;},{&quot;SAP.Action5&quot;,&quot;16&quot;},{&quot;BI.ControlName6&quot;,&quot;17&quot;},{&quot;BI.Action6&quot;,&quot;18&quot;}}]" Name="DataParam" />
+      <Variable x:TypeArguments="x:String" Default="[DataParam.Item(&quot;Calculator.ControlName&quot;)]" Name="ServiceNow_Action3" />
+      <Variable x:TypeArguments="x:String" Default="[]" Name="Sparsh_ControlName" />
+      <Variable x:TypeArguments="x:String" Name="OutVariable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg2:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg2:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <a:InvokeScripts MasterParams="{x:Null}" sap:VirtualizedContainerService.HintSize="464,228" ScriptCategory="Web" ScriptExecData="[OutVariable]" ScriptName="ServiceNow">
+      <a:InvokeScripts.Parameters>
+        <scg2:List x:TypeArguments="x:String" Capacity="4">
+          <x:String>ControlName3</x:String>
+          <x:String>Action3</x:String>
+        </scg2:List>
+      </a:InvokeScripts.Parameters>
+    </a:InvokeScripts>
+    <WriteLine sap:VirtualizedContainerService.HintSize="464,60" Text="[OutVariable]" />
+    <InvokeMethod sap:VirtualizedContainerService.HintSize="464,126" MethodName="Show" TargetType="av:MessageBox">
+      <InArgument x:TypeArguments="x:String">[OutVariable]</InArgument>
+    </InvokeMethod>
+  </Sequence>
+</Activity>

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD0A8ECC-BCED-4230-978B-CF8A22655EB5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infosys.WEM.AutomationActivity.Libraries</RootNamespace>
+    <AssemblyName>WEM.AutomationActivity.Libraries</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Releasex64|AnyCPU'">
+    <OutputPath>..\bin\x64\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Releasex64|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>..\bin\x64\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseOffline|AnyCPU' ">
+    <OutputPath>..\bin\ReleaseOffline\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseOffline|x64' ">
+    <OutputPath>..\bin\x64ReleaseOffline\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IAP.Infrastructure.Services.Contracts">
+      <HintPath>..\References\IAP.Infrastructure.Services.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Reference Assemblies\Microsoft\WindowsPowerShell\3.0\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WEM.Common.Contracts, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Common.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Infrastructure.Common, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Infrastructure.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.SecurityAccess.Contracts, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.SecurityAccess.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alert.cs" />
+    <Compile Include="Application.cs" />
+    <Compile Include="AutomationFacade.cs" />
+    <Compile Include="Button.cs" />
+    <Compile Include="CheckBox.cs" />
+    <Compile Include="ComboBox.cs" />
+    <Compile Include="Control.cs" />
+    <Compile Include="Custom.cs" />
+    <Compile Include="DataGrid.cs" />
+    <Compile Include="DataItem.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="Edit.cs" />
+    <Compile Include="Editors\ListSelection.cs" />
+    <Compile Include="FindAllControlsFromImage.cs" />
+    <Compile Include="FindApplication.cs" />
+    <Compile Include="FindControl.cs" />
+    <Compile Include="FindControlFromImage.cs" />
+    <Compile Include="FindControls.cs" />
+    <Compile Include="FindScreen.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="HighlightElement.cs" />
+    <Compile Include="Hyperlink.cs" />
+    <Compile Include="IAPExecutionHelper.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="ImageRecognitionTimeout.cs" />
+    <Compile Include="InitializeAutomationAPI.cs" />
+    <Compile Include="InvokeScript.cs" />
+    <Compile Include="InvokeWorkflow.cs" />
+    <Compile Include="List.cs" />
+    <Compile Include="ListItem.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="PauseAndResume.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadioButton.cs" />
+    <Compile Include="ScheduleConfiguration.cs" />
+    <Compile Include="Tab.cs" />
+    <Compile Include="TabItem.cs" />
+    <Compile Include="Table.cs" />
+    <Compile Include="TableCell.cs" />
+    <Compile Include="TableRow.cs" />
+    <Compile Include="FocusChangeTracker.cs" />
+    <Compile Include="TextBox.cs" />
+    <Compile Include="TicketHandler.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ActivityDesigners\ActivityDesigners.csproj">
+      <Project>{91b1d799-9174-41fc-82a0-e89a568e0a39}</Project>
+      <Name>ActivityDesigners</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.OCREngine\Infosys.ATR.OCRWrapper.csproj">
+      <Project>{5c449e7f-9ed1-46e9-bd98-b208c6b4e790}</Project>
+      <Name>Infosys.ATR.OCRWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.WinUIAutomationRuntimeWrapper\Infosys.ATR.WinUIAutomationRuntimeWrapper.csproj">
+      <Project>{bb5f06de-9a55-4b3f-818e-6e64ec625193}</Project>
+      <Name>Infosys.ATR.WinUIAutomationRuntimeWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InfrastructureClientLibrary\InfrastructureClientLibrary.csproj">
+      <Project>{0a3d30e2-2d1f-4267-8ac0-4309136922c7}</Project>
+      <Name>InfrastructureClientLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScriptExecutionLibrary\ScriptExecutionLibrary.csproj">
+      <Project>{7db7b7b9-a485-48c4-9314-1c05a1c4e735}</Project>
+      <Name>ScriptExecutionLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecureHandler\SecureHandler.csproj">
+      <Project>{c3dee115-18ec-405f-a426-40bc1e99f944}</Project>
+      <Name>SecureHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkflowExecutionClientLibrary\WorkflowExecutionClientLibrary.csproj">
+      <Project>{4717ca84-8af6-44d9-bba3-008ceb4c5750}</Project>
+      <Name>WorkflowExecutionClientLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkflowExecutionLibrary\WorkflowExecutionLibrary.csproj">
+      <Project>{2fdce347-410f-4764-805f-3e2460a561da}</Project>
+      <Name>WorkflowExecutionLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\Infosys.ATR.UIAutomation.SEE.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\Infosys.ATR.UIAutomation.SEE.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.SEE\obj\Debug\Interop.SHDocVw.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.csproj.ResolveComReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.Input.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.csproj.CoreCompileInputs.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.csproj.CopyComplete
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.pdb

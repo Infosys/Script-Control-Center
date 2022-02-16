@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9235A66-D5DF-4BA8-9B0D-5CE09B983F64}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infosys.ATR.WFDesigner</RootNamespace>
+    <AssemblyName>Infosys.ATR.WFDesigner</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Releasex64|AnyCPU'">
+    <OutputPath>..\bin\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Releasex64|x64'">
+    <OutputPath>..\bin\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseOffline|AnyCPU' ">
+    <OutputPath>..\bin\ReleaseOffline\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseOffline|x64' ">
+    <OutputPath>..\bin\x64ReleaseOffline\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infosys.ATR.Admin, Version=1.3.2.31692, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\release\Infosys.ATR.Admin.dll</HintPath>
+    </Reference>
+    <Reference Include="Infosys.ATR.UIAutomation.SEE">
+      <HintPath>..\Infosys.ATR.UIAutomation.SEE\obj\Release\Infosys.ATR.UIAutomation.SEE.dll</HintPath>
+    </Reference>
+    <Reference Include="Infosys.Lif.LegacyCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=70094227d3ea0710, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\TFS\ATR-FEA\Code\ATR\References\Infosys.Lif.LegacyCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI">
+      <HintPath>..\References\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms">
+      <HintPath>..\References\Microsoft.Practices.CompositeUI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI.WPF">
+      <HintPath>..\References\Microsoft.Practices.CompositeUI.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\References\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\References\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ScintillaNET, Version=2.6.0.0, Culture=neutral, PublicKeyToken=948d6c9751444115" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Core.Presentation" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WEM.Common.Contracts, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Common.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Contracts, Version=1.3.2.29071, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.DataAccess, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.DataEntity, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.DataEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.IDataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.IDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Infrastructure.Common, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Infrastructure.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Node.Contracts, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Node.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Scripts.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Scripts.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.SecurityAccess.Contracts, Version=1.3.2.2853, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.SecurityAccess.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\Application.cs" />
+    <Compile Include="Constants\EventTopicNames.cs" />
+    <Compile Include="Constants\UIExtensionSiteNames.cs" />
+    <Compile Include="Constants\WorkspaceNames.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\WorkflowParameter.cs" />
+    <Compile Include="Module.cs" />
+    <Compile Include="ModuleController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\WCFExtensions.cs" />
+    <Compile Include="Services\WFCache.cs" />
+    <Compile Include="Services\WFExtensions.cs" />
+    <Compile Include="Services\WFService.cs" />
+    <Compile Include="Translators\CategoryPE_SE.cs" />
+    <Compile Include="Translators\WorkflowParameterPE_SE.cs" />
+    <Compile Include="Translators\WorkflowPE_SE.cs" />
+    <Compile Include="Views\IClose.cs" />
+    <Compile Include="Views\Settings\ISettings.cs" />
+    <Compile Include="Views\Settings\Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Settings\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\SettingsPresenter.cs" />
+    <Compile Include="Views\Settings\SettingsSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Transaction\ITransaction.cs" />
+    <Compile Include="Entities\TransactionPE.cs" />
+    <Compile Include="Views\Transaction\TransactionPresenter.cs" />
+    <Compile Include="Views\Transaction\TransactionSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Transaction\TransactionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Transaction\TransactionView.Designer.cs">
+      <DependentUpon>TransactionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Transaction\uclTransStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Transaction\uclTransStatus.Designer.cs">
+      <DependentUpon>uclTransStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WFDesigner\ExecuteWf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\WFDesigner\ExecuteWf.Designer.cs">
+      <DependentUpon>ExecuteWf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WFDesigner\uclTransDesc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\WFDesigner\uclTransDesc.Designer.cs">
+      <DependentUpon>uclTransDesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WFDesigner\WFDesigner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\WFDesigner\WFDesigner.Designer.cs">
+      <DependentUpon>WFDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WFDesigner\IWFDesigner.cs" />
+    <Compile Include="Views\WFDesigner\WFPresenter.cs" />
+    <Compile Include="Views\WFDesigner\WFSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\WFDesigner\WorkflowParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\WFDesigner\WorkflowParam.Designer.cs">
+      <DependentUpon>WorkflowParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WFSelector\Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\WFSelector\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WFSelector\IWFSelector.cs" />
+    <Compile Include="Views\WFSelector\WFDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\WFSelector\WFDetails.Designer.cs">
+      <DependentUpon>WFDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WFSelector\WFSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\WFSelector\WFSelector.Designer.cs">
+      <DependentUpon>WFSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WFSelector\WFSelectorPresenter.cs" />
+    <Compile Include="Views\WFSelector\WFSelectorSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WFWorkItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ActivityDesigners\ActivityDesigners.csproj">
+      <Project>{91b1d799-9174-41fc-82a0-e89a568e0a39}</Project>
+      <Name>ActivityDesigners</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ActivityLibraries\ActivityLibraries.csproj">
+      <Project>{fd0a8ecc-bced-4230-978b-cf8a22655eb5}</Project>
+      <Name>ActivityLibraries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonClientLibrary\CommonClientLibrary.csproj">
+      <Project>{1d40198d-f50f-44e4-96e4-107856d049b4}</Project>
+      <Name>CommonClientLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontendAutomation\Infrastructure\Infrastructure.Interface\Infrastructure.Interface.csproj">
+      <Project>{9D628643-05AC-400E-9242-E427CBC86901}</Project>
+      <Name>Infrastructure.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontendAutomation\Infrastructure\Infrastructure.Library\Infrastructure.Library.csproj">
+      <Project>{5F92D5A6-9F6A-4702-8BD5-39C7EC291C4E}</Project>
+      <Name>Infrastructure.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATE.Entities\Infosys.ATR.Entities.csproj">
+      <Project>{3AB4F117-993D-41B3-9823-E93FEDB65774}</Project>
+      <Name>Infosys.ATR.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.AutomationClient\Infosys.ATR.AutomationClient.csproj">
+      <Project>{e4023b67-b1bd-47a0-ad6d-af13f4304655}</Project>
+      <Name>Infosys.ATR.AutomationClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.CodeGeneration\Infosys.ATR.CodeGeneration.csproj">
+      <Project>{50ad2487-242c-44d6-af91-39dc327d6491}</Project>
+      <Name>Infosys.ATR.CodeGeneration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.CommonViews\Infosys.ATR.CommonViews.csproj">
+      <Project>{253c18eb-4d14-460b-ad35-99ec28bb4f18}</Project>
+      <Name>Infosys.ATR.CommonViews</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.Compression\Infosys.ATR.Packaging.csproj">
+      <Project>{0e7e9a78-a05b-4f62-82b1-bf46a95adb44}</Project>
+      <Name>Infosys.ATR.Packaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.Editor\Infosys.ATR.Editor.csproj">
+      <Project>{7d8988c1-4bab-4a7a-bb7c-83503394b8c0}</Project>
+      <Name>Infosys.ATR.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.IDE\Infosys.ATR.DevelopmentStudio.csproj">
+      <Project>{0948e0fb-6238-4e3a-98b7-917c6390f875}</Project>
+      <Name>Infosys.ATR.DevelopmentStudio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.ScheduleRequestUI\Infosys.ATR.ScheduleRequestUI.csproj">
+      <Project>{b3f27ace-8821-47dd-a831-615d96dfb3cf}</Project>
+      <Name>Infosys.ATR.ScheduleRequestUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.UIAutomation.Entities\Infosys.ATR.UIAutomation.Entities.csproj">
+      <Project>{85164420-6793-41f4-9b90-21eb27c0b352}</Project>
+      <Name>Infosys.ATR.UIAutomation.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.UIAutomation.UserActivityMonitor\Infosys.ATR.UIAutomation.UserActivityMonitor.csproj">
+      <Project>{F52AA97E-180A-40ED-8F2B-09080171D6C7}</Project>
+      <Name>Infosys.ATR.UIAutomation.UserActivityMonitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.WinUIAutomationRuntimeWrapper\Infosys.ATR.WinUIAutomationRuntimeWrapper.csproj">
+      <Project>{BB5F06DE-9A55-4B3F-818E-6E64EC625193}</Project>
+      <Name>Infosys.ATR.WinUIAutomationRuntimeWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.LicenseValidationClient\Infosys.LicenseValidationClient.csproj">
+      <Project>{47929582-7bed-45dd-8dbe-1d4c6086d499}</Project>
+      <Name>Infosys.LicenseValidationClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecureHandler\SecureHandler.csproj">
+      <Project>{c3dee115-18ec-405f-a426-40bc1e99f944}</Project>
+      <Name>SecureHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkflowExecutionClientLibrary\WorkflowExecutionClientLibrary.csproj">
+      <Project>{4717ca84-8af6-44d9-bba3-008ceb4c5750}</Project>
+      <Name>WorkflowExecutionClientLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkflowExecutionLibrary\WorkflowExecutionLibrary.csproj">
+      <Project>{2fdce347-410f-4764-805f-3e2460a561da}</Project>
+      <Name>WorkflowExecutionLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Views\WFDesigner\AutomationTemp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\WFDesigner\InvokeScripts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Transaction\TransactionView.resx">
+      <DependentUpon>TransactionView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Transaction\uclTransStatus.resx">
+      <DependentUpon>uclTransStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WFDesigner\ExecuteWf.resx">
+      <DependentUpon>ExecuteWf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WFDesigner\uclTransDesc.resx">
+      <DependentUpon>uclTransDesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WFDesigner\WFDesigner.resx">
+      <DependentUpon>WFDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WFDesigner\WorkflowParam.resx">
+      <DependentUpon>WorkflowParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WFSelector\Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WFSelector\WFDetails.resx">
+      <DependentUpon>WFDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WFSelector\WFSelector.resx">
+      <DependentUpon>WFSelector.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\add.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\download.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\information.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\remove.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

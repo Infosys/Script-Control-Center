@@ -1,0 +1,189 @@
+﻿<sap:ActivityDesigner x:Name="btn" x:Class="Infosys.WEM.AutomationActivity.Designers.ScheduleConfiguration"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"                        
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+    xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation" 
+    
+    xmlns:Model="clr-namespace:System.Activities.Presentation.Model;assembly=System.Activities.Presentation" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" ClipToBounds="False" Height="460"  Width="475" Collapsible="True" UseLayoutRounding="True"  VerticalAlignment="Center">
+  
+    <sap:ActivityDesigner.Resources>
+
+        <!--<system:Boolean x:Key="True">True</system:Boolean>
+        <system:Boolean x:Key="False">False</system:Boolean>-->
+
+        <!--<ResourceDictionary x:Uid="ResourceDictionary_1">
+            <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
+            <sapc:ModelToObjectValueConverter x:Key="ModelToObjectValueConverter" />
+            <Thickness x:Key="tbMargin">5,10,0,0</Thickness>
+        </ResourceDictionary>-->
+    </sap:ActivityDesigner.Resources>
+    <Grid Name="main" Margin="0,0,-127,-262">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="385"  />
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition Width="Auto"  />
+            <ColumnDefinition Width="Auto"  />
+            <ColumnDefinition Width="Auto"  />
+            <ColumnDefinition Width="Auto"  />
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="82*"/>
+        </Grid.ColumnDefinitions>       
+        <Label Content="Module Type" Grid.Column="0" Grid.Row="1" Height="28" HorizontalAlignment="Left"  Name="lblModType"  Width="80" VerticalAlignment="Center" Margin="0,1,0,2"/>
+        <RadioButton x:Name="rdScript" Content="Script" GroupName="Group0" Grid.Row="1" Checked="rdScript_Checked"   VerticalAlignment="Center" Margin="89,7,0,8" Grid.ColumnSpan="7" Height="16"/>
+        <RadioButton x:Name="rdWF" Content="Workflow" GroupName="Group0" Grid.Row="1" Checked="rdWF_Checked" VerticalAlignment="Center" Margin="150,7,28,8" Grid.ColumnSpan="8" Height="16"/>
+
+        <Label Content="Scedule for" Grid.Column="0" Grid.Row="2" Height="28" HorizontalAlignment="Left"  Name="lblSchedlueFor"  Width="80" VerticalAlignment="Center" Margin="0,1"/>
+        <RadioButton x:Name="rdNow" Content="Now" GroupName="Group1" Grid.Row="2" Checked="rdNow_Checked" IsChecked="True"  VerticalAlignment="Center" Margin="89,7,0,7" Grid.ColumnSpan="7" Height="16"/>
+        <RadioButton x:Name="rdDateTime" Content="Set Date/time" GroupName="Group1" Grid.Row="2" Checked="rdDateTime_Checked" VerticalAlignment="Center" Margin="150,7,28,7" Grid.ColumnSpan="8" Height="16"/>
+
+        <GroupBox Grid.Row="3" Grid.Column="0"  Header="Range of Occurences" HorizontalAlignment="Left" VerticalAlignment="Top" Width="460" Height="123" Grid.ColumnSpan="8" >
+            <Grid Margin="0,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" MinWidth="106" />
+                    <ColumnDefinition Width="Auto" MinWidth="133" />
+                    <ColumnDefinition Width="Auto" MinWidth="74"  />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Content="Start Date Time" Grid.Column="0"  Grid.Row="0"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-2,10,0,0" Height="26" Width="96"/>
+                <!--<DatePicker x:Name="dpStartDate" SelectedDate="{Binding Path=ModelItem.ScheduleStartDateTime,  Mode=TwoWay}"  Grid.Row="0"    HorizontalAlignment="Left"   Margin="97,10,0,0" VerticalAlignment="Top" Height="22" SelectedDateChanged="DatePicker_SelectedDateChanged" Width="106" Grid.ColumnSpan="2"/>-->
+                <DatePicker x:Name="dpStartDate"  ToolTip="Select Start Date"   Grid.Row="0" Grid.ColumnSpan="2"   HorizontalAlignment="Left"   Margin="91,10,0,0" VerticalAlignment="Top" Height="22" SelectedDateChanged="DatePicker_SelectedDateChanged" Width="106" />
+                <TextBox x:Name="txtHours" ToolTip="Enter Hours in 24-Hour Format" Grid.Row="0" Grid.Column="1" Height="22" Margin="98,12,42,6"  Width="30" TextChanged="txtHours_TextChanged"/>
+                <Label Content=":" Grid.Row="0" Grid.Column="1" Margin="126,10,10,4"></Label>
+                <TextBox x:Name="txtMinutes" ToolTip="Enter Minutes" Grid.Row="0" Grid.Column="1" Margin="137,12,3,6"  Width="30" Height="22" TextChanged="txtMinutes_TextChanged"/>
+                <!--<TextBox Width="100" Grid.Column="1" x:Name="txtStartDate"  Grid.Row="0" HorizontalAlignment="Left"   Margin="0,10,5,0" VerticalAlignment="Top" Height="22"/>-->
+                <RadioButton Grid.Column="2"  Grid.Row="0" x:Name="rdNoEndDate" Content="No End Date" GroupName="Group2" Grid.ColumnSpan="2" Margin="7,10,3,0" Checked="rdNoEndDate_Checked"/>
+                <RadioButton Grid.Column="2"  Grid.Row="1" x:Name="rdNoEndAfter" Content="End after" GroupName="Group2" Margin="9,10,23,0" Checked="rdNoEndAfter_Checked" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="txtOccur" Width="30" Grid.Column="3"  Grid.Row="1"  Text="{Binding Path=ModelItem.ScheduleOcurrences,  Mode=TwoWay}" HorizontalAlignment="Left"     Margin="0,5" />
+                <Label Content="Occurrences" Grid.Column="3"  Grid.Row="1"  HorizontalAlignment="Left"  Margin="30,3,0,3" Width="75"/>
+                <RadioButton Grid.Column="2"   Grid.Row="2" x:Name="rdBy" Content="End by:" GroupName="Group2" Margin="0,10,89,0" IsChecked="True" Checked="rdBy_Checked" HorizontalAlignment="Right" Width="74" Grid.ColumnSpan="2"/>
+                <!--<TextBox x:Name="txtScEndDate" Width="100" Grid.Column="3"  Grid.Row="2" HorizontalAlignment="Left"   Margin="0,5,0,0"  Height="22" Grid.ColumnSpan="2"/>-->
+                <DatePicker  x:Name="dpEndDate"  ToolTip="Select End Date" Grid.Column="3"  Grid.Row="2"   HorizontalAlignment="Left"   Margin="1,5,0,0" SelectedDateChanged="dpEndDate_SelectedDateChanged" Width="102"/>
+            </Grid>
+        </GroupBox>
+        <Label Content="Priority"  Grid.Column="0"  Grid.Row="4"     HorizontalAlignment="Left"  Name="lblPriority" VerticalAlignment="Top" Margin="4,4,0,0" Height="26" Width="48"  />
+        <TextBox  Grid.Row="4" Grid.Column="0" TextChanged="txtPriority_TextChanged"   Name="txtPriority" Text="{Binding Path=ModelItem.SchedulePriority,  Mode=TwoWay}" Width="60"  HorizontalAlignment="Left" Margin="62,6,0,8" RenderTransformOrigin="0.5,0.5"  >
+
+        </TextBox>
+        <Label Content=" Select Cluster to Run option" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left"    Margin="0,3,0,0" Width="158" />
+        <RadioButton x:Name="rdClus" Content="Run on Cluster" GroupName="Group3" Grid.Row="5" Margin="159,8,0,0" Checked="rdClus_Checked" Grid.ColumnSpan="7"/>
+        <RadioButton x:Name="rdNode" Content="Run on Node" GroupName="Group3" Grid.Row="5" Margin="279,8,0,0" IsChecked="True" Checked="rdNode_Checked" Grid.ColumnSpan="2"/>
+        <GroupBox Grid.Row="6" Grid.Column="0" Header="IAP Node(s)" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="380" Height="134">
+            <Grid Margin="0,0,47,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto"  />
+                </Grid.ColumnDefinitions>
+                <Label Content="Domain:" Grid.Column="0" Grid.Row="0"  Height="28" HorizontalAlignment="Left" Width="60"    />
+                <!--<TextBox  Grid.Row="0" Grid.Column="0"  Name="txtDomain" Text="{Binding Path=ModelItem.DomainName,  Mode=TwoWay}" Width="150" Height="23"  HorizontalAlignment="Left" Margin="55,0,0,0"  />-->
+                <TextBox  Grid.Row="0" Grid.Column="0"  Name="txtDomain" Text="{Binding Path=ModelItem.DomainName, Mode=TwoWay}" Width="150" Height="23"  HorizontalAlignment="Left" Margin="55,0,0,0"  />
+                <Button Content="Fetch" Grid.Row="0" Grid.Column="2"   Height="21" HorizontalAlignment="Left" 
+                x:Name="btnConfirm1" VerticalAlignment="Top" Width="72" Click="btnFetch_Click" Margin="0,3,0,0"></Button>
+                <Label Content="Registered Nodes:" Grid.Column="0" Grid.Row="1" Height="28" HorizontalAlignment="Left"   VerticalAlignment="Top"  />
+                <Label Content="Selected Nodes:" Grid.Column="2" Grid.Row="1" Height="28" HorizontalAlignment="Left"   VerticalAlignment="Top"  />             
+                <ListBox Name="lbxRegNodes" HorizontalAlignment="Left"  Grid.Row="2" Grid.Column="0"
+                          Width="175" Height="55" ItemsSource="{Binding Path=RegisteredServerNames, Mode=TwoWay}"  IsSynchronizedWithCurrentItem="true" >
+                   
+                </ListBox>               
+                <ListBox Name="lbxRemoteNodes" ItemsSource="{Binding Path=RemoteServerNames, Mode=OneWay}" SelectionMode="Extended" Grid.Row="2" Height="55"  IsSynchronizedWithCurrentItem="true" Grid.ColumnSpan="3" Margin="217,0,-46,0">
+                
+                </ListBox>
+                <Grid Grid.Row="2" Grid.Column="0" Margin="180,0,10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Content=">>" Grid.Row="0" Grid.Column="0"   HorizontalAlignment="Left" 
+                Name="btnS" VerticalAlignment="Top" Width="31" Click="btnAdd_Click" Margin="0,5,0,0"></Button>
+                    <Button Content="&lt;&lt;" Grid.Row="1" Grid.Column="0"   HorizontalAlignment="Left" 
+                Name="btnR" VerticalAlignment="Top" Width="31" Click="btnRemove_Click" Margin="0,5,0,0"></Button>
+                </Grid>
+            </Grid>
+        </GroupBox>
+        <Grid Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"  />
+                <ColumnDefinition Width="Auto"  />
+                <ColumnDefinition Width="Auto"  />
+            </Grid.ColumnDefinitions>
+            <Label Content="Workflow/Script metadata repository URI" Grid.Column="0" Grid.Row="0" Height="28" HorizontalAlignment="Left"  Name="lblServiceUri2" VerticalAlignment="Top" />
+           <TextBox   Grid.Column="1" Grid.Row="0" Height="23" Width="151" Name="txtBoxSvcBaseUri"  Text="{Binding Path=ModelItem.MetadataRepositoryURI,  Mode=TwoWay}"   HorizontalAlignment="Left"  ToolTip="Enter the service URL of the script repository" Margin="0,3" />
+            <Button Content="Fetch" Grid.Row="0" Grid.Column="2"  Height="23" HorizontalAlignment="Left" Margin="4,3,0,3"
+                Name="btnFetchCat"  Width="50" Click="btnFetchCategory_Click" />
+            <Label Content="Workflow/Script Category"  Grid.Column="0"  Grid.Row="1" Height="28" HorizontalAlignment="Left"  Name="lblScriptCat" VerticalAlignment="Top"   />
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtCategory" Width="151" Height="23" PreviewMouseDown="txtCategory_PreviewMouseDown" HorizontalAlignment="Left" MouseEnter="txtCategory_MouseEnter" MouseLeave="txtCategory_MouseLeave" IsEnabled="False" Margin="0,3"  >
+                <TextBox.Background>
+                    <ImageBrush ImageSource="/WEM.AutomationActivity.Designers;component/Images/combo.png"  AlignmentX="Right" Stretch="None" />
+                </TextBox.Background>
+            </TextBox>
+            <Popup  Grid.Column="2" Grid.Row="1" x:Name="PopupCat" AllowsTransparency="True" IsOpen="{Binding ElementName=txtCategory, Path=IsChecked}" StaysOpen="False"  PlacementTarget="{Binding ElementName=txtCategory}">
+                <TreeView x:Name="Tree1"  SelectedItemChanged="Tree1_SelectedItemChanged">
+                </TreeView>
+            </Popup>
+         
+            <Label Content="Registered Clusters:" Grid.Column="0" Grid.Row="2" Height="28" HorizontalAlignment="Left"   VerticalAlignment="Top"  />
+            <Label Content="Selected Clusters:" Grid.Column="1" Grid.Row="2" Height="28" HorizontalAlignment="Left"   VerticalAlignment="Top"  />
+            
+            <ListBox Name="lbxRegClusters" HorizontalAlignment="Left"  Grid.Row="3" Grid.Column="0"
+                          Width="175" Height="55" ItemsSource="{Binding Path=RegisteredClusters, Mode=TwoWay}"  IsSynchronizedWithCurrentItem="true" Margin="7,0,0,0" >             
+            </ListBox>
+
+            <ListBox Name="lbxSelClusters" ItemsSource="{Binding Path=SelectedClusters, Mode=TwoWay}" SelectionMode="Extended" Grid.Row="3" Height="55"  IsSynchronizedWithCurrentItem="true" Grid.ColumnSpan="2" Margin="225,0,0,0"/>
+            <Grid Grid.Row="3" Grid.Column="0" Margin="180,0,10,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Button Content=">>" Grid.Row="0" Grid.Column="0"   HorizontalAlignment="Left" 
+                Name="btnAddClus" VerticalAlignment="Top" Width="31" Click="btnAddCluster_Click" Margin="7,5,0,0"></Button>
+                <Button Content="&lt;&lt;" Grid.Row="1" Grid.Column="0"   HorizontalAlignment="Left" 
+                Name="btnRemoveClus" VerticalAlignment="Top" Width="31" Click="btnRemoveCluster_Click" Margin="8,5,0,0"></Button>
+            </Grid>
+        </Grid>
+        <Button x:Name="btnConfirm" Grid.Row="8" Grid.Column="0" Content="Confirm" Width="60" HorizontalAlignment="Center"  Margin="124,10,201,10" Click="btnConfirm_Click"/>
+        <Button x:Name="btnReset" Grid.Row="8" Content="Reset" Width="60" HorizontalAlignment="Center"  Margin="226,10,99,10" Click="btnReset_Click"/>
+    </Grid>
+</sap:ActivityDesigner>
+ 

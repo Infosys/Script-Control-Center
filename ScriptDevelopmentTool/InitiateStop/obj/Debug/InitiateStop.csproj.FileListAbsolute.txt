@@ -1,0 +1,9 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\InitiateStop.exe.config
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\InitiateStop.exe
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\InitiateStop.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\InitiateStop\obj\Debug\InitiateStop.Form1.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\InitiateStop\obj\Debug\InitiateStop.Properties.Resources.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\InitiateStop\obj\Debug\InitiateStop.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\InitiateStop\obj\Debug\InitiateStop.csproj.CoreCompileInputs.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\InitiateStop\obj\Debug\InitiateStop.exe
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\InitiateStop\obj\Debug\InitiateStop.pdb

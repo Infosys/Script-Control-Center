@@ -1,0 +1,7 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\IMSWorkBench.Infrastructure.Module.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\IMSWorkBench.Infrastructure.Module.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Infrastructure.Module\obj\Debug\Infrastructure.Module.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Infrastructure.Module\obj\Debug\Infrastructure.Module.csproj.CoreCompileInputs.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Infrastructure.Module\obj\Debug\Infrastructure.Module.csproj.CopyComplete
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Infrastructure.Module\obj\Debug\IMSWorkBench.Infrastructure.Module.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Infrastructure.Module\obj\Debug\IMSWorkBench.Infrastructure.Module.pdb

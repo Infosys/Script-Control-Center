@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FDCE347-410F-4764-805F-3E2460A561DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infosys.WEM.WorkflowExecutionLibrary</RootNamespace>
+    <AssemblyName>WEM.WorkflowExecutionLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseOffline|AnyCPU'">
+    <OutputPath>..\bin\ReleaseOffline\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Releasex64|AnyCPU'">
+    <OutputPath>..\bin\x64\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseOffline|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>..\bin\x64ReleaseOffline\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Releasex64|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>..\bin\x64\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IAP.Infrastructure.Services.Contracts">
+      <HintPath>..\References\IAP.Infrastructure.Services.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Infosys.Lif.LegacyCommon">
+      <HintPath>..\References\Infosys.Lif.LegacyCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Infosys.Lif.LegacyIntegrator">
+      <HintPath>..\References\Infosys.Lif.LegacyIntegrator.dll</HintPath>
+    </Reference>
+    <Reference Include="Infosys.Lif.LegacyIntegratorService">
+      <HintPath>..\References\Infosys.Lif.LegacyIntegratorService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WEM.Common.Contracts, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Common.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Contracts, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Infrastructure.Common, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Infrastructure.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="WEM.Node.Contracts, Version=1.3.2.35460, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\WEM.Node.Contracts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entity\Workflow.cs" />
+    <Compile Include="Translator\Workflow_DocumentEntry.cs" />
+    <Compile Include="WorkflowExecutionManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonClientLibrary\CommonClientLibrary.csproj">
+      <Project>{1d40198d-f50f-44e4-96e4-107856d049b4}</Project>
+      <Name>CommonClientLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontendAutomation\Infrastructure\Infrastructure.Library\Infrastructure.Library.csproj">
+      <Project>{5f92d5a6-9f6a-4702-8bd5-39c7ec291c4e}</Project>
+      <Name>Infrastructure.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.Compression\Infosys.ATR.Packaging.csproj">
+      <Project>{0e7e9a78-a05b-4f62-82b1-bf46a95adb44}</Project>
+      <Name>Infosys.ATR.Packaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecute.csproj">
+      <Project>{5ec55749-4ae4-49b4-a8f5-89743ffa3ad5}</Project>
+      <Name>Infosys.ATR.RemoteExecute</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.Atr.RepositoryAccess\Infosys.ATR.RepositoryAccess.csproj">
+      <Project>{84c73028-a842-4027-a8cf-a26f2c8fd578}</Project>
+      <Name>Infosys.ATR.RepositoryAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.WinUIAutomationRuntimeWrapper\Infosys.ATR.WinUIAutomationRuntimeWrapper.csproj">
+      <Project>{bb5f06de-9a55-4b3f-818e-6e64ec625193}</Project>
+      <Name>Infosys.ATR.WinUIAutomationRuntimeWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.WorkflowStateManagement\Infosys.ATR.WorkflowStateManagement\Infosys.ATR.WorkflowStateManagement.csproj">
+      <Project>{21bbaa8f-b586-4ab6-9bd8-438473916aa1}</Project>
+      <Name>Infosys.ATR.WorkflowStateManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecureHandler\SecureHandler.csproj">
+      <Project>{c3dee115-18ec-405f-a426-40bc1e99f944}</Project>
+      <Name>SecureHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkflowExecutionClientLibrary\WorkflowExecutionClientLibrary.csproj">
+      <Project>{4717ca84-8af6-44d9-bba3-008ceb4c5750}</Project>
+      <Name>WorkflowExecutionClientLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

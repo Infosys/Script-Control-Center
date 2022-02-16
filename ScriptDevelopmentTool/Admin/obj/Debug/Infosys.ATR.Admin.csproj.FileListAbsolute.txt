@@ -1,0 +1,16 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\Infosys.ATR.Admin.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\bin\Debug\Infosys.ATR.Admin.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.Views.Explorer.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.Views.GroupDetails.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.Views.GroupExplorerDetails.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.Views.GroupSelector.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.Views.GroupsExplorer.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.Views.GroupUserDetails.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.Views.SemanticCluster.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.Views.UserDetails.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.csproj.CoreCompileInputs.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.csproj.CopyComplete
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Admin\obj\Debug\Infosys.ATR.Admin.pdb

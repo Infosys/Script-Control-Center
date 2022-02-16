@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>google search</name>
+    <baseImageDir>D:\IMS\TFS\ATR\TestProject1\XMLs\google</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName />
+      <applicationType>Web</applicationType>
+      <appLocationPath>http://www.google.co.in</appLocationPath>
+      <webBrowser>Internet Explorer</webBrowser>
+      <webBrowserVersion>9.0</webBrowserVersion>
+    </appControlConfig>
+    <screenConfig>
+      <name>search pane</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>logo</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Image</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>logo.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>search field</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>search field.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>search button</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>search button.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+  <ProjectMode>ImageCapture</ProjectMode>
+</automationConfig>

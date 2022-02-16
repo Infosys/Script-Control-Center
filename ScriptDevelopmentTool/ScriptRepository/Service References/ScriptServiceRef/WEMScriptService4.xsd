@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:61335/WEMScriptService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" />
+  <xs:element name="GetScriptDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="scriptId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="subCategoryId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScriptDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" minOccurs="0" name="GetScriptDetailsResult" nillable="true" type="q1:GetScriptDetailsResMsg" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllScriptDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subCategoryId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllScriptDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" minOccurs="0" name="GetAllScriptDetailsResult" nillable="true" type="q2:GetAllScriptDetailsResMsg" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCategoryAndSubcategory">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCategoryAndSubcategoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" minOccurs="0" name="GetAllCategoryAndSubcategoryResult" nillable="true" type="q3:GetAllCategoryAndSubcategoryResMsg" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCategoryOrSubcategory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" minOccurs="0" name="value" nillable="true" type="q4:AddCategoryOrSubcategoryReqMsg" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCategoryOrSubcategoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" minOccurs="0" name="AddCategoryOrSubcategoryResult" nillable="true" type="q5:AddCategoryOrSubcategoryResMsg" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCategoryOrSubcategory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" minOccurs="0" name="value" nillable="true" type="q6:UpdateCategoryOrSubcategoryReqMsg" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCategoryOrSubcategoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" minOccurs="0" name="UpdateCategoryOrSubcategoryResult" nillable="true" type="q7:UpdateCategoryOrSubcategoryResMsg" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCategoryOrSubcategory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" minOccurs="0" name="value" nillable="true" type="q8:DeleteCategoryOrSubcategoryReqMsg" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCategoryOrSubcategoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" minOccurs="0" name="DeleteCategoryOrSubcategoryResult" nillable="true" type="q9:DeleteCategoryOrSubcategoryResMsg" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

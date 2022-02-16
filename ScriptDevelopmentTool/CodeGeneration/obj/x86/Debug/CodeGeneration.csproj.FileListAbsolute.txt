@@ -1,0 +1,17 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\bin\Debug\CodeGeneration.exe.config
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\bin\Debug\CodeGeneration.exe
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\bin\Debug\CodeGeneration.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\bin\Debug\Infosys.ATR.CodeGeneration.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\bin\Debug\Infosys.ATR.UIAutomation.Entities.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\bin\Debug\Infosys.Solutions.CodeGeneration.Framework.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\bin\Debug\Newtonsoft.Json.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\bin\Debug\Infosys.ATR.CodeGeneration.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\bin\Debug\Infosys.ATR.UIAutomation.Entities.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\obj\x86\Debug\CodeGeneration.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\obj\x86\Debug\CodeGeneration.Form1.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\obj\x86\Debug\CodeGeneration.Properties.Resources.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\obj\x86\Debug\CodeGeneration.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\obj\x86\Debug\CodeGeneration.csproj.CoreCompileInputs.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\obj\x86\Debug\CodeGeneration.csproj.CopyComplete
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\obj\x86\Debug\CodeGeneration.exe
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\CodeGeneration\obj\x86\Debug\CodeGeneration.pdb

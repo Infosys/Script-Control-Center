@@ -1,0 +1,8 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ModuleOrganiser\obj\Debug\Infosys.ATR.ModuleOrganiser.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ModuleOrganiser\obj\Debug\Infosys.ATR.ModuleOrganiser.AboutBox1.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ModuleOrganiser\obj\Debug\Infosys.ATR.ModuleOrganiser.ExportScriptUtility.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ModuleOrganiser\obj\Debug\Infosys.ATR.ModuleOrganiser.GetSecureText.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ModuleOrganiser\obj\Debug\Infosys.ATR.ModuleOrganiser.ModuleLauncher.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ModuleOrganiser\obj\Debug\Infosys.ATR.ModuleOrganiser.Properties.Resources.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ModuleOrganiser\obj\Debug\Infosys.ATR.ModuleOrganiser.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ModuleOrganiser\obj\Debug\Infosys.ATR.ModuleOrganiser.csproj.CoreCompileInputs.cache

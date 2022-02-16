@@ -1,0 +1,25 @@
+<html>
+    <head>Sample html</head>
+    <body>
+    <script type="text/javascript">
+        function AssignText() {
+            var text = document.getElementById("txtName");
+            var lbl = document.getElementById("info").innerHTML = text.value;
+            
+        }
+    </script>
+        <table border="2px">
+            <tr>
+                <td>Text</td>
+                <td>Button</td>
+            </tr>
+            <tr>
+                <td><input id="txtName" type="text" /></td>
+                <td><input id="btnClick" type="button" onclick="AssignText();" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label id="info"></label></td>
+            </tr>
+        </table>
+    </body>
+</html>

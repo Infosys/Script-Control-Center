@@ -1,0 +1,7 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.RemoteExecuteHanlder\bin\Debug\Infosys.ATR.RemoteExecute.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.RemoteExecuteHanlder\bin\Debug\Infosys.ATR.RemoteExecute.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\obj\Debug\Infosys.ATR.RemoteExecute.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\obj\Debug\Infosys.ATR.RemoteExecute.csproj.CoreCompileInputs.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\obj\Debug\Infosys.ATR.RemoteExecute.csproj.CopyComplete
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\obj\Debug\Infosys.ATR.RemoteExecute.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\obj\Debug\Infosys.ATR.RemoteExecute.pdb

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>ExcelPoc</name>
+    <baseImageDir>D:\AutomationSamples</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName />
+      <applicationType>WinDesktop</applicationType>
+      <appLocationPath>C:\Program Files\Microsoft Office\Office15\EXCEL.EXE D:\IMS\images\Automation Samples\Lookup.xlsx</appLocationPath>
+    </appControlConfig>
+    <screenConfig>
+      <name>Sheet1</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>Home</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName>Open Other Workbooks</controlName>
+          <controlClass>Hyperlink</controlClass>
+          <controlPath>/0[0]/1[0]/2</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>Computer</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Pane</controlClass>
+          <controlPath>/0[0]/1[4]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>CellA1</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName>A1</controlName>
+          <controlClass>DataItem</controlClass>
+          <controlPath>/0[0]/1[4]/2[0]/3[3]/4[0]/5[0]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>CellD1</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName>D1</controlName>
+          <controlClass>DataItem</controlClass>
+          <controlPath>/0[0]/1[4]/2[0]/3[3]/4[0]/5[3]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>CellB1</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName></controlName>
+          <controlClass>DataItem</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>View tab</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName>View</controlName>
+          <controlClass>TabItem</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>namebox</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <automationId>1001</automationId>
+          <controlName />
+          <controlClass>Edit</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+
+  <ProjectMode>Win32</ProjectMode>
+</automationConfig>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>Excel App</name>
+    <baseImageDir>D:\IMS\images\Automation Samples</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName />
+      <applicationType>WinDesktop</applicationType>
+      <appLocationPath>C:\Program Files\Microsoft Office\Office15\EXCEL.EXE D:\IMS\images\Automation Samples\Lookup.xlsx</appLocationPath>
+    </appControlConfig>
+    <screenConfig>
+      <name>Main</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>ZoomTab</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName>Zoom...</controlName>
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>View tab</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName>View</controlName>
+          <controlClass>TabItem</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+    </screenConfig>
+    <screenConfig>
+      <name>Zoom</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName>Zoom</controlName>
+        <controlClass>Window</controlClass>
+      </screenControlConfig>
+      <entityConfig>
+        <name>25</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName>25%</controlName>
+          <controlClass>RadioButton</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>OK</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName>OK</controlName>
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+  <ProjectMode>Win32</ProjectMode>
+</automationConfig>

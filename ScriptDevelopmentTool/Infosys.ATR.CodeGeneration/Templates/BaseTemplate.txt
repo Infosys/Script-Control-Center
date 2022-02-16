@@ -1,0 +1,7 @@
+﻿$RepeaterTemplate
+		##controlName## = ["##imgpath##",##controlType##]
+$end
+
+class ##className## :
+	##Repeater##	
+	

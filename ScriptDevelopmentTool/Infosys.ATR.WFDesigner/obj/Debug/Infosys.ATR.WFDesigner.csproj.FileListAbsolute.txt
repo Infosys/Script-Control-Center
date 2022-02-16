@@ -1,0 +1,14 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.Properties.Resources.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.Views.Settings.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.Views.TransactionView.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.Views.Transaction.uclTransStatus.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.Views.ExecuteWf.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.Views.uclTransDesc.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.Views.WFDesigner.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.Views.WorkflowParam.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.Views.Info.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.Views.WFDetails.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.Views.WFSelector.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WFDesigner\obj\Debug\Infosys.ATR.WFDesigner.csproj.CoreCompileInputs.cache

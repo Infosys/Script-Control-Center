@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>Table</name>
+    <baseImageDir>D:\IMS\images\POCTable</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName />
+      <applicationType>Web</applicationType>
+      <appLocationPath>http://BLRKEC63234L:8082/iapscriptstore/download.html</appLocationPath>
+    </appControlConfig>
+    <screenConfig>
+      <name>Screen 1</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>Table1</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <automationId />
+          <controlName />
+          <controlClass>Table</controlClass>
+          <controlPath>/0[0]/1[3]/2[0]/3[1]/4[0]/5[1]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+        <entityConfig>
+          <name>Cell 1a</name>
+          <parent>Table1</parent>
+          <entityControlConfig>
+            <automationId />
+            <controlName>Cell 1a</controlName>
+            <controlClass>Custom</controlClass>
+            <controlPath>/0[0]/1[3]/2[0]/3[1]/4[0]/5[1]/6[1]</controlPath>
+          </entityControlConfig>
+          <entityImageConfig />
+        </entityConfig>
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+  <ProjectMode>Win32</ProjectMode>
+</automationConfig>

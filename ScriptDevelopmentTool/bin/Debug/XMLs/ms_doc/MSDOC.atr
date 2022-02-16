@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>MsWord</name>
+    <baseImageDir>D:\IMS\POCs\ms_doc</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName>Access request.docx - Word</controlName>
+      <applicationType>WinDesktop</applicationType>
+      <appLocationPath>winword.exe "D:\IMS\POCs\ms_doc\Access request.docx"</appLocationPath>
+    </appControlConfig>
+    <screenConfig>
+      <name>EditPane</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>Column_6_2</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <automationId />
+          <controlName>Table Cell</controlName>
+          <controlClass>DataItem</controlClass>
+          <controlPath>/0[0]/1[2]/2[0]/3[0]/4[0]/5[1]/6[1]/7[11]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+        <entityConfig>
+          <name>Data_6_2_2</name>
+          <parent>Column_6_2</parent>
+          <entityControlConfig>
+            <automationId />
+            <controlName>Rectangle</controlName>
+            <controlClass>Image</controlClass>
+            <controlPath>/0[0]/1[2]/2[0]/3[0]/4[0]/5[1]/6[1]/7[11]/8[1]</controlPath>
+          </entityControlConfig>
+          <entityImageConfig />
+        </entityConfig>
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+  <ProjectMode>Win32</ProjectMode>
+</automationConfig>

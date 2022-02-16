@@ -1,0 +1,88 @@
+﻿<Activity mc:Ignorable="sads sap" x:Class="{x:Null}" sap:VirtualizedContainerService.HintSize="874,1458" mva:VisualBasic.Settings="Assembly references and imported namespaces for internal implementation"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:a="clr-namespace:AutomationActivitiesLibrary;assembly=AutomationActivitiesLibrary"
+ xmlns:iaw="clr-namespace:Infosys.ATR.WinUIAutomationRuntimeWrapper;assembly=Infosys.ATR.WinUIAutomationRuntimeWrapper"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:s="clr-namespace:System;assembly=mscorlib"
+ xmlns:s1="clr-namespace:System;assembly=System.Core"
+ xmlns:s2="clr-namespace:System;assembly=System"
+ xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:swf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <TryCatch sap:VirtualizedContainerService.HintSize="834,1418">
+    <TryCatch.Try>
+      <Sequence sap:VirtualizedContainerService.HintSize="816,1054">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="iaw:Control" Name="Btn4" />
+          <Variable x:TypeArguments="iaw:AutomationFacade" Name="AutomationObj" />
+          <Variable x:TypeArguments="iaw:Control" Name="Btn1" />
+          <Variable x:TypeArguments="iaw:Control" Name="BtnAdd" />
+          <Variable x:TypeArguments="iaw:Control" Name="BtnEquals" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <a:InitializeAutomationAPI AutomationConfigFilePath="D:\Code\ATR-FEA\Code\ATR\TestProject1\XMLs\Calc.atr" AutomationObject="[AutomationObj]" DisplayName="Load Automation Configuration" sap:VirtualizedContainerService.HintSize="794,22" IsLaunchApp="True" />
+        <a:FindControl AutomationObject="[AutomationObj]" ControlCanonicalPath="Calculator.Screen 1.Four" ControlObj="[Btn4]" DisplayName="Get Button 4" sap:VirtualizedContainerService.HintSize="794,22" />
+        <If Condition="[Btn4.IsControlAvailable()]" DisplayName="Check if control is available" sap:VirtualizedContainerService.HintSize="794,204">
+          <If.Then>
+            <a:Button_Click ControlObj="[Btn4]" DisplayName="Btn4_Click" sap:VirtualizedContainerService.HintSize="200,22" />
+          </If.Then>
+          <If.Else>
+            <WriteLine sap:VirtualizedContainerService.HintSize="210,60" Text="Fail" />
+          </If.Else>
+        </If>
+        <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="794,22" />
+        <Parallel sap:VirtualizedContainerService.HintSize="794,86">
+          <a:FindControl AutomationObject="[AutomationObj]" ControlCanonicalPath="Calculator.Screen 1.One" ControlObj="[Btn1]" DisplayName="Get Button 1" sap:VirtualizedContainerService.HintSize="200,40" />
+          <a:FindControl AutomationObject="[AutomationObj]" ControlCanonicalPath="Calculator.Screen 1.Equals" ControlObj="[BtnEquals]" DisplayName="Get Button =" sap:VirtualizedContainerService.HintSize="200,40" />
+          <a:FindControl AutomationObject="[AutomationObj]" ControlCanonicalPath="Calculator.Screen 1.Add" ControlObj="[BtnAdd]" DisplayName="Get Button Add" sap:VirtualizedContainerService.HintSize="200,40" />
+        </Parallel>
+        <If Condition="[Btn1.IsControlAvailable() And BtnAdd.IsControlAvailable() And BtnEquals.IsControlAvailable()]" sap:VirtualizedContainerService.HintSize="794,374">
+          <If.Then>
+            <Sequence sap:VirtualizedContainerService.HintSize="222,270">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <a:Button_Click ControlObj="[BtnAdd]" DisplayName="BtnAdd_Click" sap:VirtualizedContainerService.HintSize="200,22" />
+              <a:Button_Click ControlObj="[Btn1]" DisplayName="Btn1_Click" sap:VirtualizedContainerService.HintSize="200,22" />
+              <a:Button_Click ControlObj="[BtnEquals]" DisplayName="BtnEquals_Click" sap:VirtualizedContainerService.HintSize="200,22" />
+            </Sequence>
+          </If.Then>
+          <If.Else>
+            <WriteLine sap:VirtualizedContainerService.HintSize="210,60" Text="Failed" />
+          </If.Else>
+        </If>
+      </Sequence>
+    </TryCatch.Try>
+    <TryCatch.Catches>
+      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="820,102">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ActivityAction x:TypeArguments="s:Exception">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+          </ActivityAction.Argument>
+          <WriteLine sap:VirtualizedContainerService.HintSize="210,60" Text="[exception.Message]" />
+        </ActivityAction>
+      </Catch>
+    </TryCatch.Catches>
+  </TryCatch>
+</Activity>

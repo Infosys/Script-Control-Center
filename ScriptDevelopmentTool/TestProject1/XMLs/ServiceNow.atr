@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>Service Now</name>
+    <baseImageDir>C:\Users\raghavan_mk\Desktop\testimagecapture\Servicenow</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName></controlName>
+      <controlClass>Window</controlClass>
+      <applicationType>Web</applicationType>
+      <appLocationPath>http://info.servicenow.com/demonow</appLocationPath>
+      <uiFwk>.net 2.0</uiFwk>
+    </appControlConfig>
+    <screenConfig>
+      <name>Login</name>
+      <screenImageConfig>
+        <stateImageConfig>
+          <state>validate</state>
+          <validationImageSearchConfig>
+            <imageName>login-validate.jpg</imageName>
+          </validationImageSearchConfig>
+        </stateImageConfig>
+      </screenImageConfig>
+      <screenControlConfig>
+        <controlName>http://info.servicenow.com/demonow - Windows Internet Explorer</controlName>
+        <controlClass>Pane</controlClass>
+      </screenControlConfig>
+      <entityConfig>
+        <name>FirstName</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName></controlName>
+          <automationId></automationId>
+          <controlClass>Edit</controlClass>
+          <controlPath>/0[0]/1[3]/2[0]/3[1]/4[0]/5[17]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state>default</state>
+            <centerImageSearchConfig>
+              <imageName>firstname-default.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Last Name</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName></controlName>
+          <controlClass>Edit</controlClass>
+          <controlPath>/0[0]/1[3]/2[0]/3[1]/4[0]/5[19]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>Business Email</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName></controlName>
+          <controlClass>Edit</controlClass>
+          <controlPath>/0[0]/1[3]/2[0]/3[1]/4[0]/5[21]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>Company</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName></controlName>
+          <controlClass>Edit</controlClass>
+          <controlPath>/0[0]/1[3]/2[0]/3[1]/4[0]/5[23]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>Title</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName></controlName>
+          <controlClass>Edit</controlClass>
+          <controlPath>/0[0]/1[3]/2[0]/3[1]/4[0]/5[25]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>Business Phone</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName></controlName>
+          <controlClass>Edit</controlClass>
+          <controlPath>/0[0]/1[3]/2[0]/3[1]/4[0]/5[27]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>State or Province</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName></controlName>
+          <controlClass>ComboBox</controlClass>
+          <controlPath>/0[0]/1[3]/2[0]/3[1]/4[0]/5[29]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+        <entityConfig>
+          <name>Open</name>
+          <parent>State or Province</parent>
+          <entityControlConfig>
+            <controlName>Open</controlName>
+            <controlClass>Button</controlClass>
+            <controlPath>/0[0]/1[3]/2[0]/3[1]/4[0]/5[29]/6[1]</controlPath>
+          </entityControlConfig>
+          <entityImageConfig />
+        </entityConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Country</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName></controlName>
+          <controlClass>ComboBox</controlClass>
+          <controlPath>/0[0]/1[3]/2[0]/3[1]/4[0]/5[31]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+        <entityConfig>
+          <name>Country List</name>
+          <parent>Country</parent>
+          <entityControlConfig>
+            <controlName>Country List</controlName>
+            <controlClass>List</controlClass>
+            <controlPath>/0[0]</controlPath>
+          </entityControlConfig>
+          <entityImageConfig />
+        </entityConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>ITSM Solution</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName></controlName>
+          <controlClass>ComboBox</controlClass>
+          <controlPath>/0[0]/1[3]/2[0]/3[1]/4[0]/5[33]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+        <entityConfig>
+          <name>ITSM List</name>
+          <parent>ITSM Solution</parent>
+          <entityControlConfig>
+            <controlName>ITSM List</controlName>
+            <controlClass>List</controlClass>
+            <controlPath>/0[0]</controlPath>
+          </entityControlConfig>
+          <entityImageConfig />
+        </entityConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Demo</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName></controlName>
+          <controlClass>Button</controlClass>
+          <controlPath>/0[0]/1[3]/2[0]/3[1]/4[0]/5[34]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+</automationConfig>

@@ -1,0 +1,13 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ScriptsRepository\obj\Debug\Infosys.ATR.ScriptsRepository.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ScriptsRepository\obj\Debug\Infosys.ATR.ScriptsRepository.Properties.Resources.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ScriptsRepository\obj\Debug\Infosys.ATR.ScriptRepository.Views.PythonIDE.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ScriptsRepository\obj\Debug\Infosys.ATR.ScriptRepository.Views.CategoryDetails.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ScriptsRepository\obj\Debug\Infosys.ATR.ScriptsRepository.Views.Info.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ScriptsRepository\obj\Debug\Infosys.ATR.ScriptRepository.Views.MainRepositoryView.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ScriptsRepository\obj\Debug\Infosys.ATR.ScriptRepository.Views.ScriptDesigner.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ScriptsRepository\obj\Debug\Infosys.ATR.ScriptRepository.Views.ScriptDetails.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ScriptsRepository\obj\Debug\Infosys.ATR.ScriptsRepository.Views.Scripts.ScriptOutputDisplay.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ScriptsRepository\obj\Debug\Infosys.ATR.ScriptsRepository.Views.Scripts.ScriptParameters.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ScriptsRepository\obj\Debug\Infosys.ATR.ScriptRepository.Views.SubCategoryDetails.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ScriptsRepository\obj\Debug\Infosys.ATR.ScriptsRepository.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ScriptsRepository\obj\Debug\Infosys.ATR.ScriptsRepository.csproj.CoreCompileInputs.cache

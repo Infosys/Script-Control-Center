@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>Home Page</name>
+    <baseImageDir>D:\Code\ATR-FEA\Code\ATR\TestProject1\XMLs\service_manager_image</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName />
+      <applicationType>Web</applicationType>
+      <appLocationPath>https://smgapinc.saas.hp.com/smcorp/index.do?lang=en</appLocationPath>
+      <webBrowser>Internet Explorer</webBrowser>
+      <webBrowserVersion>9.0</webBrowserVersion>
+    </appControlConfig>
+    <screenConfig>
+      <name>Login Pane</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>Login Id</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>login_id.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Password</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>pwd.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Login Button</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>login_btn.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+    </screenConfig>
+    <screenConfig>
+      <name>Navigator Page</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>Menu</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>menu.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+        <entityConfig>
+          <name>Incident Management</name>
+          <parent>Menu</parent>
+          <entityControlConfig>
+            <controlName />
+            <controlClass>Button</controlClass>
+            <controlPath />
+          </entityControlConfig>
+          <entityImageConfig>
+            <stateImageConfig>
+              <state />
+              <centerImageSearchConfig>
+                <imageName>incidents manage.jpg</imageName>
+              </centerImageSearchConfig>
+            </stateImageConfig>
+          </entityImageConfig>
+          <entityConfig>
+            <name>Search</name>
+            <parent>Incident Management</parent>
+            <entityControlConfig>
+              <controlName />
+              <controlClass>Button</controlClass>
+              <controlPath />
+            </entityControlConfig>
+            <entityImageConfig>
+              <stateImageConfig>
+                <state />
+                <centerImageSearchConfig>
+                  <imageName>search.jpg</imageName>
+                </centerImageSearchConfig>
+              </stateImageConfig>
+            </entityImageConfig>
+          </entityConfig>
+        </entityConfig>
+      </entityConfig>
+    </screenConfig>
+    <screenConfig>
+      <name>Search Fields</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>Assignment group</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>assign group.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Opened After</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>opended after.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Opened before</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>opended before.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Search</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>search inci.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>List</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>list.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Export</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>export.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>ok</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>ok.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+    </screenConfig>
+    <screenConfig>
+      <name>Save file</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>Save</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>save.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Open Folder</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>open_folder.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+  <ProjectMode>ImageCapture</ProjectMode>
+</automationConfig>

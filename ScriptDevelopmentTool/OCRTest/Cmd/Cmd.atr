@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <appConfig>
+    <name>Cmd</name>
+    <baseImageDir>D:\ATR-FEA\Code\ATR\OCRTest\Cmd</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName />
+      <applicationType>WinDesktop</applicationType>
+      <appLocationPath>C:\Windows\System32\cmd.exe</appLocationPath>
+      <webBrowser />
+      <webBrowserVersion />
+    </appControlConfig>
+    <screenConfig>
+      <name>IpConfig</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>IPAddress</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>DHCP</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>Control 3</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+    </screenConfig>
+    <screenConfig>
+      <name>Title</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>Title</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>Cmd.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Properties</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>Properties.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Black</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>Blac.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>FontTab</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>Font.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Font12by16</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>12by16.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>ScreenText</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>ScrnText.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>White</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>White.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Ok</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>OkButton.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+
+      <entityConfig>
+        <name>ScreenBg</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>ScrnBg.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>PhysicalAddress</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>PhysicalAddress.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+
+      <entityConfig>
+        <name>IPv4Address</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>IPv4Address.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+
+      <entityConfig>
+        <name>domain</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>domain.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      
+    </screenConfig> 
+  </appConfig>
+  <ProjectMode>ImageCapture</ProjectMode>
+</automationConfig>

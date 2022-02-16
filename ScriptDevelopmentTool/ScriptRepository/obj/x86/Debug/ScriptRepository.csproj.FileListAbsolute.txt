@@ -1,0 +1,5 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\ScriptRepository\obj\x86\Debug\ScriptRepository.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\ScriptRepository\obj\x86\Debug\ScriptRepository.Form1.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\ScriptRepository\obj\x86\Debug\ScriptRepository.Properties.Resources.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\ScriptRepository\obj\x86\Debug\ScriptRepository.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\ScriptRepository\obj\x86\Debug\ScriptRepository.csproj.CoreCompileInputs.cache

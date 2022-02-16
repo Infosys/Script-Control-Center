@@ -1,0 +1,6 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Shell\obj\Debug\Shell.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Shell\obj\Debug\IMSWorkBench.Infrastructure.Shell.CustomMessageBox.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Shell\obj\Debug\IMSWorkBench.Infrastructure.Shell.Properties.Resources.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Shell\obj\Debug\IMSWorkBench.Infrastructure.Shell.ShellForm.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Shell\obj\Debug\Shell.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Shell\obj\Debug\Shell.csproj.CoreCompileInputs.cache

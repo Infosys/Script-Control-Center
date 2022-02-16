@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>ServiceNow_HomePage</name>
+    <baseImageDir>D:\IMS\TFS\ATR\TestProject1\XMLs\ServiceNowUnlockAcc</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName />
+      <applicationType>Web</applicationType>
+      <appLocationPath>http://info.servicenow.com/demonow</appLocationPath>
+      <webBrowser>Internet Explorer</webBrowser>
+      <webBrowserVersion>9.0</webBrowserVersion>
+    </appControlConfig>
+    <screenConfig>
+      <name>AgentDetails</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>FirstName</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>firstname.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>LastName</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>lastname.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Email</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>email.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Company</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>company.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Infosys</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>infosys.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>JobTitle</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>job.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Phone</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>phone.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>State</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Combobox</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>state.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Country</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Combobox</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>country.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Solution</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Combobox</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>solution.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Done</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>done.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+    </screenConfig>
+    <screenConfig>
+      <name>Incidents</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>Search</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>search.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>IncidentItem</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>incident_tem.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Comment</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>comment.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Resolve</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>resolve.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Update</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>rupdate.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+  <ProjectMode>ImageCapture</ProjectMode>
+</automationConfig>

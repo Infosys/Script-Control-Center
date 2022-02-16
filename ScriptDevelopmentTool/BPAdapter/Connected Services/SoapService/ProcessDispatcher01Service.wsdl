@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:blueprism:webservice:processdispatcher01" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" name="ProcessDispatcher01Service" targetNamespace="urn:blueprism:webservice:processdispatcher01" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="urn:blueprism:webservice:processdispatcher01" />
+  </wsdl:types>
+  <wsdl:message name="InitialiseRequest" />
+  <wsdl:message name="InitialiseResponse">
+    <wsdl:part name="bpInstance" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CleanUpRequest">
+    <wsdl:part name="bpInstance" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CleanUpResponse" />
+  <wsdl:message name="RunProcessRequest">
+    <wsdl:part name="bpInstance" type="s:string" />
+    <wsdl:part name="TransactionID" type="s:string" />
+    <wsdl:part name="ProcessName" type="s:string" />
+    <wsdl:part name="ProcessParameters" type="s:string" />
+    <wsdl:part name="CallbackInfo" type="s:string" />
+    <wsdl:part name="UseSSO" type="s:boolean" />
+  </wsdl:message>
+  <wsdl:message name="RunProcessResponse">
+    <wsdl:part name="Response" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetProcessStatusRequest">
+    <wsdl:part name="bpInstance" type="s:string" />
+    <wsdl:part name="TransactionID" type="s:string" />
+    <wsdl:part name="UseSSO" type="s:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetProcessStatusResponse">
+    <wsdl:part name="Response" type="s:string" />
+  </wsdl:message>
+  <wsdl:portType name="ProcessDispatcher01PortType">
+    <wsdl:operation name="Initialise">
+      <wsdl:input message="tns:InitialiseRequest" />
+      <wsdl:output message="tns:InitialiseResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="CleanUp">
+      <wsdl:input message="tns:CleanUpRequest" />
+      <wsdl:output message="tns:CleanUpResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="RunProcess">
+      <wsdl:input message="tns:RunProcessRequest" />
+      <wsdl:output message="tns:RunProcessResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessStatus">
+      <wsdl:input message="tns:GetProcessStatusRequest" />
+      <wsdl:output message="tns:GetProcessStatusResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProcessDispatcher01SoapBinding" type="tns:ProcessDispatcher01PortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Initialise">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:blueprism:webservice:processdispatcher01" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:blueprism:webservice:processdispatcher01" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CleanUp">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:blueprism:webservice:processdispatcher01" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:blueprism:webservice:processdispatcher01" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RunProcess">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:blueprism:webservice:processdispatcher01" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:blueprism:webservice:processdispatcher01" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessStatus">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:blueprism:webservice:processdispatcher01" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:blueprism:webservice:processdispatcher01" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProcessDispatcher01Service">
+    <wsdl:port name="ProcessDispatcher01Soap" binding="tns:ProcessDispatcher01SoapBinding">
+      <soap:address location="http://VAINPDBLR-05:8181/ws/ProcessDispatcher01" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

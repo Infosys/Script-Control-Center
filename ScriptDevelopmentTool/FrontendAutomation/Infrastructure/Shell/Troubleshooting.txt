@@ -1,0 +1,2 @@
+﻿1. If Error while trying to open a script from the script repository you get an error in the EditScript method.
+Possible Solution: It could be that the Shell\Pythondlls-> sci* dlls are not present in the bin directory

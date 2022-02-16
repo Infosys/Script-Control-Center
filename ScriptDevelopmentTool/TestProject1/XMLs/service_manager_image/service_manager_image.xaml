@@ -1,0 +1,101 @@
+﻿<Activity mc:Ignorable="sads sap" x:Class="{x:Null}" sap:VirtualizedContainerService.HintSize="284,3782" mva:VisualBasic.Settings="Assembly references and imported namespaces for internal implementation"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:iaw="clr-namespace:Infosys.ATR.WinUIAutomationRuntimeWrapper;assembly=Infosys.ATR.WinUIAutomationRuntimeWrapper"
+ xmlns:iwalb="clr-namespace:Infosys.WEM.AutomationActivity.Libraries.Button;assembly=WEM.AutomationActivity.Libraries"
+ xmlns:iwalf="clr-namespace:Infosys.WEM.AutomationActivity.Libraries.FindControl;assembly=WEM.AutomationActivity.Libraries"
+ xmlns:iwalh="clr-namespace:Infosys.WEM.AutomationActivity.Libraries.HighlightElement;assembly=WEM.AutomationActivity.Libraries"
+ xmlns:iwali="clr-namespace:Infosys.WEM.AutomationActivity.Libraries.InitializeAutomationAPI;assembly=WEM.AutomationActivity.Libraries"
+ xmlns:iwalt="clr-namespace:Infosys.WEM.AutomationActivity.Libraries.TextBox;assembly=WEM.AutomationActivity.Libraries"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence DisplayName="Sequence- Login Page" sap:VirtualizedContainerService.HintSize="244,3742">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="iaw:AutomationFacade" Name="automationFacade" />
+      <Variable x:TypeArguments="iaw:Control" Name="control" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <iwali:InitializeAutomationAPI AutomationConfigFilePath="D:\Code\ATR-FEA\Code\ATR\TestProject1\XMLs\service_manager_image\service_manager_image.atr" AutomationObject="[automationFacade]" sap:VirtualizedContainerService.HintSize="222,22" IsLaunchApp="True" />
+    <iwalh:HighlightElement AutomationObject="[automationFacade]" sap:VirtualizedContainerService.HintSize="222,22" IsElementTobeHighlighted="True" />
+    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Login Pane.Login Id" ControlObj="[control]" DisplayName="Find Login Id" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:SendText Result="{x:Null}" ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" SendToText="si2y2i8" />
+    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Login Pane.Password" ControlObj="[control]" DisplayName="Find Password" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:SendText Result="{x:Null}" ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" SendToText="Gap1234" />
+    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Login Pane.Login Button" ControlObj="[control]" DisplayName="Find Login Button" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalb:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <Delay Duration="00:00:20" sap:VirtualizedContainerService.HintSize="222,22" />
+    <Sequence DisplayName="Sequence- Incident Navigator Page" sap:VirtualizedContainerService.HintSize="222,642">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Navigator Page.Menu" ControlObj="[control]" DisplayName="Find Menu" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalb:DoubleClick ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Navigator Page.Menu.Incident Management" ControlObj="[control]" DisplayName="Find Incident Management" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalb:DoubleClick ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Navigator Page.Menu.Incident Management.Search" ControlObj="[control]" DisplayName="Find Search Menu" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalb:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="200,22" />
+    </Sequence>
+    <Sequence DisplayName="Sequence- Search Fields" sap:VirtualizedContainerService.HintSize="222,1572">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Search Fields.Assignment group" ControlObj="[control]" DisplayName="Find Assignment group" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalt:SendText Result="{x:Null}" ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" SendToText="asi-retail-dc wms" />
+      <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Search Fields.Opened After" ControlObj="[control]" DisplayName="Find- Opened After" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalt:SendText Result="{x:Null}" ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" SendToText="09/01/14 00:00:00" />
+      <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Search Fields.Opened before" ControlObj="[control]" DisplayName="Find- Opened Before" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalt:SendText Result="{x:Null}" ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" SendToText="09/15/14 02:32:13" />
+      <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Search Fields.Search" ControlObj="[control]" DisplayName="Find- Search" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalb:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Search Fields.List" ControlObj="[control]" DisplayName="Find- Option list" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalb:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Search Fields.Export" ControlObj="[control]" DisplayName="Find- Export" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalb:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Search Fields.ok" ControlObj="[control]" DisplayName="Find- Ok" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalb:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="200,22" />
+    </Sequence>
+    <Sequence DisplayName="Sequence- Save dialog" sap:VirtualizedContainerService.HintSize="222,456">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Save file.Save" ControlObj="[control]" DisplayName="Find- Save" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalb:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="Home Page.Save file.Open Folder" ControlObj="[control]" DisplayName="Find- Open Folder" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalb:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="200,22" />
+    </Sequence>
+  </Sequence>
+</Activity>

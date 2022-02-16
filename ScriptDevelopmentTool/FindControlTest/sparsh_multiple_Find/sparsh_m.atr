@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>Sparsh</name>
+    <baseImageDir>D:\IMS\TFS\2012\atr\FindControlTest\sparsh_multiple_Find</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName />
+      <applicationType>Web</applicationType>
+      <appLocationPath>http://sparshv2/Pages/Home.aspx</appLocationPath>
+      <webBrowser>Internet Explorer</webBrowser>
+      <webBrowserVersion />
+    </appControlConfig>
+    <screenConfig>
+      <name>SearchPanel</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>SearchText</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>search_text.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>SearchButton</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>search_btn.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+  <ProjectMode>ImageCapture</ProjectMode>
+</automationConfig>

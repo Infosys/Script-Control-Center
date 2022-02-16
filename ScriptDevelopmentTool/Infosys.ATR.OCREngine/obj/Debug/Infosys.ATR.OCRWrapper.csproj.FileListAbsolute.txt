@@ -1,0 +1,5 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.OCREngine\bin\Debug\Infosys.ATR.OCRWrapper.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.OCREngine\bin\Debug\Infosys.ATR.OCRWrapper.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.OCREngine\obj\Debug\Infosys.ATR.OCRWrapper.csproj.CoreCompileInputs.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.OCREngine\obj\Debug\Infosys.ATR.OCRWrapper.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.OCREngine\obj\Debug\Infosys.ATR.OCRWrapper.pdb

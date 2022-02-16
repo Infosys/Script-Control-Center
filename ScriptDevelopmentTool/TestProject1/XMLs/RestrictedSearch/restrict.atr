@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>ColorApp</name>
+    <baseImageDir>D:\IMS\TFS\2012\atr\TestProject1\XMLs\RestrictedSearch</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName />
+      <applicationType>WinDesktop</applicationType>
+      <appLocationPath>D:\IMS\TFS\2012\atr\TestColorBasedDetection\bin\Debug\TestColorBasedDetection.exe</appLocationPath>
+      <webBrowser />
+      <webBrowserVersion />
+    </appControlConfig>
+    <screenConfig>
+      <name>Screen</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>Region1</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state>region1</state>
+            <centerImageSearchConfig>
+              <imageName>region1.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+        <entityConfig>
+          <name>blue</name>
+          <parent>Region1</parent>
+          <entityControlConfig>
+            <controlName />
+            <controlClass>Button</controlClass>
+            <controlPath />
+          </entityControlConfig>
+          <entityImageConfig>
+            <stateImageConfig>
+              <state />
+              <centerImageSearchConfig>
+                <imageName>blue.jpg</imageName>
+              </centerImageSearchConfig>
+            </stateImageConfig>
+          </entityImageConfig>
+        </entityConfig>
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+  <ProjectMode>ImageCapture</ProjectMode>
+</automationConfig>

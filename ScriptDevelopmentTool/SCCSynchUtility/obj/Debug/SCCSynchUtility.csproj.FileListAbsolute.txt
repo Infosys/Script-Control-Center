@@ -1,0 +1,2 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\SCCSynchUtility\obj\Debug\SCCSynchUtility.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\SCCSynchUtility\obj\Debug\SCCSynchUtility.csproj.CoreCompileInputs.cache

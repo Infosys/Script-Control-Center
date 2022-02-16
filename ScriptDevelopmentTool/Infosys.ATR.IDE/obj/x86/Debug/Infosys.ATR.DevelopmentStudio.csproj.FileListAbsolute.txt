@@ -1,0 +1,16 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.ControlEditor.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.ControlExplorer.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.EditObjectModel.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.IDE.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.IdeUC.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.Properties.Resources.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.PythonIDE.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Teboscreen.tips.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.Shell.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.Snapper.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.uc_ControlEditor.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.uc_ControlExplorer.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.ViewObjectModel.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.IDE\obj\x86\Debug\Infosys.ATR.DevelopmentStudio.csproj.CoreCompileInputs.cache

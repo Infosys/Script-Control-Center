@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A339D354-769E-4FBF-9925-B311044541C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IMSWorkBench.Scripts</RootNamespace>
+    <AssemblyName>IMSWorkBench.Scripts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>$(SolutionDir)bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Releasex64|AnyCPU'">
+    <OutputPath>bin\Releasex64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Releasex64|x64'">
+    <OutputPath>..\bin\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseOffline|AnyCPU' ">
+    <OutputPath>..\bin\ReleaseOffline\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseOffline|x64' ">
+    <OutputPath>bin\x64\ReleaseOnline\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infosys.Collaboration.CtxtMgmt.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3a88cceda5d56d15, processorArchitecture=MSIL">
+      <HintPath>..\..\..\References\Infosys.Collaboration.CtxtMgmt.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.CompositeUI, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\References\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\References\Microsoft.Practices.CompositeUI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI.WPF, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\References\Microsoft.Practices.CompositeUI.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\References\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WEM.Infrastructure.Common, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\References\WEM.Infrastructure.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Infosys.ATR.DataAnalysis\DataExtraction.cs">
+      <Link>Services\DataExtraction.cs</Link>
+    </Compile>
+    <Compile Include="Constants\ConstantNames.cs" />
+    <Compile Include="Entities\UseCaseFile.cs" />
+    <Compile Include="Views\Playback\ExecuteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Playback\ExecuteDialog.Designer.cs">
+      <DependentUpon>ExecuteDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module.cs" />
+    <Compile Include="ModuleController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Constants\CommandNames.cs" />
+    <Compile Include="Constants\EventTopicNames.cs" />
+    <Compile Include="Constants\UIExtensionSiteNames.cs" />
+    <Compile Include="Constants\WorkspaceNames.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Utility.cs" />
+    <Compile Include="Views\Add\Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Add\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Add\Add.GeneratedCode.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Add\AddPresenter.cs" />
+    <Compile Include="Views\Add\AddPresenter.GeneratedCode.cs">
+      <DependentUpon>AddPresenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Add\IAdd.cs" />
+    <Compile Include="Views\Edit\Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Edit\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Edit\Edit.GeneratedCode.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Edit\EditPresenter.cs" />
+    <Compile Include="Views\Edit\EditPresenter.GeneratedCode.cs">
+      <DependentUpon>EditPresenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Edit\IEdit.cs" />
+    <Compile Include="Views\Playback\DGVColumnHeader.cs" />
+    <Compile Include="Views\Playback\IPlayback.cs" />
+    <Compile Include="Views\Playback\Playback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Playback\Playback.Designer.cs">
+      <DependentUpon>Playback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Playback\Playback.GeneratedCode.cs">
+      <DependentUpon>Playback.cs</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Playback\PlaybackPresenter.cs" />
+    <Compile Include="Views\Playback\PlaybackPresenter.GeneratedCode.cs">
+      <DependentUpon>PlaybackPresenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ScriptsLayout\IScriptsLayout.cs" />
+    <Compile Include="Views\ScriptsLayout\Progress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ScriptsLayout\Progress.Designer.cs">
+      <DependentUpon>Progress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ScriptsLayout\ScriptsLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ScriptsLayout\ScriptsLayout.Designer.cs">
+      <DependentUpon>ScriptsLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ScriptsLayout\ScriptsLayout.GeneratedCode.cs">
+      <DependentUpon>ScriptsLayout.cs</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ScriptsLayout\ScriptsLayoutPresenter.cs" />
+    <Compile Include="Views\ScriptsLayout\ScriptsLayoutPresenter.GeneratedCode.cs">
+      <DependentUpon>ScriptsLayoutPresenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ScriptsLayout\ShowProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ScriptsLayout\ShowProgress.Designer.cs">
+      <DependentUpon>ShowProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ScriptsLayout\TabControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\ScriptsLayout\Util.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ScriptsLayout\VerticalLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Usecases\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Playback\ExecuteDialog.resx">
+      <DependentUpon>ExecuteDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Add\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Edit\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Playback\Playback.resx">
+      <DependentUpon>Playback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ScriptsLayout\Progress.resx">
+      <DependentUpon>Progress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ScriptsLayout\ScriptsLayout.resx">
+      <DependentUpon>ScriptsLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ScriptsLayout\ShowProgress.resx">
+      <DependentUpon>ShowProgress.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Close2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\previous.png" />
+    <Content Include="Images\delete.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\FormRunHS.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\next.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestScripts\sample.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\066.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\094.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\097.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\back - Copy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\close - Copy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\close.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\green.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\green_neon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\pause.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\recording.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\red.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Infosys.ATR.IDE\Infosys.ATR.DevelopmentStudio.csproj">
+      <Project>{0948e0fb-6238-4e3a-98b7-917c6390f875}</Project>
+      <Name>Infosys.ATR.DevelopmentStudio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infosys.ATR.ScriptEditor\Infosys.ATR.ScriptEditor.csproj">
+      <Project>{716A7285-44D5-44BF-AE56-1AB50AE40966}</Project>
+      <Name>Infosys.ATR.ScriptEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infosys.ATR.UIAutomation.Entities\Infosys.ATR.UIAutomation.Entities.csproj">
+      <Project>{85164420-6793-41F4-9B90-21EB27C0B352}</Project>
+      <Name>Infosys.ATR.UIAutomation.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infosys.ATR.UIAutomation.Recorder\Infosys.ATR.UIAutomation.Recorder.csproj">
+      <Project>{29DB1E14-3A59-4F14-8BC0-EC1BD9D49C1D}</Project>
+      <Name>Infosys.ATR.UIAutomation.Recorder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infosys.ATR.UIAutomation.SEE\Infosys.ATR.UIAutomation.SEE.csproj">
+      <Project>{C0B57F67-B8BA-40DE-9A1B-556CA9D971BA}</Project>
+      <Name>Infosys.ATR.UIAutomation.SEE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Infosys.ATR.UIAutomation.UserActivityMonitor\Infosys.ATR.UIAutomation.UserActivityMonitor.csproj">
+      <Project>{F52AA97E-180A-40ED-8F2B-09080171D6C7}</Project>
+      <Name>Infosys.ATR.UIAutomation.UserActivityMonitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Infrastructure.Interface\Infrastructure.Interface.csproj">
+      <Project>{9D628643-05AC-400E-9242-E427CBC86901}</Project>
+      <Name>Infrastructure.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\Infrastructure.Library\Infrastructure.Library.csproj">
+      <Project>{5F92D5A6-9F6A-4702-8BD5-39C7EC291C4E}</Project>
+      <Name>Infrastructure.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>Application 1</name>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName>calculator</controlName>
+      <controlClass>Window</controlClass>
+    </appControlConfig>
+    <screenConfig>
+      <name>Screen 1</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName>screen</controlName>
+        <controlClass>Pane</controlClass>
+      </screenControlConfig>
+      <entityConfig>
+        <name>Control 1</name>
+        <entityControlConfig>
+          <controlName>ctrlbtn</controlName>
+          <controlClass>Button</controlClass>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+</automationConfig>

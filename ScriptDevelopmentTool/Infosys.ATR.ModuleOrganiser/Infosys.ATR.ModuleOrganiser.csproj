@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9D979B6-D6F8-49C1-AE23-54106BF83A8A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infosys.ATR.ModuleOrganiser</RootNamespace>
+    <AssemblyName>Infosys.ATR.ModuleOrganiser</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseOffline|AnyCPU'">
+    <OutputPath>..\bin\ReleaseOffline\</OutputPath>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Releasex64|AnyCPU'">
+    <OutputPath>..\bin\x64\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseOffline|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>..\bin\x64ReleaseOffline\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Releasex64|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>..\bin\x64\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.CompositeUI">
+      <HintPath>..\References\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\References\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Constants\Constants.cs" />
+    <Compile Include="Constants\EventTopicNames.cs" />
+    <Compile Include="Constants\UIExtensionSiteNames.cs" />
+    <Compile Include="Constants\WorkspaceNames.cs" />
+    <Compile Include="ExportScriptUtility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportScriptUtility.Designer.cs">
+      <DependentUpon>ExportScriptUtility.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetSecureText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetSecureText.Designer.cs">
+      <DependentUpon>GetSecureText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module.cs" />
+    <Compile Include="ModuleController.cs" />
+    <Compile Include="ModuleLauncher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleLauncher.Designer.cs">
+      <DependentUpon>ModuleLauncher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonClientLibrary\CommonClientLibrary.csproj">
+      <Project>{1d40198d-f50f-44e4-96e4-107856d049b4}</Project>
+      <Name>CommonClientLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontendAutomation\Infrastructure\Infrastructure.Interface\Infrastructure.Interface.csproj">
+      <Project>{9d628643-05ac-400e-9242-e427cbc86901}</Project>
+      <Name>Infrastructure.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontendAutomation\Infrastructure\Infrastructure.Library\Infrastructure.Library.csproj">
+      <Project>{5f92d5a6-9f6a-4702-8bd5-39c7ec291c4e}</Project>
+      <Name>Infrastructure.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.ATR.ExportUtility\Infosys.ATR.ExportUtility.csproj">
+      <Project>{87b85615-fa8c-4afa-a004-b01fddcf0a94}</Project>
+      <Name>Infosys.ATR.ExportUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infosys.LicenseValidationClient\Infosys.LicenseValidationClient.csproj">
+      <Project>{47929582-7bed-45dd-8dbe-1d4c6086d499}</Project>
+      <Name>Infosys.LicenseValidationClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecureHandler\SecureHandler.csproj">
+      <Project>{c3dee115-18ec-405f-a426-40bc1e99f944}</Project>
+      <Name>SecureHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkflowExecutionClientLibrary\WorkflowExecutionClientLibrary.csproj">
+      <Project>{4717ca84-8af6-44d9-bba3-008ceb4c5750}</Project>
+      <Name>WorkflowExecutionClientLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportScriptUtility.resx">
+      <DependentUpon>ExportScriptUtility.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetSecureText.resx">
+      <DependentUpon>GetSecureText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleLauncher.resx">
+      <DependentUpon>ModuleLauncher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

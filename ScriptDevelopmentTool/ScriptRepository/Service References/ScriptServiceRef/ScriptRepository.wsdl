@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ScriptRepository" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:61335/WEMScriptService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:61335/WEMScriptService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Infosys.WEM.Infrastructure.Common" />
+      <xsd:import schemaLocation="http://localhost:61335/WEMScriptService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:61335/WEMScriptService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Message" />
+      <xsd:import schemaLocation="http://localhost:61335/WEMScriptService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Infosys.WEM.Scripts.Service.Contracts.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IScriptRepository_GetScriptDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScriptDetails" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_GetScriptDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScriptDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_GetScriptDetails_ServiceFaultErrorFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Infosys.WEM.Infrastructure.Common" name="detail" element="q1:ServiceFaultError" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_GetAllScriptDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllScriptDetails" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_GetAllScriptDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllScriptDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_GetAllScriptDetails_ServiceFaultErrorFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Infosys.WEM.Infrastructure.Common" name="detail" element="q2:ServiceFaultError" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_GetAllCategoryAndSubcategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCategoryAndSubcategory" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_GetAllCategoryAndSubcategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCategoryAndSubcategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_GetAllCategoryAndSubcategory_ServiceFaultErrorFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Infosys.WEM.Infrastructure.Common" name="detail" element="q3:ServiceFaultError" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_AddCategoryOrSubcategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCategoryOrSubcategory" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_AddCategoryOrSubcategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCategoryOrSubcategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_AddCategoryOrSubcategory_ServiceFaultErrorFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/Infosys.WEM.Infrastructure.Common" name="detail" element="q4:ServiceFaultError" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_UpdateCategoryOrSubcategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCategoryOrSubcategory" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_UpdateCategoryOrSubcategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCategoryOrSubcategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_UpdateCategoryOrSubcategory_ServiceFaultErrorFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/Infosys.WEM.Infrastructure.Common" name="detail" element="q5:ServiceFaultError" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_DeleteCategoryOrSubcategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCategoryOrSubcategory" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_DeleteCategoryOrSubcategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCategoryOrSubcategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScriptRepository_DeleteCategoryOrSubcategory_ServiceFaultErrorFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/Infosys.WEM.Infrastructure.Common" name="detail" element="q6:ServiceFaultError" />
+  </wsdl:message>
+  <wsdl:portType name="IScriptRepository">
+    <wsdl:operation name="GetScriptDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScriptRepository/GetScriptDetails" message="tns:IScriptRepository_GetScriptDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScriptRepository/GetScriptDetailsResponse" message="tns:IScriptRepository_GetScriptDetails_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IScriptRepository/GetScriptDetailsServiceFaultErrorFault" name="ServiceFaultErrorFault" message="tns:IScriptRepository_GetScriptDetails_ServiceFaultErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllScriptDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScriptRepository/GetAllScriptDetails" message="tns:IScriptRepository_GetAllScriptDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScriptRepository/GetAllScriptDetailsResponse" message="tns:IScriptRepository_GetAllScriptDetails_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IScriptRepository/GetAllScriptDetailsServiceFaultErrorFault" name="ServiceFaultErrorFault" message="tns:IScriptRepository_GetAllScriptDetails_ServiceFaultErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCategoryAndSubcategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScriptRepository/GetAllCategoryAndSubcategory" message="tns:IScriptRepository_GetAllCategoryAndSubcategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScriptRepository/GetAllCategoryAndSubcategoryResponse" message="tns:IScriptRepository_GetAllCategoryAndSubcategory_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IScriptRepository/GetAllCategoryAndSubcategoryServiceFaultErrorFault" name="ServiceFaultErrorFault" message="tns:IScriptRepository_GetAllCategoryAndSubcategory_ServiceFaultErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCategoryOrSubcategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScriptRepository/AddCategoryOrSubcategory" message="tns:IScriptRepository_AddCategoryOrSubcategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScriptRepository/AddCategoryOrSubcategoryResponse" message="tns:IScriptRepository_AddCategoryOrSubcategory_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IScriptRepository/AddCategoryOrSubcategoryServiceFaultErrorFault" name="ServiceFaultErrorFault" message="tns:IScriptRepository_AddCategoryOrSubcategory_ServiceFaultErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCategoryOrSubcategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScriptRepository/UpdateCategoryOrSubcategory" message="tns:IScriptRepository_UpdateCategoryOrSubcategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScriptRepository/UpdateCategoryOrSubcategoryResponse" message="tns:IScriptRepository_UpdateCategoryOrSubcategory_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IScriptRepository/UpdateCategoryOrSubcategoryServiceFaultErrorFault" name="ServiceFaultErrorFault" message="tns:IScriptRepository_UpdateCategoryOrSubcategory_ServiceFaultErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategoryOrSubcategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScriptRepository/DeleteCategoryOrSubcategory" message="tns:IScriptRepository_DeleteCategoryOrSubcategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScriptRepository/DeleteCategoryOrSubcategoryResponse" message="tns:IScriptRepository_DeleteCategoryOrSubcategory_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IScriptRepository/DeleteCategoryOrSubcategoryServiceFaultErrorFault" name="ServiceFaultErrorFault" message="tns:IScriptRepository_DeleteCategoryOrSubcategory_ServiceFaultErrorFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="ScriptRepository" />
+</wsdl:definitions>

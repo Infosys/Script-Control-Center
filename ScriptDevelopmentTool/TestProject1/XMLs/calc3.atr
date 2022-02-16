@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>Calculator</name>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName>Calculator</controlName>
+      <controlClass>Window</controlClass>
+      <appLocationPath>calc.exe</appLocationPath>
+      <applicationType>Win32</applicationType>
+    </appControlConfig>
+    <screenConfig>
+      <name></name>
+      <screenImageConfig />
+      <screenControlConfig />
+      <entityConfig>
+        <name>One</name>
+        <entityControlConfig>
+          <automationId>131</automationId>
+          <controlName>1</controlName>
+          <controlClass>Button</controlClass>
+          <controlPath>/0[0]/1[0]/2[9]</controlPath>
+          <applicationType>Win32</applicationType>
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state>default</state>
+            <centerImageSearchConfig>
+              <imageName>one.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>Control 3</name>
+        <entityControlConfig>
+          <automationId>Item 1</automationId>
+          <controlName>View</controlName>
+          <controlClass>Menu</controlClass>
+          <controlPath></controlPath>
+          <applicationType>Win32</applicationType>
+        </entityControlConfig>
+        <entityImageConfig />
+        <entityConfig>
+          <name>Control 4</name>
+          <entityControlConfig>
+            <automationId>Item 305</automationId>
+            <controlName>Standard</controlName>
+            <controlClass>MenuItem</controlClass>
+            <controlPath></controlPath>
+            <applicationType>Win32</applicationType>
+          </entityControlConfig>
+          <entityImageConfig />
+        </entityConfig>
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+</automationConfig>

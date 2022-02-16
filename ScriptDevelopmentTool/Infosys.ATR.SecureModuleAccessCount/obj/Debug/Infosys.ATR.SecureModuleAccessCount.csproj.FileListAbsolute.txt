@@ -1,0 +1,9 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.SecureModuleAccessCount\bin\Debug\Infosys.ATR.SecureModuleAccessCount.exe.config
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.SecureModuleAccessCount\bin\Debug\Infosys.ATR.SecureModuleAccessCount.exe
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.SecureModuleAccessCount\bin\Debug\Infosys.ATR.SecureModuleAccessCount.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.SecureModuleAccessCount\obj\Debug\Infosys.ATR.SecureModuleAccessCount.SecureDataForm.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.SecureModuleAccessCount\obj\Debug\Infosys.ATR.SecureModuleAccessCount.Properties.Resources.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.SecureModuleAccessCount\obj\Debug\Infosys.ATR.SecureModuleAccessCount.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.SecureModuleAccessCount\obj\Debug\Infosys.ATR.SecureModuleAccessCount.csproj.CoreCompileInputs.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.SecureModuleAccessCount\obj\Debug\Infosys.ATR.SecureModuleAccessCount.exe
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.SecureModuleAccessCount\obj\Debug\Infosys.ATR.SecureModuleAccessCount.pdb

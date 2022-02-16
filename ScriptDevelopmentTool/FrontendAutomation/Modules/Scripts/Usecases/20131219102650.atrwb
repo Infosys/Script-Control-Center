@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UseCase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="google-infosys" CreatedOn="2013-12-19T10:26:50.6127703+05:30">
+  <Activity Id="cef40465-87c5-41e4-828f-c9ba04d18049" ParentId="">
+    <Task Id="72ad0806-9bc0-4ff2-9c85-4157b53c2966" Name="H" Description="H- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="1" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="H" />
+      <TargetControlAttributes Name="KeyData" Value="H" />
+      <TargetControlAttributes Name="KeyValue" Value="72" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="c39b5805-c915-45e2-9630-3a0d0a26edbf" Name="T" Description="T- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="2" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="T" />
+      <TargetControlAttributes Name="KeyData" Value="T" />
+      <TargetControlAttributes Name="KeyValue" Value="84" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="afa87108-4985-470c-948f-86a2e18b3200" Name="T" Description="T- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="3" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="T" />
+      <TargetControlAttributes Name="KeyData" Value="T" />
+      <TargetControlAttributes Name="KeyValue" Value="84" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="ed5bae39-2087-424b-903e-d04a97cd3e10" Name="P" Description="P- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="4" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="P" />
+      <TargetControlAttributes Name="KeyData" Value="P" />
+      <TargetControlAttributes Name="KeyValue" Value="80" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="e8026ce1-72f1-4be1-b5d2-5548e2cb64c9" Name="RShiftKey" Description="RShiftKey- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="5" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="RShiftKey" />
+      <TargetControlAttributes Name="KeyData" Value="RShiftKey" />
+      <TargetControlAttributes Name="KeyValue" Value="161" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="47d37a03-887a-47a1-9db9-adacb0aa54a0" Name="Oem1" Description="Oem1- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="6" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="Oem1" />
+      <TargetControlAttributes Name="KeyData" Value="Oem1" />
+      <TargetControlAttributes Name="KeyValue" Value="186" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="2f481111-48a7-45cb-b33b-6204c2c65b35" Name="OemQuestion" Description="OemQuestion- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="7" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="OemQuestion" />
+      <TargetControlAttributes Name="KeyData" Value="OemQuestion" />
+      <TargetControlAttributes Name="KeyValue" Value="191" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="1c2a0e6d-ec57-4422-99ac-4eb0306d0ff4" Name="OemQuestion" Description="OemQuestion- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="8" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="OemQuestion" />
+      <TargetControlAttributes Name="KeyData" Value="OemQuestion" />
+      <TargetControlAttributes Name="KeyValue" Value="191" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="abc91691-26cd-4e29-854b-758f19c40bbe" Name="W" Description="W- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="9" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="W" />
+      <TargetControlAttributes Name="KeyData" Value="W" />
+      <TargetControlAttributes Name="KeyValue" Value="87" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="fa7030ef-2243-46d7-ad87-3c1c97830bd2" Name="W" Description="W- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="10" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="W" />
+      <TargetControlAttributes Name="KeyData" Value="W" />
+      <TargetControlAttributes Name="KeyValue" Value="87" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="4121e2ab-b67a-4e32-926e-66913222bf94" Name="W" Description="W- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="11" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="W" />
+      <TargetControlAttributes Name="KeyData" Value="W" />
+      <TargetControlAttributes Name="KeyValue" Value="87" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="d44c87e0-e01e-4555-bdf8-efccf03a6fd1" Name="OemPeriod" Description="OemPeriod- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="12" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="OemPeriod" />
+      <TargetControlAttributes Name="KeyData" Value="OemPeriod" />
+      <TargetControlAttributes Name="KeyValue" Value="190" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="41eff808-b8d8-4cc5-9cf3-860484de0653" Name="G" Description="G- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="13" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="G" />
+      <TargetControlAttributes Name="KeyData" Value="G" />
+      <TargetControlAttributes Name="KeyValue" Value="71" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="d1ce9fc0-2df7-44a5-be70-e0eaeb08ecee" Name="O" Description="O- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="14" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="O" />
+      <TargetControlAttributes Name="KeyData" Value="O" />
+      <TargetControlAttributes Name="KeyValue" Value="79" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="f1a25ae2-d6a7-43cd-a6e6-214513716b2e" Name="O" Description="O- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="15" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="O" />
+      <TargetControlAttributes Name="KeyData" Value="O" />
+      <TargetControlAttributes Name="KeyValue" Value="79" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="aacb543d-19a7-46b5-8b53-b60c7dc2221b" Name="G" Description="G- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="16" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="G" />
+      <TargetControlAttributes Name="KeyData" Value="G" />
+      <TargetControlAttributes Name="KeyValue" Value="71" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="ecc5ff6f-28be-49d0-bfff-5f6d7cefcd39" Name="L" Description="L- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="17" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="L" />
+      <TargetControlAttributes Name="KeyData" Value="L" />
+      <TargetControlAttributes Name="KeyValue" Value="76" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="e7d6d8cc-5afb-4530-a001-2ab1d6a3eef5" Name="E" Description="E- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="18" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="E" />
+      <TargetControlAttributes Name="KeyData" Value="E" />
+      <TargetControlAttributes Name="KeyValue" Value="69" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="24b304ac-caf7-46ad-8ff7-ee27c49fc104" Name="OemPeriod" Description="OemPeriod- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="19" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="OemPeriod" />
+      <TargetControlAttributes Name="KeyData" Value="OemPeriod" />
+      <TargetControlAttributes Name="KeyValue" Value="190" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="9a80631c-ac9b-4bd5-bef0-e99ed4fc626e" Name="C" Description="C- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="20" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="C" />
+      <TargetControlAttributes Name="KeyData" Value="C" />
+      <TargetControlAttributes Name="KeyValue" Value="67" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="47915e6f-36bd-46c6-8cee-2d1e6cba7849" Name="O" Description="O- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="21" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="O" />
+      <TargetControlAttributes Name="KeyData" Value="O" />
+      <TargetControlAttributes Name="KeyValue" Value="79" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="12506bcd-6327-4d4e-a88f-9828fb1febfa" Name="OemPeriod" Description="OemPeriod- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="22" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="OemPeriod" />
+      <TargetControlAttributes Name="KeyData" Value="OemPeriod" />
+      <TargetControlAttributes Name="KeyValue" Value="190" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="87f4318b-ef12-4c25-884d-d487d2d25a3c" Name="I" Description="I- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="23" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="I" />
+      <TargetControlAttributes Name="KeyData" Value="I" />
+      <TargetControlAttributes Name="KeyValue" Value="73" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="0cbb53d3-7f75-4b48-ae5f-221000ecbc7e" Name="N" Description="N- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="24" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="N" />
+      <TargetControlAttributes Name="KeyData" Value="N" />
+      <TargetControlAttributes Name="KeyValue" Value="78" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <TargetApplication>
+      <TargetApplicationAttributes Name="ApplicationName" />
+      <TargetApplicationAttributes Name="FileName" />
+      <TargetApplicationAttributes Name="ModuleName" />
+    </TargetApplication>
+  </Activity>
+  <Activity Id="e421e54a-268f-4ded-a278-ddb6d6a055f7" ParentId="">
+    <Task Id="039cd02e-ddd6-4a9b-81de-3b87eccd0fe4" Name="MouseLeftClick" Description="Mouse Left Button clicked on- " Event="MouseLeftClick" TriggeredPattern="Focus" Order="25" ControlId="lst-ib" SourceIndex="0" ControlName="q" XPath="/HTML/BODY/DIV/DIV[4]/FORM/DIV[1]/DIV[1]/TABLE/TBODY/TR[0]/TD[0]/TABLE/TBODY/TR/TD[0]/DIV/TABLE/TBODY/TR/TD[1]/DIV/INPUT[0]" ControlType="text" ControlOnApplication="WebApplication">
+      <TargetControlAttributes Name="Class" Value="gsfi" />
+      <TargetControlAttributes Name="TabIndex" Value="0" />
+      <TargetControlAttributes Name="Tag" Value="INPUT" />
+      <TargetControlAttributes Name="OuterHTML" Value="&lt;input name=&quot;q&quot; title=&quot;Search&quot; class=&quot;gsfi&quot; id=&quot;lst-ib&quot; style='background: url(&quot;data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D&quot;); margin: 0px; padding: 0px 1px; border: currentColor; left: 0px; width: 100%; height: auto; position: absolute; z-index: 6;' dir=&quot;ltr&quot; spellcheck=&quot;false&quot; type=&quot;text&quot; size=&quot;41&quot; maxlength=&quot;2048&quot; value=&quot;&quot; autocomplete=&quot;off&quot;&gt;" />
+    </Task>
+    <Task Id="da39e113-ade4-4204-a117-0776929e70d1" Name="I" Description="I- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="26" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="I" />
+      <TargetControlAttributes Name="KeyData" Value="I" />
+      <TargetControlAttributes Name="KeyValue" Value="73" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="9e8ee12f-3e17-417d-8cfb-e56701f753ca" Name="N" Description="N- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="27" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="N" />
+      <TargetControlAttributes Name="KeyData" Value="N" />
+      <TargetControlAttributes Name="KeyValue" Value="78" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="dca46f20-ad08-4550-8724-6ebf365c4acf" Name="F" Description="F- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="28" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="F" />
+      <TargetControlAttributes Name="KeyData" Value="F" />
+      <TargetControlAttributes Name="KeyValue" Value="70" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="c955e44c-fd31-45ef-ad8f-fb975d8b09dd" Name="O" Description="O- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="29" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="O" />
+      <TargetControlAttributes Name="KeyData" Value="O" />
+      <TargetControlAttributes Name="KeyValue" Value="79" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="d937f954-1947-4dc3-acce-ef3b3dfdf772" Name="S" Description="S- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="30" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="S" />
+      <TargetControlAttributes Name="KeyData" Value="S" />
+      <TargetControlAttributes Name="KeyValue" Value="83" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="f7a3cdd3-0b7f-4098-8a26-053de05e26b9" Name="Y" Description="Y- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="31" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="Y" />
+      <TargetControlAttributes Name="KeyData" Value="Y" />
+      <TargetControlAttributes Name="KeyValue" Value="89" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="f5b571fc-8cd6-47ac-a1b0-070fdc7532e7" Name="S" Description="S- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="32" SourceIndex="0" ControlOnApplication="Win32">
+      <TargetControlAttributes Name="KeyCode" Value="S" />
+      <TargetControlAttributes Name="KeyData" Value="S" />
+      <TargetControlAttributes Name="KeyValue" Value="83" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="3b8407f0-3e8c-45e0-a39d-7b17a00c95a9" Name="MouseLeftClick" Description="Mouse Left Button clicked on- " Event="MouseLeftClick" TriggeredPattern="Invoke" Order="33" SourceIndex="0" ControlName="" XPath="/HTML/BODY/DIV/DIV[4]/FORM/DIV[1]/DIV[1]/TABLE/TBODY/TR[0]/TD[0]/TABLE/TBODY/TR/TD[1]/DIV/DIV/DIV/BUTTON/SPAN" ControlType="" ControlOnApplication="WebApplication">
+      <TargetControlAttributes Name="Class" Value="sbico" />
+      <TargetControlAttributes Name="TabIndex" Value="0" />
+      <TargetControlAttributes Name="Tag" Value="SPAN" />
+      <TargetControlAttributes Name="OuterHTML" Value="&lt;span class=&quot;sbico&quot;&gt;&lt;/span&gt;" />
+    </Task>
+    <TargetApplication ApplicationType="WebApplication" ApplicationExe="https://www.google.co.in/">
+      <TargetApplicationAttributes Name="ApplicationName" Value="Google" />
+      <TargetApplicationAttributes Name="FileName" Value="https://www.google.co.in/" />
+      <TargetApplicationAttributes Name="ModuleName" />
+    </TargetApplication>
+  </Activity>
+</UseCase>

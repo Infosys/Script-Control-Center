@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ScriptType>
+  <Type key="bat" allowremote="false">ExecuteBat</Type>
+  <Type key="vbs" allowremote="false">ExecuteVBScript</Type>
+  <Type key="iap" allowremote="false">ExecuteIfea</Type>
+  <Type key="py" allowremote="false">ExecutePython</Type>
+  <Type key="js" allowremote="false">ExecuteJScript</Type>
+  <Type key="ps1" allowremote="false">ExecutePowerShellScript</Type>
+</ScriptType>

@@ -1,0 +1,21 @@
+﻿<SolutionProfile xmlns="http://schemas.microsoft.com/pag/cab-profile/2.0">
+	<Section Name="Services">
+		<Modules>
+			<!--<ModuleInfo AssemblyFile="IMSWorkBench.Infrastructure.Module.dll" />-->
+		</Modules>
+	</Section>
+	<Section Name="Apps">
+		<Dependencies>
+			<Dependency Name="Services" />
+		</Dependencies>
+		<Modules>
+			<ModuleInfo AssemblyFile="Infosys.ATR.Admin.dll"/>
+			<ModuleInfo AssemblyFile="Infosys.ATR.ScriptsRepository.dll"/>
+			<ModuleInfo AssemblyFile="Infosys.ATR.Editor.dll" />
+			<ModuleInfo AssemblyFile="Infosys.ATR.WFDesigner.dll"/>
+			<ModuleInfo AssemblyFile="Infosys.ATR.ModuleOrganiser.dll"/>
+			<ModuleInfo AssemblyFile="Infosys.ATR.ModuleLoader.dll"/>
+    	<ModuleInfo AssemblyFile="Infosys.ATR.ProcessRecorder.dll"/>
+		</Modules>
+	</Section>
+</SolutionProfile>

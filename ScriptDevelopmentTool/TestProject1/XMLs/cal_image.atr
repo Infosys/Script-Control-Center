@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>calculator</name>
+    <baseImageDir>D:\IMS\images</baseImageDir>
+    <appImageConfig>
+      <stateImageConfig>
+        <state />
+        <centerImageSearchConfig>
+          <imageName>calc-open.jpg</imageName>
+        </centerImageSearchConfig>
+      </stateImageConfig>
+    </appImageConfig>
+    <appControlConfig>
+      <controlName />
+      <applicationType>WinDesktop</applicationType>
+      <appLocationPath>calc.exe</appLocationPath>
+    </appControlConfig>
+    <screenConfig>
+      <name>Screen1</name>
+      <screenImageConfig>
+        <stateImageConfig>
+          <state />
+          <centerImageSearchConfig>
+            <imageName>screen.jpg</imageName>
+          </centerImageSearchConfig>
+        </stateImageConfig>
+      </screenImageConfig>
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>one</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>one.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+      <entityConfig>
+        <name>lcd</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Text</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>lcd.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+  <ProjectMode>Win32</ProjectMode>
+</automationConfig>

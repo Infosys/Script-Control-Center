@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7ec4fafd-b07a-4d08-a2fa-4ee5853f1baa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61335/WEMScriptService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WEMScriptService.xsd" MetadataType="Schema" ID="2906bf08-0d43-4a88-93da-7e60625479f7" SourceId="1" SourceUrl="http://localhost:61335/WEMScriptService.svc?xsd=xsd3" />
+    <MetadataFile FileName="WEMScriptService.disco" MetadataType="Disco" ID="ba0066bb-fe88-44c3-8916-141fe813b35d" SourceId="1" SourceUrl="http://localhost:61335/WEMScriptService.svc?disco" />
+    <MetadataFile FileName="WEMScriptService1.xsd" MetadataType="Schema" ID="03079a0b-aca3-4253-a603-88fc324f0818" SourceId="1" SourceUrl="http://localhost:61335/WEMScriptService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WEMScriptService2.xsd" MetadataType="Schema" ID="e5d5f652-b638-4d66-aba3-dc317d3fbc4c" SourceId="1" SourceUrl="http://localhost:61335/WEMScriptService.svc?xsd=xsd4" />
+    <MetadataFile FileName="WEMScriptService3.xsd" MetadataType="Schema" ID="5b2c9f22-1f77-4399-82fc-3eece8d98b02" SourceId="1" SourceUrl="http://localhost:61335/WEMScriptService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WEMScriptService4.xsd" MetadataType="Schema" ID="b5067f6b-2f99-40bb-a9e4-32ca26bfd29c" SourceId="1" SourceUrl="http://localhost:61335/WEMScriptService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ScriptRepository.wsdl" MetadataType="Wsdl" ID="be3b4a1e-8ecd-4a19-a636-967ac73eb01f" SourceId="1" SourceUrl="http://localhost:61335/WEMScriptService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UseCase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CreatedOn="0001-01-01T00:00:00">
+  <_CreatedOn>0001-01-01T00:00:00</_CreatedOn>
+  <Activity Id="7d14fe86-156d-44d7-b068-9423818d3e96" ParentId="">
+    <Task Id="8f396445-9e3b-461e-a427-e175b9a3f683" Name="MouseLeftClick" Description="Mouse Left Button clicked on- 3" Event="MouseLeftClick" TriggeredPattern="InvokePatternIdentifiers.Pattern" Order="1" ControlId="133" ControlName="3" ControlType="ControlType.Button">
+      <TargetControlAttributes Name="AutomationId" Value="133" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="button" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="Button" />
+    </Task>
+    <Task Id="f8d3ccf2-631d-426e-8364-0e640c23e43e" Name="MouseLeftClick" Description="Mouse Left Button clicked on- Multiply" Event="MouseLeftClick" TriggeredPattern="InvokePatternIdentifiers.Pattern" Order="2" ControlId="92" ControlName="Multiply" ControlType="ControlType.Button">
+      <TargetControlAttributes Name="AutomationId" Value="92" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="button" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="Button" />
+    </Task>
+    <Task Id="7acc513f-449c-41e9-bfa8-9ab4ad9aae2b" Name="MouseLeftClick" Description="Mouse Left Button clicked on- 3" Event="MouseLeftClick" TriggeredPattern="InvokePatternIdentifiers.Pattern" Order="3" ControlId="133" ControlName="3" ControlType="ControlType.Button">
+      <TargetControlAttributes Name="AutomationId" Value="133" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="button" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="Button" />
+    </Task>
+    <Task Id="a7a0fb7b-3aac-4b14-8eaa-6dc6d045da4e" Name="MouseLeftClick" Description="Mouse Left Button clicked on- Equals" Event="MouseLeftClick" TriggeredPattern="InvokePatternIdentifiers.Pattern" Order="4" ControlId="121" ControlName="Equals" ControlType="ControlType.Button">
+      <TargetControlAttributes Name="AutomationId" Value="121" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="button" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="Button" />
+    </Task>
+    <Task Id="2c3d1962-49a1-44b3-86f4-3aaf101e4a95" Name="MouseLeftClick" Description="Mouse Left Button clicked on- 3" Event="MouseLeftClick" TriggeredPattern="InvokePatternIdentifiers.Pattern" Order="5" ControlId="133" ControlName="3" ControlType="ControlType.Button">
+      <TargetControlAttributes Name="AutomationId" Value="133" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="button" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="Button" />
+    </Task>
+    <Task Id="8b31d330-043e-47ff-b1a7-cdb580478baa" Name="MouseLeftClick" Description="Mouse Left Button clicked on- Multiply" Event="MouseLeftClick" TriggeredPattern="InvokePatternIdentifiers.Pattern" Order="6" ControlId="92" ControlName="Multiply" ControlType="ControlType.Button">
+      <TargetControlAttributes Name="AutomationId" Value="92" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="button" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="Button" />
+    </Task>
+    <Task Id="2948e39b-2d72-4089-b132-3d934e25c3fa" Name="MouseLeftClick" Description="Mouse Left Button clicked on- 4" Event="MouseLeftClick" TriggeredPattern="InvokePatternIdentifiers.Pattern" Order="7" ControlId="134" ControlName="4" ControlType="ControlType.Button">
+      <TargetControlAttributes Name="AutomationId" Value="134" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="button" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="Button" />
+    </Task>
+    <Task Id="f6cc2070-1c40-4533-9335-72d083eaf42d" Name="MouseLeftClick" Description="Mouse Left Button clicked on- Equals" Event="MouseLeftClick" TriggeredPattern="InvokePatternIdentifiers.Pattern" Order="8" ControlId="121" ControlName="Equals" ControlType="ControlType.Button">
+      <TargetControlAttributes Name="AutomationId" Value="121" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="button" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="Button" />
+    </Task>
+    <Task Id="50ed9778-de8a-44e9-81fa-f58c8b802e2a" Name="MouseLeftClick" Description="Mouse Left Button clicked on- 3" Event="MouseLeftClick" TriggeredPattern="InvokePatternIdentifiers.Pattern" Order="9" ControlId="133" ControlName="3" ControlType="ControlType.Button">
+      <TargetControlAttributes Name="AutomationId" Value="133" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="button" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="Button" />
+    </Task>
+    <Task Id="5f7afe5d-67f2-48be-9ee7-cebe1ad496ed" Name="MouseLeftClick" Description="Mouse Left Button clicked on- Multiply" Event="MouseLeftClick" TriggeredPattern="InvokePatternIdentifiers.Pattern" Order="10" ControlId="92" ControlName="Multiply" ControlType="ControlType.Button">
+      <TargetControlAttributes Name="AutomationId" Value="92" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="button" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="Button" />
+    </Task>
+    <Task Id="e9ebe446-0cb5-415c-b89f-f434cf47e8b2" Name="MouseLeftClick" Description="Mouse Left Button clicked on- 5" Event="MouseLeftClick" TriggeredPattern="InvokePatternIdentifiers.Pattern" Order="11" ControlId="135" ControlName="5" ControlType="ControlType.Button">
+      <TargetControlAttributes Name="AutomationId" Value="135" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="button" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="Button" />
+    </Task>
+    <Task Id="dbd447ef-f801-429a-a1ce-c8893d98f1d4" Name="MouseLeftClick" Description="Mouse Left Button clicked on- Equals" Event="MouseLeftClick" TriggeredPattern="InvokePatternIdentifiers.Pattern" Order="12" ControlId="121" ControlName="Equals" ControlType="ControlType.Button">
+      <TargetControlAttributes Name="AutomationId" Value="121" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="button" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="Button" />
+    </Task>
+    <TargetApplication ApplicationType="Win32" ApplicationExe="C:\Windows\system32\calc.exe">
+      <TargetApplicationAttributes Name="ApplicationName" Value="calc" />
+      <TargetApplicationAttributes Name="FileName" Value="C:\Windows\system32\calc.exe" />
+      <TargetApplicationAttributes Name="ModuleName" Value="calc.exe" />
+    </TargetApplication>
+  </Activity>
+  <Activity Id="00febeb2-255c-4a12-be08-d1de035cccd9" ParentId="">
+    <Task Id="01a806d8-c1e5-4c83-844c-75295534d113" Name="MouseLeftClick" Description="Mouse Left Button clicked on- " Event="MouseLeftClick" Order="13" ControlId="15" ControlName="" ControlType="ControlType.Document">
+      <TargetControlAttributes Name="AutomationId" Value="15" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="document" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="Edit" />
+    </Task>
+    <Task Id="14cf898a-0297-4c41-b0aa-44ba60f2ab90" Name="M" Description="M- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="14">
+      <TargetControlAttributes Name="KeyCode" Value="M" />
+      <TargetControlAttributes Name="KeyData" Value="M" />
+      <TargetControlAttributes Name="KeyValue" Value="77" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="4452d379-51c6-4a07-a48a-b6b5a230bee8" Name="U" Description="U- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="15">
+      <TargetControlAttributes Name="KeyCode" Value="U" />
+      <TargetControlAttributes Name="KeyData" Value="U" />
+      <TargetControlAttributes Name="KeyValue" Value="85" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="df915e82-e1eb-4257-8a44-4b9297a5fda5" Name="L" Description="L- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="16">
+      <TargetControlAttributes Name="KeyCode" Value="L" />
+      <TargetControlAttributes Name="KeyData" Value="L" />
+      <TargetControlAttributes Name="KeyValue" Value="76" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="8de93aca-7e80-440a-bb4e-609ae496d789" Name="T" Description="T- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="17">
+      <TargetControlAttributes Name="KeyCode" Value="T" />
+      <TargetControlAttributes Name="KeyData" Value="T" />
+      <TargetControlAttributes Name="KeyValue" Value="84" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="0d45c37c-494f-4a0a-8462-55fa1b234129" Name="I" Description="I- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="18">
+      <TargetControlAttributes Name="KeyCode" Value="I" />
+      <TargetControlAttributes Name="KeyData" Value="I" />
+      <TargetControlAttributes Name="KeyValue" Value="73" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="39e5dcf4-0ad1-4ab1-a542-481c506e9f2a" Name="P" Description="P- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="19">
+      <TargetControlAttributes Name="KeyCode" Value="P" />
+      <TargetControlAttributes Name="KeyData" Value="P" />
+      <TargetControlAttributes Name="KeyValue" Value="80" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="a71efc29-1b70-409c-9b5b-5d8c895321b0" Name="L" Description="L- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="20">
+      <TargetControlAttributes Name="KeyCode" Value="L" />
+      <TargetControlAttributes Name="KeyData" Value="L" />
+      <TargetControlAttributes Name="KeyValue" Value="76" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="41f146c8-2c85-4916-bace-dfb7f69caf52" Name="I" Description="I- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="21">
+      <TargetControlAttributes Name="KeyCode" Value="I" />
+      <TargetControlAttributes Name="KeyData" Value="I" />
+      <TargetControlAttributes Name="KeyValue" Value="73" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="41987625-8873-49e5-9d62-94cc289b10cc" Name="C" Description="C- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="22">
+      <TargetControlAttributes Name="KeyCode" Value="C" />
+      <TargetControlAttributes Name="KeyData" Value="C" />
+      <TargetControlAttributes Name="KeyValue" Value="67" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="c752a91d-681d-4432-b265-fd5226fc0b87" Name="A" Description="A- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="23">
+      <TargetControlAttributes Name="KeyCode" Value="A" />
+      <TargetControlAttributes Name="KeyData" Value="A" />
+      <TargetControlAttributes Name="KeyValue" Value="65" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="f4db37e4-72a6-49c0-8a15-2c86d109708f" Name="T" Description="T- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="24">
+      <TargetControlAttributes Name="KeyCode" Value="T" />
+      <TargetControlAttributes Name="KeyData" Value="T" />
+      <TargetControlAttributes Name="KeyValue" Value="84" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="1a78a62a-c86e-4b85-8e58-5961ea8d3ad2" Name="I" Description="I- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="25">
+      <TargetControlAttributes Name="KeyCode" Value="I" />
+      <TargetControlAttributes Name="KeyData" Value="I" />
+      <TargetControlAttributes Name="KeyValue" Value="73" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="60db8235-165e-4a5b-9b17-6edff5b00b0b" Name="O" Description="O- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="26">
+      <TargetControlAttributes Name="KeyCode" Value="O" />
+      <TargetControlAttributes Name="KeyData" Value="O" />
+      <TargetControlAttributes Name="KeyValue" Value="79" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="93f87cd4-0284-4295-a380-4406169da0a5" Name="N" Description="N- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="27">
+      <TargetControlAttributes Name="KeyCode" Value="N" />
+      <TargetControlAttributes Name="KeyData" Value="N" />
+      <TargetControlAttributes Name="KeyValue" Value="78" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="ddaad5fb-4f42-4eca-85d8-2fde21360a05" Name="Space" Description="Space- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="28">
+      <TargetControlAttributes Name="KeyCode" Value="Space" />
+      <TargetControlAttributes Name="KeyData" Value="Space" />
+      <TargetControlAttributes Name="KeyValue" Value="32" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="d9d0a8b4-14fd-4a02-8250-3715f63fd100" Name="O" Description="O- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="29">
+      <TargetControlAttributes Name="KeyCode" Value="O" />
+      <TargetControlAttributes Name="KeyData" Value="O" />
+      <TargetControlAttributes Name="KeyValue" Value="79" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="5887f06f-595a-4221-964c-e6738b0f27b2" Name="F" Description="F- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="30">
+      <TargetControlAttributes Name="KeyCode" Value="F" />
+      <TargetControlAttributes Name="KeyData" Value="F" />
+      <TargetControlAttributes Name="KeyValue" Value="70" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="33443b1f-caaa-47ce-bbf7-945b5569b96a" Name="Space" Description="Space- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="31">
+      <TargetControlAttributes Name="KeyCode" Value="Space" />
+      <TargetControlAttributes Name="KeyData" Value="Space" />
+      <TargetControlAttributes Name="KeyValue" Value="32" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="9e7c1f7a-7bd4-4f95-bfa2-0afe4928bea4" Name="D3" Description="D3- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="32">
+      <TargetControlAttributes Name="KeyCode" Value="D3" />
+      <TargetControlAttributes Name="KeyData" Value="D3" />
+      <TargetControlAttributes Name="KeyValue" Value="51" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <TargetApplication ApplicationType="Win32" ApplicationExe="C:\Windows\system32\notepad.exe">
+      <TargetApplicationAttributes Name="ApplicationName" Value="notepad" />
+      <TargetApplicationAttributes Name="FileName" Value="C:\Windows\system32\notepad.exe" />
+      <TargetApplicationAttributes Name="ModuleName" Value="notepad.exe" />
+    </TargetApplication>
+  </Activity>
+</UseCase>

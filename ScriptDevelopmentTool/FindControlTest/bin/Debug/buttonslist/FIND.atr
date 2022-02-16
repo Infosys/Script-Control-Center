@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>Sparsh</name>
+    <baseImageDir>D:\Source\aiautotfswkspc\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool\FindControlTest\buttonslist</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName />
+      <applicationType>Web</applicationType>
+      <appLocationPath>http://sparshv2/Pages/Home.aspx</appLocationPath>
+      <webBrowser>Internet Explorer</webBrowser>
+      <webBrowserVersion />
+    </appControlConfig>
+    <screenConfig>
+      <name>SearchPanel</name>
+      <screenImageConfig />
+      <screenControlConfig>
+		  <controlName>Sparsh – The Infosys Intranet</controlName>
+		  <controlClass>Pane</controlClass>
+      </screenControlConfig>
+      <entityConfig>
+        <name>links</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+			<controlName></controlName>
+			<controlClass>Hyperlink</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName></imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+  <ProjectMode>Win32</ProjectMode>
+</automationConfig>

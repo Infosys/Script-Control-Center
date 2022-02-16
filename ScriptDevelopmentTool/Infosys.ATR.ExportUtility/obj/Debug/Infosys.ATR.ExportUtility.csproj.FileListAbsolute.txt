@@ -1,0 +1,4 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ExportUtility\obj\Debug\Infosys.ATR.ExportUtility.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ExportUtility\obj\Debug\Infosys.ATR.ExportUtility.ExportUtility.resources
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ExportUtility\obj\Debug\Infosys.ATR.ExportUtility.csproj.GenerateResource.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ExportUtility\obj\Debug\Infosys.ATR.ExportUtility.csproj.CoreCompileInputs.cache

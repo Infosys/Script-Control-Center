@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <appConfig>
+    <name>JAVA_IFEA</name>
+    <baseImageDir>D:\ATR-FEA\Code\ATR\OCRTest\Cmd</baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <controlName />
+      <applicationType>Java</applicationType>
+      <appLocationPath>java.exe -jar "C:\Users\suchi_paharia\Downloads\SwingSet2.jar"</appLocationPath>
+    </appControlConfig>
+    <screenConfig>
+      <name>Tool Bar</name>
+      <screenImageConfig />
+      <screenControlConfig>
+        <controlName />
+      </screenControlConfig>
+      <entityConfig>
+        <name>SwingSet</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <automationId />
+          <controlName>SwingSet</controlName>
+          <controlClass>Window</controlClass>
+          <controlPath>/0[0]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig />
+      </entityConfig>
+      <entityConfig>
+        <name>Ctrl</name>
+        <parent>Screen</parent>
+        <entityControlConfig>
+          <controlName />
+          <controlClass>Button</controlClass>
+          <controlPath />
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state />
+            <centerImageSearchConfig>
+              <imageName>SourceCode.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+  <ProjectMode>Win32</ProjectMode>
+</automationConfig>

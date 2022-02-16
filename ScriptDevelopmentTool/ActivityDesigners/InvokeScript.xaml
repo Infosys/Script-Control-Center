@@ -1,0 +1,83 @@
+﻿<sap:ActivityDesigner x:Class="Infosys.WEM.AutomationActivity.Designers.InvokeScript"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+    xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation" 
+    xmlns:Model="clr-namespace:System.Activities.Presentation.Model;assembly=System.Activities.Presentation" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" ClipToBounds="False" d:DesignHeight="560" Collapsible="True" Height="Auto" UseLayoutRounding="True" Width="477" VerticalAlignment="Center">
+    <sap:ActivityDesigner.Resources>
+        <ResourceDictionary x:Uid="ResourceDictionary_1">
+            <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
+            <sapc:ModelToObjectValueConverter x:Key="ModelToObjectValueConverter" />
+            <Thickness x:Key="tbMargin">5,10,0,0</Thickness>
+        </ResourceDictionary>
+    </sap:ActivityDesigner.Resources>
+    <Grid Name="Container" Width="Auto" ClipToBounds="False" HorizontalAlignment="Stretch" Margin="0,0,0,-6"  >
+        <Grid.Resources>
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="Margin" Value="{StaticResource tbMargin}"/>
+            </Style>
+            <Style TargetType="{x:Type ComboBox}">
+                <Setter Property="Margin" Value="{StaticResource tbMargin}"/>
+            </Style>
+            <Style TargetType="{x:Type Label}">
+                <Setter Property="Margin" Value="{StaticResource tbMargin}"/>
+            </Style>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Margin" Value="{StaticResource tbMargin}"/>
+            </Style>
+            <Style TargetType="{x:Type TreeView}">
+                <Setter Property="Margin" Value="{StaticResource tbMargin}"/>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Script metadata repository URI" Grid.Column="0" Grid.Row="0" Height="28" HorizontalAlignment="Left"  Name="lblServiceUri" VerticalAlignment="Top" />
+        <Label Content="Script Category"  Grid.Column="0"  Grid.Row="1" Height="28" HorizontalAlignment="Left"  Name="lblScriptCat" VerticalAlignment="Top"   />
+
+        <Label Content="Script" Grid.Column="0" Grid.Row="3" Height="28" HorizontalAlignment="Left" Name="lblScriptName" VerticalAlignment="Top"   />
+        <Label Content="Parameter" Grid.Column="0"  Grid.Row="4" Height="28" HorizontalAlignment="Left"  Name="lblScriptParam" VerticalAlignment="Top" />
+        <Label Content="Default Value" Grid.Column="0"  Grid.Row="5" Height="28" HorizontalAlignment="Left"  Name="lblParameterValue" VerticalAlignment="Top"  />
+        <TextBox  Grid.Row="0" Grid.Column="1" Height="23" 
+                 Name="txtBoxSvcBaseUri"  Width="210"  HorizontalAlignment="Left"  ToolTip="Enter the service URL of the script repository" />
+        <Button Content="Fetch" Grid.Row="0" Grid.Column="2"  Height="23" HorizontalAlignment="Left" 
+                Name="btnFetch" VerticalAlignment="Top" Width="60" Click="btnFetch_Click" />
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtCategory" Width="210" Height="23" PreviewMouseDown="txtCategory_PreviewMouseDown" HorizontalAlignment="Left" MouseEnter="txtCategory_MouseEnter" MouseLeave="txtCategory_MouseLeave" IsEnabled="False"  >
+            <TextBox.Background>
+                <ImageBrush ImageSource="/WEM.AutomationActivity.Designers;component/Images/combo.png"  AlignmentX="Right" Stretch="None" />
+            </TextBox.Background>
+        </TextBox>
+        <Popup Grid.Row="2" Grid.Column="1" x:Name="PopupCat" AllowsTransparency="True" IsOpen="{Binding ElementName=txtCategory, Path=IsChecked}" StaysOpen="False"  PlacementTarget="{Binding ElementName=txtCategory}">
+            <TreeView x:Name="Tree1" Initialized="Tree1_Initialized" SelectedItemChanged="Tree1_SelectedItemChanged">
+            </TreeView>
+        </Popup>
+
+        <ComboBox  Grid.Row="3" Grid.Column="1" Height="23" Name="cmbScriptName" Width="215" HorizontalAlignment="Left" 
+                    ItemsSource="{Binding Path=ScriptNames, Mode=TwoWay}"
+                    IsSynchronizedWithCurrentItem="True" 
+                    SelectedItem="{Binding Path=ModelItem.ScriptName,  Mode=TwoWay}" 
+                   SelectionChanged="cmbScriptName_SelectionChanged" ToolTip="Select Script Name" IsEnabled="False" />
+        <ComboBox  Grid.Row="4" Grid.Column="1" Height="23" Name="cmbScriptParams" Width="215" HorizontalAlignment="Left" 
+                    ItemsSource="{Binding Path=Parameters, Mode=TwoWay}"
+                    IsSynchronizedWithCurrentItem="True" 
+                   SelectionChanged="cmbScriptParams_SelectionChanged" ToolTip="Select Parameter"  />
+        <TextBox  Grid.Row="5" Grid.Column="1" Height="23" HorizontalAlignment="Left" 
+                 Name="txtBoxParamVal"  Width="210" ToolTip="Enter Default Parameter Value" />
+        <Button Content="Create Variable" Grid.Row="6" Grid.Column="1"  Height="23" HorizontalAlignment="Left" 
+                Name="btnSave" VerticalAlignment="Top" Width="100" Click="btnSave_Click"
+                ToolTip ="Click to create parameter variable for script to be invoked"/>
+    </Grid>
+</sap:ActivityDesigner>

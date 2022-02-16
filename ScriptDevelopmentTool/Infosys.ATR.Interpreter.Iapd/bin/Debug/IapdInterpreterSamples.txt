@@ -1,0 +1,9 @@
+Iapd.exe iapd:"D:\temp\sample.iapd" function:"PrintFunction('rb')"
+
+Iapd.exe function:"PrintFunction('rb')" iapd:"D:\temp\sample.iapd" 
+
+Iapd.exe iapd:"D:\temp\sample1.iapd" parameters:"'rb','1','True'"
+
+Iapd.exe parameters:"'rb','1','True'" iapd:"D:\temp\sample1.iapd" 
+
+NB- Independent of the order of the arguments

@@ -1,0 +1,10 @@
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.TessaractWrapper\bin\Debug\Infosys.ATR.TessaractWrapper.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.TessaractWrapper\bin\Debug\Infosys.ATR.TessaractWrapper.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.TessaractWrapper\bin\Debug\Infosys.ATR.OCRWrapper.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.TessaractWrapper\bin\Debug\tessnet2_32.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.TessaractWrapper\bin\Debug\Infosys.ATR.OCRWrapper.pdb
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.TessaractWrapper\obj\Debug\Infosys.ATR.TessaractWrapper.csproj.AssemblyReference.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.TessaractWrapper\obj\Debug\Infosys.ATR.TessaractWrapper.csproj.CoreCompileInputs.cache
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.TessaractWrapper\obj\Debug\Infosys.ATR.TessaractWrapper.csproj.CopyComplete
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.TessaractWrapper\obj\Debug\Infosys.ATR.TessaractWrapper.dll
+D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.TessaractWrapper\obj\Debug\Infosys.ATR.TessaractWrapper.pdb

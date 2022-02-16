@@ -1,0 +1,127 @@
+﻿<Activity mc:Ignorable="sads sap" x:Class="{x:Null}" sap:VirtualizedContainerService.HintSize="284,4402" mva:VisualBasic.Settings="Assembly references and imported namespaces for internal implementation"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:iaw="clr-namespace:Infosys.ATR.WinUIAutomationRuntimeWrapper;assembly=Infosys.ATR.WinUIAutomationRuntimeWrapper"
+ xmlns:iwalb="clr-namespace:Infosys.WEM.AutomationActivity.Libraries.Button;assembly=WEM.AutomationActivity.Libraries"
+ xmlns:iwalc="clr-namespace:Infosys.WEM.AutomationActivity.Libraries.ComboBox;assembly=WEM.AutomationActivity.Libraries"
+ xmlns:iwale="clr-namespace:Infosys.WEM.AutomationActivity.Libraries.Edit;assembly=WEM.AutomationActivity.Libraries"
+ xmlns:iwalf="clr-namespace:Infosys.WEM.AutomationActivity.Libraries.FindControl;assembly=WEM.AutomationActivity.Libraries"
+ xmlns:iwalh="clr-namespace:Infosys.WEM.AutomationActivity.Libraries.HighlightElement;assembly=WEM.AutomationActivity.Libraries"
+ xmlns:iwali="clr-namespace:Infosys.WEM.AutomationActivity.Libraries.InitializeAutomationAPI;assembly=WEM.AutomationActivity.Libraries"
+ xmlns:iwalt="clr-namespace:Infosys.WEM.AutomationActivity.Libraries.TextBox;assembly=WEM.AutomationActivity.Libraries"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence DisplayName="Sequence- ServiceNow" sap:VirtualizedContainerService.HintSize="244,4362">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="iaw:AutomationFacade" Name="automationFacade" />
+      <Variable x:TypeArguments="iaw:Control" Name="control" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <iwali:InitializeAutomationAPI AutomationConfigFilePath="D:\IMS\TFS\ATR\TestProject1\XMLs\ServiceNowUnlockAcc\ServiceNowUnlockAcc.atr" AutomationObject="[automationFacade]" sap:VirtualizedContainerService.HintSize="222,22" IsLaunchApp="True" />
+    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalh:HighlightElement AutomationObject="[automationFacade]" sap:VirtualizedContainerService.HintSize="222,22" IsElementTobeHighlighted="True" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.AgentDetails.FirstName" ControlObj="[control]" DisplayName="FindControl- first name" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:SendText Result="{x:Null}" ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" SendToText="Rahul" />
+    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.AgentDetails.LastName" ControlObj="[control]" DisplayName="FindControl- last name" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:SendText Result="{x:Null}" ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" SendToText="Bandopadhyaya" />
+    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.AgentDetails.Email" ControlObj="[control]" DisplayName="FindControl- email" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:SendText Result="{x:Null}" ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" SendToText="XXXX" />
+    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.AgentDetails.Company" ControlObj="[control]" DisplayName="FindControl- company" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:SendText Result="{x:Null}" ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" SendToText="Infosys" />
+    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.AgentDetails.Infosys" ControlObj="[control]" DisplayName="FindControl- infosys" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalb:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.AgentDetails.JobTitle" ControlObj="[control]" DisplayName="FindControl- job title" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:SendText Result="{x:Null}" ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" SendToText="TA" />
+    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.AgentDetails.Phone" ControlObj="[control]" DisplayName="FindControl- phone" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalt:SendText Result="{x:Null}" ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" SendToText="12345" />
+    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.AgentDetails.State" ControlObj="[control]" DisplayName="FindControl- state" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalc:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalc:KeyPress ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" Key="ak" />
+    <iwalc:KeyPressWithModifiers ControlObj="[control]" DisplayName="KeyPress- ENTER" sap:VirtualizedContainerService.HintSize="222,22" ModifierKey="5">
+      <iwalc:KeyPressWithModifiers.SendToText>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </iwalc:KeyPressWithModifiers.SendToText>
+    </iwalc:KeyPressWithModifiers>
+    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.AgentDetails.Country" ControlObj="[control]" DisplayName="FindControl- country" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalc:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalc:KeyPress ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" Key="us" />
+    <iwalc:KeyPressWithModifiers ControlObj="[control]" DisplayName="KeyPress- ENTER" sap:VirtualizedContainerService.HintSize="222,22" ModifierKey="5">
+      <iwalc:KeyPressWithModifiers.SendToText>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </iwalc:KeyPressWithModifiers.SendToText>
+    </iwalc:KeyPressWithModifiers>
+    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.AgentDetails.Solution" ControlObj="[control]" DisplayName="FindControl- solution" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalc:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalc:KeyPress ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" Key="se" />
+    <iwalc:KeyPressWithModifiers ControlObj="[control]" DisplayName="KeyPress- ENTER" sap:VirtualizedContainerService.HintSize="222,22" ModifierKey="5">
+      <iwalc:KeyPressWithModifiers.SendToText>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </iwalc:KeyPressWithModifiers.SendToText>
+    </iwalc:KeyPressWithModifiers>
+    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.AgentDetails.Done" ControlObj="[control]" DisplayName="FindControl- Demo button" sap:VirtualizedContainerService.HintSize="222,22" />
+    <iwalb:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
+    <Delay Duration="00:00:20" sap:VirtualizedContainerService.HintSize="222,22" />
+    <Sequence DisplayName="Sequence- Incidents Page" sap:VirtualizedContainerService.HintSize="222,1262">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.Incidents.Search" ControlObj="[control]" DisplayName="FindControl- search textbox" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalt:SendText Result="{x:Null}" ControlObj="[control]" DisplayName="SendText- &quot;account locked&quot;" sap:VirtualizedContainerService.HintSize="200,22" SendToText="account locked" />
+      <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalt:KeyPress ControlObj="[control]" DisplayName="KeyPress- ENTER" sap:VirtualizedContainerService.HintSize="200,22" ModifierKey="5">
+        <iwalt:KeyPress.SendToText>
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String" Value="" />
+          </InArgument>
+        </iwalt:KeyPress.SendToText>
+      </iwalt:KeyPress>
+      <Delay Duration="00:00:20" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.Incidents.IncidentItem" ControlObj="[control]" DisplayName="FindControl- incident" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalb:ClickWithOffset ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" XAxis="20" YAxis="0" />
+      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.Incidents.Comment" ControlObj="[control]" DisplayName="FindControl- comments text box" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalt:ClickWithOffset ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" XAxis="0" YAxis="20" />
+      <iwale:KeyPress ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" ModifierKey="-1" SendToText="unlocked" />
+      <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.Incidents.Resolve" ControlObj="[control]" DisplayName="FindControl- resolve button" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalb:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.Incidents.Update" ControlObj="[control]" DisplayName="FindControl- update button" sap:VirtualizedContainerService.HintSize="200,22" />
+      <iwalb:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="200,22" />
+      <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="200,22" />
+    </Sequence>
+  </Sequence>
+</Activity>

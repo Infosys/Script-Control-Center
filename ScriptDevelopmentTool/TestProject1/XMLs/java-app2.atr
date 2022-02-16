@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <appConfig>
+    <name>SwingSet2</name>
+    <baseImageDir></baseImageDir>
+    <appImageConfig />
+    <appControlConfig>
+      <appLocationPath>java.exe -jar "D:\IMS\java\SwingSet2.jar"</appLocationPath>
+      <applicationType>Java</applicationType>
+    </appControlConfig>
+    <screenConfig>
+      <name>Internal Frame Generator</name>
+      <screenImageConfig />
+      <screenControlConfig />
+      <entityConfig>
+        <name>Text Box 1</name>
+        <entityControlConfig>
+          <automationId></automationId>
+          <controlName></controlName>
+          <controlClass>TextBox</controlClass>
+          <controlPath>/0[0]/1[0]/2[1]/3[0]/4[0]/5[1]/6[0]/7[0]/8[0]/9[0]/10[0]/11[0]/12[1]/13[0]/14[2]/15[3]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig>
+          <stateImageConfig>
+            <state>default</state>
+            <centerImageSearchConfig>
+              <imageName>one.jpg</imageName>
+            </centerImageSearchConfig>
+          </stateImageConfig>
+        </entityImageConfig>
+      </entityConfig>           
+    </screenConfig>
+    <screenConfig>
+      <name>Tool Bar</name>
+      <screenImageConfig />
+      <screenControlConfig />
+      <entityConfig>
+        <name>Toggle Button 1</name>
+        <entityControlConfig>
+          <automationId></automationId>
+          <controlName></controlName>
+          <controlClass>Button</controlClass>
+          <controlPath>/0[0]/1[0]/2[1]/3[0]/4[0]/5[0]/6[0]/7[0]/8[3]</controlPath>
+        </entityControlConfig>
+        <entityImageConfig/>
+        <entityConfig>
+          <name>Presets</name>
+          <entityControlConfig>
+            <automationId></automationId>
+            <controlName></controlName>
+            <controlClass>ComboBox</controlClass>
+            <controlPath>/0[0]/1[0]/2[1]/3[0]/4[0]/5[1]/6[0]/7[0]/8[0]/9[1]/10[1]/11[2]</controlPath>
+          </entityControlConfig>
+          <entityImageConfig/>
+          <entityConfig>
+            <name>Lara, Larry, Lisa</name>
+            <entityControlConfig>
+              <automationId></automationId>
+              <controlName></controlName>
+              <controlClass>ListItem</controlClass>
+              <controlPath>/0[0]/1[0]/2[1]/3[1]/4[0]/5[1]/6[0]/7[0]/8[0]/9[1]/10[1]/11[2]/12[0]/13[0]/14[0]/15[0]/16[5]</controlPath>
+            </entityControlConfig>
+            <entityImageConfig/>
+          </entityConfig>
+        </entityConfig>
+      </entityConfig>
+    </screenConfig>
+  </appConfig>
+</automationConfig>

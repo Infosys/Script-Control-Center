@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UseCase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Find Users, Contacts, and Groups" CreatedOn="2013-12-06T15:05:42.8956555+05:30">
+  <Activity Id="52392133-4990-403a-a84b-1a35c0883328" ParentId="">
+    <Task Id="b11cfdf7-5cf0-4757-9745-b8f529689de1" Name="MouseLeftClick" Description="Mouse Left Button clicked on- In:" Event="MouseLeftClick" Order="1" ControlId="16899" ControlName="In:" ControlType="ControlType.ComboBox">
+      <TargetControlAttributes Name="AutomationId" Value="16899" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="combo box" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="ComboBox" />
+    </Task>
+    <Task Id="36c3c7a6-75fa-41ea-b685-d11cf4f21a61" Name="MouseLeftClick" Description="Mouse Left Button clicked on- ad.infosys.com" Event="MouseLeftClick" TriggeredPattern="SelectionItemPatternIdentifiers.Pattern" CurrentState="True" Order="2" ControlId="" ControlName="ad.infosys.com" ControlType="ControlType.ListItem">
+      <TargetControlAttributes Name="AutomationId" Value="" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="list item" />
+      <TargetControlAttributes Name="AccessKey" Value="" />
+      <TargetControlAttributes Name="ClassName" Value="" />
+    </Task>
+    <Task Id="efdbab38-cef2-4b58-bf8e-59799dc52769" Name="MouseLeftClick" Description="Mouse Left Button clicked on- Name:" Event="MouseLeftClick" TriggeredPattern="ValuePatternIdentifiers.Pattern" Order="3" ControlId="1221" ControlName="Name:" ControlType="ControlType.Edit">
+      <TargetControlAttributes Name="AutomationId" Value="1221" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="edit" />
+      <TargetControlAttributes Name="AccessKey" Value="Alt+a" />
+      <TargetControlAttributes Name="ClassName" Value="Edit" />
+    </Task>
+    <Task Id="f2bc630b-da8f-41a2-97ec-c8fdd75e25be" Name="R" Description="R- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="4">
+      <TargetControlAttributes Name="KeyCode" Value="R" />
+      <TargetControlAttributes Name="KeyData" Value="R" />
+      <TargetControlAttributes Name="KeyValue" Value="82" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="e34dbffb-6212-452e-a081-2411f93a6ffd" Name="A" Description="A- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="5">
+      <TargetControlAttributes Name="KeyCode" Value="A" />
+      <TargetControlAttributes Name="KeyData" Value="A" />
+      <TargetControlAttributes Name="KeyValue" Value="65" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="01a0542f-9b93-4235-8d05-458c0a3486b2" Name="H" Description="H- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="6">
+      <TargetControlAttributes Name="KeyCode" Value="H" />
+      <TargetControlAttributes Name="KeyData" Value="H" />
+      <TargetControlAttributes Name="KeyValue" Value="72" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="43182363-a499-49e4-9894-99e940d22bb8" Name="U" Description="U- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="7">
+      <TargetControlAttributes Name="KeyCode" Value="U" />
+      <TargetControlAttributes Name="KeyData" Value="U" />
+      <TargetControlAttributes Name="KeyValue" Value="85" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="9487399f-14e8-47d5-bfa4-cf376c80d0ca" Name="L" Description="L- key is pressed from Keyboard" Event="KeyboardKeyPress" Order="8">
+      <TargetControlAttributes Name="KeyCode" Value="L" />
+      <TargetControlAttributes Name="KeyData" Value="L" />
+      <TargetControlAttributes Name="KeyValue" Value="76" />
+      <TargetControlAttributes Name="IsControlKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsAltKeyPressed" Value="False" />
+      <TargetControlAttributes Name="IsShiftKeyPressed" Value="False" />
+      <TargetControlAttributes Name="Modifiers" Value="None" />
+    </Task>
+    <Task Id="c1945bdd-9214-4124-bea1-1535ccc51b7a" Name="MouseLeftClick" Description="Mouse Left Button clicked on- Find Now" Event="MouseLeftClick" TriggeredPattern="InvokePatternIdentifiers.Pattern" Order="9" ControlId="16901" ControlName="Find Now" ControlType="ControlType.Button">
+      <TargetControlAttributes Name="AutomationId" Value="16901" />
+      <TargetControlAttributes Name="LocalizedControlType" Value="button" />
+      <TargetControlAttributes Name="AccessKey" Value="Alt+i" />
+      <TargetControlAttributes Name="ClassName" Value="Button" />
+    </Task>
+    <TargetApplication ApplicationType="Win32" ApplicationExe="C:\Windows\System32\rundll32.exe">
+      <TargetApplicationAttributes Name="ApplicationName" Value="rundll32" />
+      <TargetApplicationAttributes Name="FileName" Value="C:\Windows\System32\rundll32.exe" />
+      <TargetApplicationAttributes Name="ModuleName" Value="rundll32.exe" />
+    </TargetApplication>
+  </Activity>
+</UseCase>

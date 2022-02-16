@@ -1,0 +1,9 @@
+﻿$appTemplate
+	##application##
+	##tasks##
+$taskTemplate
+	##task##	
+$eventTemplate
+	##eventType####eventParameter##
+$end
+##app##
