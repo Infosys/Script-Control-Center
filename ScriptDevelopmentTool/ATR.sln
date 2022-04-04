@@ -290,8 +290,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonClientLibrary", "Comm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infosys.ATR.WorkflowStateManagement", "Infosys.ATR.WorkflowStateManagement\Infosys.ATR.WorkflowStateManagement\Infosys.ATR.WorkflowStateManagement.csproj", "{21BBAA8F-B586-4AB6-9BD8-438473916AA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testgallery", "Testgallery\Testgallery.csproj", "{CF06DE11-BA4B-4FC1-AF0F-201EE429941D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitiateStop", "InitiateStop\InitiateStop.csproj", "{A49CF5F9-709B-46EB-AFD9-9B7F07678F76}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infosys.ATR.ProcessRecorder", "Infosys.ATR.ProcessRecorder\Infosys.ATR.ProcessRecorder.csproj", "{05DEF1D5-D2BA-4E68-86A8-6071CE234D15}"
