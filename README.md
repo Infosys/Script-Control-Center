@@ -3,9 +3,9 @@ Script Control Center is a centralized script repository and script execution en
 
 
 # Build Instructions
-1.Download source code \r\n
-2.Right click the Zip file and remove/unblock the security note
-3.Navigate to the Script-Control-Center/ScriptDevelopmentTool/ path
-4.Open visual studio cmd Prompt
-5.Execute following command
+1.Download source code <br />
+2.Right click the Zip file and remove/unblock the security note<br />
+3.Navigate to the Script-Control-Center/ScriptDevelopmentTool/ path <br />
+4.Open visual studio cmd Prompt <br />
+5.Execute following command <br />
 	MSBuild ~/Script-Control-Center/ScriptDevelopmentTool/ATR.sln
