@@ -3,7 +3,7 @@ Script Control Center is a centralized script repository and script execution en
 
 
 # Build Instructions
-1.Download source code
+1.Download source code \n
 2.Right click the Zip file and remove/unblock the security note
 3.Navigate to the Script-Control-Center/ScriptDevelopmentTool/ path
 4.Open visual studio cmd Prompt
