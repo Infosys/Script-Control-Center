@@ -8,3 +8,13 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.CommonViews\obj\Debug\Infosys.ATR.CommonViews.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.CommonViews\obj\Debug\Infosys.ATR.CommonViews.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.CommonViews\obj\Debug\Infosys.ATR.CommonViews.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.CommonViews.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.CommonViews.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.CommonViews\obj\Debug\Infosys.ATR.CommonViews.OutputView.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.CommonViews\obj\Debug\Infosys.ATR.CommonViews.Properties.Resources.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.CommonViews\obj\Debug\Infosys.ATR.CommonViews.csproj.GenerateResource.Cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.CommonViews\obj\Debug\Infosys.ATR.CommonViews.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.CommonViews\obj\Debug\Infosys.ATR.CommonViews.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.CommonViews\obj\Debug\Infosys.ATR.CommonViews.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.CommonViews\obj\Debug\Infosys.ATR.CommonViews.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.CommonViews\obj\Debug\Infosys.ATR.CommonViews.csproj.CopyComplete

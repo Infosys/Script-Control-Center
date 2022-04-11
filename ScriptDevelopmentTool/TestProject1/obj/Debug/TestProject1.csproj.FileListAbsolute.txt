@@ -73,3 +73,78 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\TestProject1\obj\Debug\TestProject1.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\TestProject1\obj\Debug\TestProject1.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\TestProject1\obj\Debug\TestProject1.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestProject1\obj\Debug\TestProject1.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestProject1\obj\Debug\TestProject1.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Template\app_ini_template.txt
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Template\iap_parameter_template.txt
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Template\iap_constants_template.txt
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Template\iap_controller_base_template.txt
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Template\iap_controller_template.txt
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Template\iap_logger_template.txt
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Template\iap_model_template.txt
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Template\iap_resolver_base_template.txt
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Template\iap_resolver_template.txt
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Template\iap_utilities_template.txt
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Template\logging_ini_template.txt
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\close note.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\comment.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\company.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\country.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\done.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\email.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\firstname.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\incident_tem - Copy.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\incident_tem.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\infosys.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\job.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\lastname.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\phone.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\resolve.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\search.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\solution.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\state.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\update.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\assign group.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\export.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\incidents manage.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\list.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\login_btn.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\login_id.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\menu.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\ok.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\opended after.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\opended before.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\open_folder.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\pwd.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\save.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\search inci.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\search.jpg
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\calc.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\calc2.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\calc3.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\cal_image.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\colorbaseddetection\ColorBased.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ms_doc\MSDOC.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\POCTable\POCTable.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\RestrictedSearch\restrict.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\xls\excel.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\xls\ExcelPoc.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\GAPDemo_287.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\google 2\google_search.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\google\google_search_image.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\hp\HPServiceManager_Image.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\java-app.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\java-app2.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\notepad.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNow.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\ServiceNowUnlockAcc
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\ServiceNowUnlockAcc.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\service_manager_image\service_manager_image.atr
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\xls\Lookup.xlsx
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\XMLs\ServiceNowUnlockAcc\servivenow.xaml
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\TestProject1.dll.config
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\TestProject1.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\TestProject1.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestProject1\obj\Debug\TestProject1.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestProject1\obj\Debug\TestProject1.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestProject1\obj\Debug\TestProject1.csproj.CopyComplete

@@ -4,3 +4,10 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\WorkflowExecutionClientLibrary\obj\Debug\WorkflowExecutionClientLibrary.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\WorkflowExecutionClientLibrary\obj\Debug\WEM.Client.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\WorkflowExecutionClientLibrary\obj\Debug\WEM.Client.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\WEM.Client.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\WEM.Client.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\WorkflowExecutionClientLibrary\obj\Debug\WEM.Client.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\WorkflowExecutionClientLibrary\obj\Debug\WEM.Client.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\WorkflowExecutionClientLibrary\obj\Debug\WorkflowExecutionClientLibrary.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\WorkflowExecutionClientLibrary\obj\Debug\WorkflowExecutionClientLibrary.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\WorkflowExecutionClientLibrary\obj\Debug\WorkflowExecutionClientLibrary.csproj.CopyComplete

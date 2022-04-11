@@ -1,0 +1,14 @@
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\bin\Debug\NiaRestClient.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\bin\Debug\NiaRestClient.pdb
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\bin\Debug\WEM.Infrastructure.SecurityCore.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\bin\Debug\Microsoft.Practices.Unity.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\bin\Debug\WEM.Infrastructure.SecurityCore.pdb
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\obj\Debug\NiaRestClient.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\obj\Debug\NiaRestClient.pdb
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\obj\Debug\NiaRestClient.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\obj\Debug\NiaRestClient.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\NiaRestClient\obj\Debug\NiaRestClient.csproj.CopyComplete

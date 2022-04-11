@@ -5,3 +5,10 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.CodeGeneration\obj\Debug\Infosys.ATR.CodeGeneration.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.CodeGeneration\obj\Debug\Infosys.ATR.CodeGeneration.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.CodeGeneration\obj\Debug\Infosys.ATR.CodeGeneration.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.CodeGeneration.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.CodeGeneration.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.CodeGeneration\obj\Debug\Infosys.ATR.CodeGeneration.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.CodeGeneration\obj\Debug\Infosys.ATR.CodeGeneration.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.CodeGeneration\obj\Debug\Infosys.ATR.CodeGeneration.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.CodeGeneration\obj\Debug\Infosys.ATR.CodeGeneration.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.CodeGeneration\obj\Debug\Infosys.ATR.CodeGeneration.csproj.CopyComplete

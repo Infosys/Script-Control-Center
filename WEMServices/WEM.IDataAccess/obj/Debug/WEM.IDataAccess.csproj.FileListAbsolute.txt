@@ -1,0 +1,5 @@
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.IDataAccess\bin\Debug\WEM.IDataAccess.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.IDataAccess\bin\Debug\WEM.IDataAccess.pdb
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.IDataAccess\obj\Debug\WEM.IDataAccess.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.IDataAccess\obj\Debug\WEM.IDataAccess.pdb
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.IDataAccess\obj\Debug\WEM.IDataAccess.csproj.CoreCompileInputs.cache

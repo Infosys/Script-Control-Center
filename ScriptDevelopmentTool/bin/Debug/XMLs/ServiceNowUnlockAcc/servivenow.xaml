@@ -38,7 +38,7 @@
     <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="222,22" />
     <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.AgentDetails.Email" ControlObj="[control]" DisplayName="FindControl- email" sap:VirtualizedContainerService.HintSize="222,22" />
     <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />
-    <iwalt:SendText Result="{x:Null}" ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" SendToText="rahul_bandopadhyaya@infosys.com" />
+    <iwalt:SendText Result="{x:Null}" ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" SendToText="XXXX" />
     <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="222,22" />
     <iwalf:FindControl AutomationObject="[automationFacade]" ControlCanonicalPath="ServiceNow_HomePage.AgentDetails.Company" ControlObj="[control]" DisplayName="FindControl- company" sap:VirtualizedContainerService.HintSize="222,22" />
     <iwalt:Click ControlObj="[control]" sap:VirtualizedContainerService.HintSize="222,22" />

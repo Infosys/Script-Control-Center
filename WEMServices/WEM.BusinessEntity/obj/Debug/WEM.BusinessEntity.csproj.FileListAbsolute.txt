@@ -1,0 +1,5 @@
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.BusinessEntity\bin\Debug\WEM.BusinessEntity.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.BusinessEntity\bin\Debug\WEM.BusinessEntity.pdb
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.BusinessEntity\obj\Debug\WEM.BusinessEntity.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.BusinessEntity\obj\Debug\WEM.BusinessEntity.pdb
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.BusinessEntity\obj\Debug\WEM.BusinessEntity.csproj.CoreCompileInputs.cache

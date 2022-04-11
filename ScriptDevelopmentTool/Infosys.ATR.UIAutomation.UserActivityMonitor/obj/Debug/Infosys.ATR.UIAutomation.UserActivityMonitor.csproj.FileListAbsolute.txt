@@ -4,3 +4,10 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.UserActivityMonitor\obj\Debug\Infosys.ATR.UIAutomation.UserActivityMonitor.csproj.CoreCompileInputs.cache
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.UserActivityMonitor\obj\Debug\Infosys.ATR.UIAutomation.UserActivityMonitor.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.UserActivityMonitor\obj\Debug\Infosys.ATR.UIAutomation.UserActivityMonitor.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Gma.xml
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.UIAutomation.UserActivityMonitor.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.UIAutomation.UserActivityMonitor.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.UserActivityMonitor\obj\Debug\Infosys.ATR.UIAutomation.UserActivityMonitor.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.UserActivityMonitor\obj\Debug\Infosys.ATR.UIAutomation.UserActivityMonitor.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.UserActivityMonitor\obj\Debug\Infosys.ATR.UIAutomation.UserActivityMonitor.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.UserActivityMonitor\obj\Debug\Infosys.ATR.UIAutomation.UserActivityMonitor.csproj.CoreCompileInputs.cache

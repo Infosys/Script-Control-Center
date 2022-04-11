@@ -5,3 +5,10 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.DataAnalysis\obj\Debug\Infosys.ATR.DataAnalysis.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.DataAnalysis\obj\Debug\Infosys.ATR.DataAnalysis.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.DataAnalysis\obj\Debug\Infosys.ATR.DataAnalysis.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.DataAnalysis\obj\Debug\Infosys.ATR.DataAnalysis.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.DataAnalysis\obj\Debug\Infosys.ATR.DataAnalysis.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.DataAnalysis.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.DataAnalysis.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.DataAnalysis\obj\Debug\Infosys.ATR.DataAnalysis.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.DataAnalysis\obj\Debug\Infosys.ATR.DataAnalysis.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.DataAnalysis\obj\Debug\Infosys.ATR.DataAnalysis.csproj.CopyComplete

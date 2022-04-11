@@ -3,3 +3,8 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATE.Entities\obj\Debug\Infosys.ATR.Entities.csproj.CoreCompileInputs.cache
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATE.Entities\obj\Debug\Infosys.ATR.Entities.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATE.Entities\obj\Debug\Infosys.ATR.Entities.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.Entities.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.Entities.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATE.Entities\obj\Debug\Infosys.ATR.Entities.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATE.Entities\obj\Debug\Infosys.ATR.Entities.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATE.Entities\obj\Debug\Infosys.ATR.Entities.csproj.CoreCompileInputs.cache

@@ -9,3 +9,14 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.UIAutomation.SEE.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.UIAutomation.SEE.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.SEE\obj\Debug\Interop.SHDocVw.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.csproj.ResolveComReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.Input.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.csproj.GenerateResource.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.SEE\obj\Debug\Infosys.ATR.UIAutomation.SEE.csproj.CopyComplete

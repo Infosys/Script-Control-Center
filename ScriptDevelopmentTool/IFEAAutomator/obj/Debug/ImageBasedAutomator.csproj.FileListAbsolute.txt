@@ -7,3 +7,12 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\IFEAAutomator\obj\Debug\ImageBasedAutomator.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\IFEAAutomator\obj\Debug\ImageBasedAutomator.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\IFEAAutomator\obj\Debug\ImageBasedAutomator.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\ImageBasedAutomator.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\ImageBasedAutomator.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\IFEAAutomator\obj\Debug\ImageBasedAutomator.Highlighter.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\IFEAAutomator\obj\Debug\ImageBasedAutomator.csproj.GenerateResource.Cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\IFEAAutomator\obj\Debug\ImageBasedAutomator.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\IFEAAutomator\obj\Debug\ImageBasedAutomator.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\IFEAAutomator\obj\Debug\ImageBasedAutomator.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\IFEAAutomator\obj\Debug\ImageBasedAutomator.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\IFEAAutomator\obj\Debug\ImageBasedAutomator.csproj.CopyComplete

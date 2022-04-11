@@ -10,3 +10,15 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WinUIAutomationRuntimeWrapper\obj\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WinUIAutomationRuntimeWrapper\obj\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.WinUIAutomationRuntimeWrapper\obj\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.WinUIAutomationRuntimeWrapper\obj\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.Logging.ErrorMessages.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.WinUIAutomationRuntimeWrapper\obj\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.Logging.InformationMessages.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.WinUIAutomationRuntimeWrapper\obj\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.Views.AppStarting.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.WinUIAutomationRuntimeWrapper\obj\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.Views.Highlighter.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.WinUIAutomationRuntimeWrapper\obj\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.csproj.GenerateResource.Cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.WinUIAutomationRuntimeWrapper\obj\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.WinUIAutomationRuntimeWrapper\obj\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.WinUIAutomationRuntimeWrapper\obj\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.WinUIAutomationRuntimeWrapper\obj\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.WinUIAutomationRuntimeWrapper\obj\Debug\Infosys.ATR.WinUIAutomationRuntimeWrapper.csproj.CopyComplete

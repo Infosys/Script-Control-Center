@@ -1,0 +1,8 @@
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\Compress_DeCompress\bin\Debug\Infosys.Compress_DeCompress.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\Compress_DeCompress\bin\Debug\Infosys.Compress_DeCompress.pdb
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\Compress_DeCompress\bin\Debug\WindowsBase.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\Compress_DeCompress\obj\Debug\Infosys.Compress_DeCompress.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\Compress_DeCompress\obj\Debug\Infosys.Compress_DeCompress.pdb
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\Compress_DeCompress\obj\Debug\Compress_DeCompress.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\Compress_DeCompress\obj\Debug\Compress_DeCompress.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\Compress_DeCompress\obj\Debug\Compress_DeCompress.csproj.CopyComplete

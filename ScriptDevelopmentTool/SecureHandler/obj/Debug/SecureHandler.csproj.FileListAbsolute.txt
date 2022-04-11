@@ -10,3 +10,16 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\SecureHandler\obj\Debug\SecureHandler.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\SecureHandler\obj\Debug\Infosys.WEM.SecureHandler.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\SecureHandler\obj\Debug\Infosys.WEM.SecureHandler.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\SecureHandler\bin\Debug\Infosys.WEM.SecureHandler.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\SecureHandler\bin\Debug\Infosys.WEM.SecureHandler.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\SecureHandler\bin\Debug\WEM.Infrastructure.SecurityCore.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\SecureHandler\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\SecureHandler\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\SecureHandler\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\SecureHandler\bin\Debug\Microsoft.Practices.Unity.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\SecureHandler\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\SecureHandler\obj\Debug\Infosys.WEM.SecureHandler.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\SecureHandler\obj\Debug\Infosys.WEM.SecureHandler.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\SecureHandler\obj\Debug\SecureHandler.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\SecureHandler\obj\Debug\SecureHandler.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\SecureHandler\obj\Debug\SecureHandler.csproj.CopyComplete

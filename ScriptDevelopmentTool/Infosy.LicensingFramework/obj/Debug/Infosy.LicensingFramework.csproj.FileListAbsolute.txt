@@ -9,3 +9,14 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosy.LicensingFramework\obj\Debug\Infosy.LicensingFramework.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosy.LicensingFramework\obj\Debug\Infosy.LicensingFramework.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosy.LicensingFramework\obj\Debug\Infosy.LicensingFramework.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosy.LicensingFramework\bin\Debug\KeyValData\KeyVal.data
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosy.LicensingFramework\bin\Debug\KeyValData\skval.iap
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosy.LicensingFramework\bin\Debug\Infosy.LicensingFramework.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosy.LicensingFramework\bin\Debug\Infosy.LicensingFramework.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosy.LicensingFramework\bin\Debug\Infosys.MTC.Licensing.Framework.Common.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosy.LicensingFramework\bin\Debug\Infosys.MTC.Licensing.Framework.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosy.LicensingFramework\obj\Debug\Infosy.LicensingFramework.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosy.LicensingFramework\obj\Debug\Infosy.LicensingFramework.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosy.LicensingFramework\obj\Debug\Infosy.LicensingFramework.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosy.LicensingFramework\obj\Debug\Infosy.LicensingFramework.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosy.LicensingFramework\obj\Debug\Infosy.LicensingFramework.csproj.CopyComplete

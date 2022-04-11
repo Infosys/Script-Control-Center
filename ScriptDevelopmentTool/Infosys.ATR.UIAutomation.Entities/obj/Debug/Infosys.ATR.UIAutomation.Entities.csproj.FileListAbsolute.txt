@@ -4,3 +4,10 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.Entities\obj\Debug\Infosys.ATR.UIAutomation.Entities.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.Entities\obj\Debug\Infosys.ATR.UIAutomation.Entities.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.Entities\obj\Debug\Infosys.ATR.UIAutomation.Entities.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.UIAutomation.Entities.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.UIAutomation.Entities.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.Entities\obj\Debug\Infosys.ATR.UIAutomation.Entities.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.Entities\obj\Debug\Infosys.ATR.UIAutomation.Entities.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.Entities\obj\Debug\Infosys.ATR.UIAutomation.Entities.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.Entities\obj\Debug\Infosys.ATR.UIAutomation.Entities.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.Entities\obj\Debug\Infosys.ATR.UIAutomation.Entities.csproj.CopyComplete

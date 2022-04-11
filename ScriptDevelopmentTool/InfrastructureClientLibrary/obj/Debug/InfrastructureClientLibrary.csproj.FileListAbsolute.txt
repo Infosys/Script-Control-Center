@@ -5,3 +5,10 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\InfrastructureClientLibrary\obj\Debug\InfrastructureClientLibrary.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\InfrastructureClientLibrary\obj\Debug\InfrastructureClientLibrary.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\InfrastructureClientLibrary\obj\Debug\InfrastructureClientLibrary.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\InfrastructureClientLibrary.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\InfrastructureClientLibrary.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\InfrastructureClientLibrary\obj\Debug\InfrastructureClientLibrary.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\InfrastructureClientLibrary\obj\Debug\InfrastructureClientLibrary.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\InfrastructureClientLibrary\obj\Debug\InfrastructureClientLibrary.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\InfrastructureClientLibrary\obj\Debug\InfrastructureClientLibrary.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\InfrastructureClientLibrary\obj\Debug\InfrastructureClientLibrary.csproj.CopyComplete

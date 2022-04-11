@@ -1,0 +1,12 @@
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\SecurityCore\bin\Debug\WEM.Infrastructure.SecurityCore.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\SecurityCore\bin\Debug\WEM.Infrastructure.SecurityCore.pdb
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\SecurityCore\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\SecurityCore\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\SecurityCore\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\SecurityCore\bin\Debug\Microsoft.Practices.Unity.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\SecurityCore\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\SecurityCore\obj\Debug\WEM.Infrastructure.SecurityCore.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\SecurityCore\obj\Debug\WEM.Infrastructure.SecurityCore.pdb
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\SecurityCore\obj\Debug\SecurityCore.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\SecurityCore\obj\Debug\SecurityCore.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\SecurityCore\obj\Debug\SecurityCore.csproj.CopyComplete

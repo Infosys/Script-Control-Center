@@ -5,3 +5,10 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Observer\obj\Debug\Observer.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Observer\obj\Debug\Observer.exe
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Observer\obj\Debug\Observer.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Observer.exe.config
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Observer.exe
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Observer.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Observer\obj\Debug\Observer.exe
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Observer\obj\Debug\Observer.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Observer\obj\Debug\Observer.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Observer\obj\Debug\Observer.csproj.CopyComplete

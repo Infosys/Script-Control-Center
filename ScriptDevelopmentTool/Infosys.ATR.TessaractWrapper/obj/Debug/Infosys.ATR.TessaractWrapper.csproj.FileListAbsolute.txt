@@ -8,3 +8,13 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.TessaractWrapper\obj\Debug\Infosys.ATR.TessaractWrapper.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.TessaractWrapper\obj\Debug\Infosys.ATR.TessaractWrapper.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.TessaractWrapper\obj\Debug\Infosys.ATR.TessaractWrapper.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.TessaractWrapper\bin\Debug\Infosys.ATR.TessaractWrapper.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.TessaractWrapper\bin\Debug\Infosys.ATR.TessaractWrapper.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.TessaractWrapper\bin\Debug\Infosys.ATR.OCRWrapper.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.TessaractWrapper\bin\Debug\tessnet2_32.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.TessaractWrapper\bin\Debug\Infosys.ATR.OCRWrapper.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.TessaractWrapper\obj\Debug\Infosys.ATR.TessaractWrapper.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.TessaractWrapper\obj\Debug\Infosys.ATR.TessaractWrapper.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.TessaractWrapper\obj\Debug\Infosys.ATR.TessaractWrapper.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.TessaractWrapper\obj\Debug\Infosys.ATR.TessaractWrapper.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.TessaractWrapper\obj\Debug\Infosys.ATR.TessaractWrapper.csproj.CopyComplete

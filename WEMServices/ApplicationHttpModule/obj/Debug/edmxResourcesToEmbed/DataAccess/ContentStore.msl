@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ContentStoreModelStoreContainer" CdmEntityContainer="ContentStoreEntities">
+    <EntitySetMapping Name="ContentFiles">
+      <EntityTypeMapping TypeName="ContentStoreModel.ContentFile">
+        <MappingFragment StoreEntitySet="Files">
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="FileExtn" ColumnName="FileExtn" />
+          <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+          <ScalarProperty Name="FileVersion" ColumnName="FileVersion" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

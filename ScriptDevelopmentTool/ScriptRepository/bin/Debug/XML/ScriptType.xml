@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ScriptType>
+  <Type key="bat" allowremote="true" executionMode="offline">ExecuteBat</Type>
+  <Type key="vbs" allowremote="true" executionMode="offline">ExecuteVBScript</Type>
+  <Type key="iap" allowremote="false" executionMode="offline">ExecuteIfea</Type>
+  <Type key="iapd" allowremote="true" executionMode="offline">ExecuteIapd</Type>
+  <Type key="py" allowremote="true" executionMode="offline">ExecutePython</Type>
+  <Type key="js" allowremote="true" executionMode="offline">ExecuteJScript</Type>
+  <Type key="ps1" allowremote="true" executionMode="offline">ExecutePowerShellScript</Type>
+  <Type key="sh" allowremote="true" executionMode="offline">ExecuteSSH</Type>
+  <Type key="exe" allowremote="false" executionMode="offline">ExecuteBat</Type> 
+  <Type key="Command" allowremote="true" executionMode="offline">ExecuteBat</Type>
+  <Type key="sh command" allowremote="true" executionMode="offline">ExecuteSSH</Type>
+  <Type key="Nia" allowremote="true" executionMode="delegate">ExecuteNia</Type>
+  <Type key="AA" allowremote="true" executionMode="delegate">ExecuteServices</Type>
+  <Type key="BP" allowremote="true" executionMode="delegate">ExecuteServices</Type>
+</ScriptType>

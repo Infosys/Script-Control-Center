@@ -7,7 +7,7 @@
     <appControlConfig>
       <controlName />
       <applicationType>Web</applicationType>
-      <appLocationPath>http://BLRKEC63234L:8082/iapscriptstore/download.html</appLocationPath>
+      <appLocationPath>http://localhost:8082/iapscriptstore/download.html</appLocationPath>
     </appControlConfig>
     <screenConfig>
       <name>Screen 1</name>

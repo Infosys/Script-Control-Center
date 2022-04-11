@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Infosys.WEM.Resource.Entity" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DataEntity" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <EntitySet Name="Account" EntityType="Infosys.WEM.Resource.Entity.Account" />
+    <EntitySet Name="CategoryWorkflowMap" EntityType="Infosys.WEM.Resource.Entity.CategoryWorkflowMap" />
+    <EntitySet Name="ObjectModelMaster" EntityType="Infosys.WEM.Resource.Entity.ObjectModelMaster" />
+    <EntitySet Name="Organization" EntityType="Infosys.WEM.Resource.Entity.Organization" />
+    <EntitySet Name="ScriptInstance" EntityType="Infosys.WEM.Resource.Entity.ScriptInstance" />
+    <EntitySet Name="Track" EntityType="Infosys.WEM.Resource.Entity.Track" />
+    <EntitySet Name="WorkflowCategoryMaster" EntityType="Infosys.WEM.Resource.Entity.WorkflowCategoryMaster" />
+    <EntitySet Name="WorkflowTrackingDetails" EntityType="Infosys.WEM.Resource.Entity.WorkflowTrackingDetails" />
+    <EntitySet Name="WorkflowTrackingMaster" EntityType="Infosys.WEM.Resource.Entity.WorkflowTrackingMaster" />
+    <EntitySet Name="GroupAccess" EntityType="Infosys.WEM.Resource.Entity.GroupAccess" />
+    <EntitySet Name="Type" EntityType="Infosys.WEM.Resource.Entity.Type" />
+    <EntitySet Name="Role" EntityType="Infosys.WEM.Resource.Entity.Role" />
+    <EntitySet Name="SuperAdmin" EntityType="Infosys.WEM.Resource.Entity.SuperAdmin" />
+    <EntitySet Name="Group" EntityType="Infosys.WEM.Resource.Entity.Group" />
+    <EntitySet Name="User" EntityType="Infosys.WEM.Resource.Entity.User" />
+    <EntitySet Name="RegisterredNodes" EntityType="Infosys.WEM.Resource.Entity.RegisterredNodes" />
+    <EntitySet Name="ActiveRegisteredNodes" EntityType="Infosys.WEM.Resource.Entity.ActiveRegisteredNodes" />
+    <EntitySet Name="WorkflowParams" EntityType="Infosys.WEM.Resource.Entity.WorkflowParams" />
+    <EntitySet Name="Module" EntityType="Infosys.WEM.Resource.Entity.Module" />
+    <EntitySet Name="Category" EntityType="Infosys.WEM.Resource.Entity.Category" />
+    <EntitySet Name="SemanticCluster" EntityType="Infosys.WEM.Resource.Entity.SemanticCluster" />
+    <EntitySet Name="Companies" EntityType="Infosys.WEM.Resource.Entity.Companies" />
+    <EntitySet Name="ScheduledRequest" EntityType="Infosys.WEM.Resource.Entity.ScheduledRequest" />
+    <EntitySet Name="ScheduledRequestActivities" EntityType="Infosys.WEM.Resource.Entity.ScheduledRequestActivities" />
+    <EntitySet Name="SemanticCategory" EntityType="Infosys.WEM.Resource.Entity.SemanticCategory" />
+    <EntitySet Name="ScriptParams" EntityType="Infosys.WEM.Resource.Entity.ScriptParams" />
+    <EntitySet Name="SemanticNodeCluster" EntityType="Infosys.WEM.Resource.Entity.SemanticNodeCluster" />
+    <EntitySet Name="TransactionInstance" EntityType="Infosys.WEM.Resource.Entity.TransactionInstance" />
+    <EntitySet Name="WorkflowMaster" EntityType="Infosys.WEM.Resource.Entity.WorkflowMaster" />
+    <EntitySet Name="ExportJobProcessingHistories" EntityType="Infosys.WEM.Resource.Entity.ExportJobProcessingHistory" />
+    <EntitySet Name="ExportScriptConfigurationDetails" EntityType="Infosys.WEM.Resource.Entity.ExportScriptConfigurationDetail" />
+    <EntitySet Name="ExportTargetSystemDetails" EntityType="Infosys.WEM.Resource.Entity.ExportTargetSystemDetail" />
+    <EntitySet Name="ExportServerDetails" EntityType="Infosys.WEM.Resource.Entity.ExportServerDetail" />
+    <EntitySet Name="ExportTransactionDetails" EntityType="Infosys.WEM.Resource.Entity.ExportTransactionDetail" />
+    <EntitySet Name="ExportConfigurationMasters" EntityType="Infosys.WEM.Resource.Entity.ExportConfigurationMaster" />
+    <EntitySet Name="ExportSourceTargetMappings" EntityType="Infosys.WEM.Resource.Entity.ExportSourceTargetMapping" />
+    <EntitySet Name="Script" EntityType="Infosys.WEM.Resource.Entity.Script" />
+    <EntitySet Name="ReferenceData" EntityType="Infosys.WEM.Resource.Entity.ReferenceData" />
+    <EntitySet Name="ScriptExecuteRequest" EntityType="Infosys.WEM.Resource.Entity.ScriptExecuteRequest" />
+    <EntitySet Name="ScriptExecuteResponse" EntityType="Infosys.WEM.Resource.Entity.ScriptExecuteResponse" />
+  </EntityContainer>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="PartitonKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitonKey" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="AccountId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="7" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CategoryWorkflowMap">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="RowKey" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="WorkflowId" Type="Guid" Nullable="false" />
+    <Property Name="ActiveWorkflowVersion" Type="Int32" Nullable="false" />
+    <Property Name="WorkflowName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ObjectModelMaster">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ObjectModelVer" Type="Int32" Nullable="false" />
+    <Property Name="ObjectModelUri" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PublishedOn" Type="DateTime" Precision="7" />
+    <Property Name="CreatedBy" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="SourceIPAddress" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Client" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ClientVersion" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="SourceMachineName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="FileSizeKB" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="LastModifiedBy" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LastModifiedOn" Type="DateTime" Precision="7" />
+  </EntityType>
+  <EntityType Name="Organization">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="OrgId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="7" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ScriptInstance">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="InstanceId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RunAsUser" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ArgString" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="StartDateTime" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="EndDateTime" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="VerboseLog" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ExecutionStatus" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+  </EntityType>
+  <EntityType Name="Track">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="TrackId" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="7" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WorkflowCategoryMaster">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="RowKey" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="7" />
+    <Property Name="LastModifiedOn" Type="DateTime" Precision="7" />
+    <Property Name="ParentId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="WorkflowTrackingDetails">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RowKey" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="WorkflowInstanceId" Type="Guid" />
+    <Property Name="ActivityStepCount" Type="Decimal" Precision="8" Scale="4" />
+    <Property Name="ActivityId" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ActivityDisplayName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ActivityParameters" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ActivityState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StartedOn" Type="DateTime" Precision="7" />
+    <Property Name="EndedOn" Type="DateTime" Precision="7" />
+    <Property Name="StatusDescription" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LastModifiedOn" Type="DateTime" Precision="7" />
+  </EntityType>
+  <EntityType Name="WorkflowTrackingMaster">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RowKey" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="WorkflowId" Type="Guid" Nullable="false" />
+    <Property Name="WorkflowVer" Type="Int32" Nullable="false" />
+    <Property Name="InstanceId" Type="Guid" Nullable="false" />
+    <Property Name="State" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="StatusDescription" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="RequestorId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RequestorSourceIP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StartedOn" Type="DateTime" Precision="7" />
+    <Property Name="RunAtIPAddress" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RunAtMachineName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CompletedOn" Type="DateTime" Precision="7" />
+    <Property Name="LastModifiedOn" Type="DateTime" Precision="7" />
+  </EntityType>
+  <EntityType Name="GroupAccess">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="GroupId" Nullable="false" />
+    <Property Type="Int32" Name="ParentId" Nullable="false" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedOn" Precision="7" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Type">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="5" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" />
+    <Property Type="Int32" Name="LastModifiedBy" />
+    <Property Type="DateTime" Name="LastModifiedOn" Precision="7" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="25" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModified" Precision="7" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="Int32" Name="CompanyId" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SuperAdmin">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="105" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Alias" Nullable="false" MaxLength="105" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CompanyId" Nullable="false" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="105" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="3" />
+    <Property Type="String" Name="ModifiedBy" MaxLength="105" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ModifiedOn" Precision="3" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="5" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedOn" Precision="7" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="Int32" Name="CompanyId" Nullable="false" />
+    <Property Type="Int32" Name="ParentId" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="105" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="CompanyId" Nullable="false" />
+    <Property Type="String" Name="Alias" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Role" Nullable="false" />
+    <Property Type="Int32" Name="CategoryId" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedOn" Precision="7" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="DisplayName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDL" />
+    <Property Type="Int32" Name="GroupId" />
+    <Property Type="Boolean" Name="IsActiveGroup" />
+  </EntityType>
+  <EntityType Name="RegisterredNodes">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" a:StoreGeneratedPattern="None" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="HttpPort" />
+    <Property Type="Int32" Name="TcpPort" />
+    <Property Type="DateTime" Name="RegisteredOn" Nullable="false" Precision="7" a:StoreGeneratedPattern="None" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="DateTime" Name="UnRegisteredOn" Precision="7" />
+    <Property Type="String" Name="MachineName" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DomainName" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OSVersion" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Is64Bit" Nullable="false" />
+    <Property Type="String" Name="WorkflowServiceVersion" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DotNetVersion" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ExecutionEngineSupported" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedOn" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="DateTime" Name="LastModifiedOn" Precision="7" />
+    <Property Type="Int32" Name="CompanyId" />
+  </EntityType>
+  <EntityType Name="ActiveRegisteredNodes">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="MachineName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DomainName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CompanyId" />
+  </EntityType>
+  <EntityType Name="WorkflowParams">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DefaultValue" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsMandatory" Nullable="false" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ModifiedBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ModifiedOn" Precision="7" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="String" Name="AllowedValues" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsSecret" Nullable="false" />
+    <Property Type="String" Name="ParamType" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ParamId" Nullable="false" />
+    <Property Name="IsReferenceKey" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Module">
+    <Key>
+      <PropertyRef Name="ModuleID" />
+    </Key>
+    <Property Type="Int32" Name="ModuleID" Nullable="false" />
+    <Property Type="String" Name="ModuleName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="CategoryId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" />
+    <Property Type="String" Name="ModifiedBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ModifiedOn" Precision="7" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="Int32" Name="CompanyId" />
+    <Property Type="Int32" Name="ModuleID" />
+  </EntityType>
+  <EntityType Name="SemanticCluster">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedOn" Precision="7" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="String" Name="ClusterName" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Id" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Priority" />
+    <Property Type="Int32" Name="CompanyId" />
+  </EntityType>
+  <EntityType Name="Companies">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" />
+    <Property Type="Int32" Name="CompanyId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompanyURL" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LogoURL" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NormalizedName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StorageBaseUrl" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DeploymentBaseUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Region" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" />
+    <Property Type="DateTime" Name="LastModifiedOn" Precision="3" />
+    <Property Type="String" Name="RemoteShareUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EnableSecureTransactions" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ScheduledRequest">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" />
+    <Property Type="String" Name="ModifiedBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ModifiedOn" Precision="7" />
+    <Property Type="String" Name="Id" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MachineName" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CategoryId" Nullable="false" />
+    <Property Type="Int32" Name="RequestVersion" />
+    <Property Type="String" Name="InputParameters" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OutputParameters" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ExecuteOn" Precision="7" />
+    <Property Type="String" Name="Message" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="State" />
+    <Property Type="Int32" Name="RequestType" Nullable="false" />
+    <Property Type="String" Name="RequestId" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Priority" Nullable="false" />
+    <Property Type="String" Name="AssignedTo" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Executor" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ParentId" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="StopType" />
+    <Property Type="String" Name="IterationSetRoot" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsIterationSetRoot" />
+    <Property Type="Int32" Name="CompanyId" />
+  </EntityType>
+  <EntityType Name="ScheduledRequestActivities">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="Status" Nullable="false" />
+    <Property Type="String" Name="ParentScheduledRequestId" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ScheduledRequestId" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="IterationSetRoot" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CompanyId" />
+  </EntityType>
+  <EntityType Name="SemanticCategory">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="CategoryId" Nullable="false" />
+    <Property Type="String" Name="SemanticClusterId" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SemanticClusterName" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedOn" Precision="3" />
+  </EntityType>
+  <EntityType Name="ScriptParams">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" />
+    <Property Type="Int32" Name="ParamId" Nullable="false" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DefaultValue" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="AllowedValues" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsMandatory" Nullable="false" />
+    <Property Type="String" Name="ParamType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" />
+    <Property Type="String" Name="ModifiedBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ModifiedOn" Precision="7" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="Boolean" Name="IsSecret" Nullable="false" />
+    <Property Type="Boolean" Name="IsUnnamed" Nullable="false" />
+    <Property Type="String" Name="DataType" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="IsReferenceKey" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SemanticNodeCluster">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedOn" Precision="7" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="String" Name="ClusterId" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IapNodeId" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TransactionInstance">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Type="String" Name="PartitionKey" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RowKey" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Timestamp" Nullable="false" Precision="7" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="CategoryId" Nullable="false" />
+    <Property Type="String" Name="WorkflowId" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ScriptId" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InstanceId" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CurrentState" Nullable="false" />
+    <Property Type="String" Name="Executor" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MachineName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InitiatedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TriggeredBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastModifiedBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IPAddress" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OSDetails" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ReferenceKey" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WorkflowVersion" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastModifiedOn" Precision="7" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="7" />
+    <Property Type="String" Name="FileType" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ScriptVersion" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CategoryName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WorkflowPersistedStateId" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ModuleName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TransactionMetadata" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BookMark" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WorkflowMaster">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="RowKey" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WorkflowVer" Type="Int32" Nullable="false" />
+    <Property Name="WorkflowURI" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ImageURI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PublishedOn" Type="DateTime" Precision="7" />
+    <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SourceIPAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Client" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ClientVersion" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SourceMachineName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FileSizeKB" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="LastModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LastModifiedOn" Type="DateTime" Precision="7" />
+    <Property Name="UsesUIAutomation" Type="Boolean" />
+    <Property Name="IslongRunningWorkflow" Type="Boolean" Nullable="false" />
+    <Property Name="IdleStateTimeout" Type="Int32" Nullable="false" />
+    <Property Name="Tags" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LicenseType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SourceUrl" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ExportJobProcessingHistory">
+    <Key>
+      <PropertyRef Name="JobId" />
+    </Key>
+    <Property Name="JobId" Type="Int32" Nullable="false" />
+    <Property Name="ExportConfigurationId" Type="Int32" Nullable="false" />
+    <Property Name="StartedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CompletedOn" Type="DateTime" Precision="3" />
+    <Property Name="ProcessingSystemIp" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProcessingSystemName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ProcessedBy" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ExportScriptConfigurationDetail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ExportConfigurationId" Type="Int32" Nullable="false" />
+    <Property Name="SourceCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="SourceScriptPath" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TargetCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="TargetScriptPath" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SourceScriptId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ExportTargetSystemDetail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="APIType" Type="Int32" Nullable="false" />
+    <Property Name="Protocol" Type="Int32" Nullable="false" />
+    <Property Name="DefaultType" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExportServerDetail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="DNSServer" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CasServer" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TargetSystemId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ExportTransactionDetail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ExportScriptConfigurationId" Type="Int32" Nullable="false" />
+    <Property Name="SourceCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="SourceScriptId" Type="Int32" Nullable="false" />
+    <Property Name="SourceScriptVersion" Type="Int32" Nullable="false" />
+    <Property Name="SourceScriptPath" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="TargetCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="TargetScriptId" Type="Int32" Nullable="false" />
+    <Property Name="TargetScriptVersion" Type="Int32" Nullable="false" />
+    <Property Name="TargetScriptName" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TargetScriptPath" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Int16" Nullable="false" />
+    <Property Name="ExistReasonCode" Type="Int16" />
+    <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Action" Type="Int32" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="isActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExportConfigurationMaster">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="TargetServerId" Type="Int32" Nullable="false" />
+    <Property Name="TargetSystemUserId" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TargetSystemPassword" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="ExportStatus" Type="Int32" Nullable="false" />
+    <Property Name="CompletedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="ScriptRepositoryBaseServerAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ExportSourceTargetMapping">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="SourceInstanceAddr" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SourceScriptCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="SourceScriptId" Type="Int32" Nullable="false" />
+    <Property Name="SourceScriptVersion" Type="Int32" Nullable="false" />
+    <Property Name="TargetInstanceId" Type="Int32" Nullable="false" />
+    <Property Name="TargetScriptCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="TargetScriptId" Type="Int32" Nullable="false" />
+    <Property Name="TargetScriptVersion" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Script">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="RowKey" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="ScriptId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ScriptType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TaskType" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TaskCmd" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ScriptURL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ArgString" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="WorkingDir" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="BelongsToOrg" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="BelongsToAccount" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="BelongsToTrack" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="7" />
+    <Property Name="Version" Type="Int32" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="RunAsAdmin" Type="Boolean" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="UsesUIAutomation" Type="Boolean" />
+    <Property Name="IfeaScriptName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CallMethod" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Tags" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="LicenseType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SourceUrl" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ExternalReferences" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ReferenceData">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="RowKey" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="ReferenceType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ReferenceKey" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ReferenceValue" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsDefault" Type="Boolean" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="LastModifiedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ScriptExecuteRequest">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="scriptexecuterequestid" />
+    </Key>
+    <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="scriptexecuterequestid" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="transactionId" Type="Guid" />
+    <Property Name="scriptid" Type="Int32" />
+    <Property Name="categoryid" Type="Int32" />
+    <Property Name="scriptname" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="inparams" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="username" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="remoteservernames" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="remoteexecutionhost" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="executionmodetype" Type="Int32" />
+    <Property Name="scheduledpattern" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="schedulestartdatetime" Type="DateTime" Precision="3" />
+    <Property Name="scheduleenddatetime" Type="DateTime" Precision="3" />
+    <Property Name="scheduleoccurences" Type="Int32" />
+    <Property Name="schedulepriority" Type="Int32" />
+    <Property Name="scheduleonclusters" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="iapnodetransport" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="domain" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="referencekey" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="path" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="ResponseNotificationCallbackURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="createdby" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="createddate" Type="DateTime" Precision="3" />
+    <Property Name="modifiedby" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="modifieddate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ScriptExecuteResponse">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="scriptexecuteresponseid" />
+    </Key>
+    <Property Name="PartitionKey" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="scriptexecuteresponseid" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="transactionId" Type="Guid" />
+    <Property Name="currentstate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="successmessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="errormessage" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="computername" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="inputcommand" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="OutParameters" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LogData" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SourceTransactionId" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="createdby" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="createddate" Type="DateTime" Precision="3" />
+    <Property Name="modifiedby" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="modifieddate" Type="DateTime" Precision="3" />
+    <Property Name="IsNotified" Type="Boolean" />
+    <Property Name="NotificationRemarks" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

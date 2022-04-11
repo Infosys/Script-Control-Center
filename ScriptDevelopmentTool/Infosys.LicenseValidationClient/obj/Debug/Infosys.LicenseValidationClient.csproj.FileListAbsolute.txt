@@ -5,3 +5,10 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseValidationClient\obj\Debug\Infosys.LicenseValidationClient.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseValidationClient\obj\Debug\Infosys.LicenseValidationClient.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.LicenseValidationClient\obj\Debug\Infosys.LicenseValidationClient.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.LicenseValidationClient.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.LicenseValidationClient.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.LicenseValidationClient\obj\Debug\Infosys.LicenseValidationClient.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.LicenseValidationClient\obj\Debug\Infosys.LicenseValidationClient.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.LicenseValidationClient\obj\Debug\Infosys.LicenseValidationClient.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.LicenseValidationClient\obj\Debug\Infosys.LicenseValidationClient.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.LicenseValidationClient\obj\Debug\Infosys.LicenseValidationClient.csproj.CopyComplete

@@ -7,3 +7,12 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ProcessRecorder\obj\Debug\Infosys.ATR.ProcessRecorder.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ProcessRecorder\obj\Debug\Infosys.ATR.ProcessRecorder.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.ProcessRecorder\obj\Debug\Infosys.ATR.ProcessRecorder.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.ProcessRecorder.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.ProcessRecorder.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.ProcessRecorder\obj\Debug\Infosys.ATR.ProcessRecorder.Views.RecordingView.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.ProcessRecorder\obj\Debug\Infosys.ATR.ProcessRecorder.csproj.GenerateResource.Cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.ProcessRecorder\obj\Debug\Infosys.ATR.ProcessRecorder.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.ProcessRecorder\obj\Debug\Infosys.ATR.ProcessRecorder.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.ProcessRecorder\obj\Debug\Infosys.ATR.ProcessRecorder.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.ProcessRecorder\obj\Debug\Infosys.ATR.ProcessRecorder.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.ProcessRecorder\obj\Debug\Infosys.ATR.ProcessRecorder.csproj.CopyComplete

@@ -1,0 +1,819 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IAP_WorkflowExecutionStoreModelStoreContainer" CdmEntityContainer="DataEntity">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitonKey" ColumnName="PartitonKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActiveRegisteredNodes">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ActiveRegisteredNodes">
+        <MappingFragment StoreEntitySet="ActiveRegisteredNodes">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="DomainName" ColumnName="DomainName" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryWorkflowMap">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.CategoryWorkflowMap">
+        <MappingFragment StoreEntitySet="CategoryWorkflowMap">
+          <ScalarProperty Name="WorkflowName" ColumnName="WorkflowName" />
+          <ScalarProperty Name="ActiveWorkflowVersion" ColumnName="ActiveWorkflowVersion" />
+          <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.Companies">
+        <MappingFragment StoreEntitySet="Companies">
+          <ScalarProperty Name="EnableSecureTransactions" ColumnName="EnableSecureTransactions" />
+          <ScalarProperty Name="RemoteShareUrl" ColumnName="RemoteShareUrl" />
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="DeploymentBaseUrl" ColumnName="DeploymentBaseUrl" />
+          <ScalarProperty Name="StorageBaseUrl" ColumnName="StorageBaseUrl" />
+          <ScalarProperty Name="NormalizedName" ColumnName="NormalizedName" />
+          <ScalarProperty Name="LogoURL" ColumnName="LogoURL" />
+          <ScalarProperty Name="CompanyURL" ColumnName="CompanyURL" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExportConfigurationMasters">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ExportConfigurationMaster">
+        <MappingFragment StoreEntitySet="ExportConfigurationMaster">
+          <ScalarProperty Name="ScriptRepositoryBaseServerAddress" ColumnName="ScriptRepositoryBaseServerAddress" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CompletedOn" ColumnName="CompletedOn" />
+          <ScalarProperty Name="ExportStatus" ColumnName="ExportStatus" />
+          <ScalarProperty Name="TargetSystemPassword" ColumnName="TargetSystemPassword" />
+          <ScalarProperty Name="TargetSystemUserId" ColumnName="TargetSystemUserId" />
+          <ScalarProperty Name="TargetServerId" ColumnName="TargetServerId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExportJobProcessingHistories">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ExportJobProcessingHistory">
+        <MappingFragment StoreEntitySet="ExportJobProcessingHistory">
+          <ScalarProperty Name="ProcessedBy" ColumnName="ProcessedBy" />
+          <ScalarProperty Name="ProcessingSystemName" ColumnName="ProcessingSystemName" />
+          <ScalarProperty Name="ProcessingSystemIp" ColumnName="ProcessingSystemIp" />
+          <ScalarProperty Name="CompletedOn" ColumnName="CompletedOn" />
+          <ScalarProperty Name="StartedOn" ColumnName="StartedOn" />
+          <ScalarProperty Name="ExportConfigurationId" ColumnName="ExportConfigurationId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExportScriptConfigurationDetails">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ExportScriptConfigurationDetail">
+        <MappingFragment StoreEntitySet="ExportScriptConfigurationDetails">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SourceScriptId" ColumnName="SourceScriptId" />
+          <ScalarProperty Name="TargetScriptPath" ColumnName="TargetScriptPath" />
+          <ScalarProperty Name="TargetCategoryId" ColumnName="TargetCategoryId" />
+          <ScalarProperty Name="SourceScriptPath" ColumnName="SourceScriptPath" />
+          <ScalarProperty Name="SourceCategoryId" ColumnName="SourceCategoryId" />
+          <ScalarProperty Name="ExportConfigurationId" ColumnName="ExportConfigurationId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExportServerDetails">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ExportServerDetail">
+        <MappingFragment StoreEntitySet="ExportServerDetails">
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="TargetSystemId" ColumnName="TargetSystemId" />
+          <ScalarProperty Name="CasServer" ColumnName="CasServer" />
+          <ScalarProperty Name="DNSServer" ColumnName="DNSServer" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExportSourceTargetMappings">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ExportSourceTargetMapping">
+        <MappingFragment StoreEntitySet="ExportSourceTargetMapping">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="TargetScriptVersion" ColumnName="TargetScriptVersion" />
+          <ScalarProperty Name="TargetScriptId" ColumnName="TargetScriptId" />
+          <ScalarProperty Name="TargetScriptCategoryId" ColumnName="TargetScriptCategoryId" />
+          <ScalarProperty Name="TargetInstanceId" ColumnName="TargetInstanceId" />
+          <ScalarProperty Name="SourceScriptVersion" ColumnName="SourceScriptVersion" />
+          <ScalarProperty Name="SourceScriptId" ColumnName="SourceScriptId" />
+          <ScalarProperty Name="SourceScriptCategoryId" ColumnName="SourceScriptCategoryId" />
+          <ScalarProperty Name="SourceInstanceAddr" ColumnName="SourceInstanceAddr" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExportTargetSystemDetails">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ExportTargetSystemDetail">
+        <MappingFragment StoreEntitySet="ExportTargetSystemDetails">
+          <ScalarProperty Name="DefaultType" ColumnName="DefaultType" />
+          <ScalarProperty Name="Protocol" ColumnName="Protocol" />
+          <ScalarProperty Name="APIType" ColumnName="APIType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExportTransactionDetails">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ExportTransactionDetail">
+        <MappingFragment StoreEntitySet="ExportTransactionDetails">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="ExistReasonCode" ColumnName="ExistReasonCode" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TargetScriptPath" ColumnName="TargetScriptPath" />
+          <ScalarProperty Name="TargetScriptName" ColumnName="TargetScriptName" />
+          <ScalarProperty Name="TargetScriptVersion" ColumnName="TargetScriptVersion" />
+          <ScalarProperty Name="TargetScriptId" ColumnName="TargetScriptId" />
+          <ScalarProperty Name="TargetCategoryId" ColumnName="TargetCategoryId" />
+          <ScalarProperty Name="SourceScriptPath" ColumnName="SourceScriptPath" />
+          <ScalarProperty Name="SourceScriptVersion" ColumnName="SourceScriptVersion" />
+          <ScalarProperty Name="SourceScriptId" ColumnName="SourceScriptId" />
+          <ScalarProperty Name="SourceCategoryId" ColumnName="SourceCategoryId" />
+          <ScalarProperty Name="ExportScriptConfigurationId" ColumnName="ExportScriptConfigurationId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FailedNodes">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.FailedNode">
+        <MappingFragment StoreEntitySet="FailedNodes">
+          <ScalarProperty Name="Cause" ColumnName="Cause" />
+          <ScalarProperty Name="DomainName" ColumnName="DomainName" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Group">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.Group">
+        <MappingFragment StoreEntitySet="Group">
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupAccess">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.GroupAccess">
+        <MappingFragment StoreEntitySet="GroupAccess">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Module">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.Module">
+        <MappingFragment StoreEntitySet="Module">
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ObjectModelMasters">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ObjectModelMaster">
+        <MappingFragment StoreEntitySet="ObjectModelMaster">
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="FileSizeKB" ColumnName="FileSizeKB" />
+          <ScalarProperty Name="SourceMachineName" ColumnName="SourceMachineName" />
+          <ScalarProperty Name="ClientVersion" ColumnName="ClientVersion" />
+          <ScalarProperty Name="Client" ColumnName="Client" />
+          <ScalarProperty Name="SourceIPAddress" ColumnName="SourceIPAddress" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="PublishedOn" ColumnName="PublishedOn" />
+          <ScalarProperty Name="ObjectModelUri" ColumnName="ObjectModelUri" />
+          <ScalarProperty Name="ObjectModelVer" ColumnName="ObjectModelVer" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Organizations">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.Organization">
+        <MappingFragment StoreEntitySet="Organization">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OrgId" ColumnName="OrgId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferenceData">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ReferenceData">
+        <MappingFragment StoreEntitySet="ReferenceData">
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ReferenceValue" ColumnName="ReferenceValue" />
+          <ScalarProperty Name="ReferenceKey" ColumnName="ReferenceKey" />
+          <ScalarProperty Name="ReferenceType" ColumnName="ReferenceType" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScheduledRequest">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ScheduledRequest">
+        <MappingFragment StoreEntitySet="ScheduledRequest">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="IsIterationSetRoot" ColumnName="IsIterationSetRoot" />
+          <ScalarProperty Name="IterationSetRoot" ColumnName="IterationSetRoot" />
+          <ScalarProperty Name="StopType" ColumnName="StopType" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Executor" ColumnName="Executor" />
+          <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="RequestId" ColumnName="RequestId" />
+          <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="ExecuteOn" ColumnName="ExecuteOn" />
+          <ScalarProperty Name="OutputParameters" ColumnName="OutputParameters" />
+          <ScalarProperty Name="InputParameters" ColumnName="InputParameters" />
+          <ScalarProperty Name="RequestVersion" ColumnName="RequestVersion" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScheduledRequestActivities">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ScheduledRequestActivities">
+        <MappingFragment StoreEntitySet="ScheduledRequestActivities">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="IterationSetRoot" ColumnName="IterationSetRoot" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ScheduledRequestId" ColumnName="ScheduledRequestId" />
+          <ScalarProperty Name="ParentScheduledRequestId" ColumnName="ParentScheduledRequestId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Script">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.Script">
+        <MappingFragment StoreEntitySet="Script">
+          <ScalarProperty Name="ExternalReferences" ColumnName="ExternalReferences" />
+          <ScalarProperty Name="SourceUrl" ColumnName="SourceUrl" />
+          <ScalarProperty Name="LicenseType" ColumnName="LicenseType" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+          <ScalarProperty Name="CallMethod" ColumnName="CallMethod" />
+          <ScalarProperty Name="IfeaScriptName" ColumnName="IfeaScriptName" />
+          <ScalarProperty Name="UsesUIAutomation" ColumnName="UsesUIAutomation" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="RunAsAdmin" ColumnName="RunAsAdmin" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="BelongsToTrack" ColumnName="BelongsToTrack" />
+          <ScalarProperty Name="BelongsToAccount" ColumnName="BelongsToAccount" />
+          <ScalarProperty Name="BelongsToOrg" ColumnName="BelongsToOrg" />
+          <ScalarProperty Name="WorkingDir" ColumnName="WorkingDir" />
+          <ScalarProperty Name="ArgString" ColumnName="ArgString" />
+          <ScalarProperty Name="ScriptURL" ColumnName="ScriptURL" />
+          <ScalarProperty Name="TaskCmd" ColumnName="TaskCmd" />
+          <ScalarProperty Name="TaskType" ColumnName="TaskType" />
+          <ScalarProperty Name="ScriptType" ColumnName="ScriptType" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ScriptId" ColumnName="ScriptId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScriptExecuteRequest">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ScriptExecuteRequest">
+        <MappingFragment StoreEntitySet="ScriptExecuteRequest">
+          <ScalarProperty Name="schedulepriority" ColumnName="schedulepriority" />
+          <ScalarProperty Name="modifieddate" ColumnName="modifieddate" />
+          <ScalarProperty Name="modifiedby" ColumnName="modifiedby" />
+          <ScalarProperty Name="createddate" ColumnName="createddate" />
+          <ScalarProperty Name="createdby" ColumnName="createdby" />
+          <ScalarProperty Name="ResponseNotificationCallbackURL" ColumnName="ResponseNotificationCallbackURL" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="referencekey" ColumnName="referencekey" />
+          <ScalarProperty Name="domain" ColumnName="domain" />
+          <ScalarProperty Name="iapnodetransport" ColumnName="iapnodetransport" />
+          <ScalarProperty Name="scheduleonclusters" ColumnName="scheduleonclusters" />
+          <ScalarProperty Name="scheduleoccurences" ColumnName="scheduleoccurences" />
+          <ScalarProperty Name="scheduleenddatetime" ColumnName="scheduleenddatetime" />
+          <ScalarProperty Name="schedulestartdatetime" ColumnName="schedulestartdatetime" />
+          <ScalarProperty Name="scheduledpattern" ColumnName="scheduledpattern" />
+          <ScalarProperty Name="executionmodetype" ColumnName="executionmodetype" />
+          <ScalarProperty Name="remoteexecutionhost" ColumnName="remoteexecutionhost" />
+          <ScalarProperty Name="remoteservernames" ColumnName="remoteservernames" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="inparams" ColumnName="inparams" />
+          <ScalarProperty Name="scriptname" ColumnName="scriptname" />
+          <ScalarProperty Name="categoryid" ColumnName="categoryid" />
+          <ScalarProperty Name="scriptid" ColumnName="scriptid" />
+          <ScalarProperty Name="transactionId" ColumnName="transactionId" />
+          <ScalarProperty Name="scriptexecuterequestid" ColumnName="scriptexecuterequestid" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScriptInstances">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ScriptInstance">
+        <MappingFragment StoreEntitySet="ScriptInstance">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ExecutionStatus" ColumnName="ExecutionStatus" />
+          <ScalarProperty Name="VerboseLog" ColumnName="VerboseLog" />
+          <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+          <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+          <ScalarProperty Name="ArgString" ColumnName="ArgString" />
+          <ScalarProperty Name="RunAsUser" ColumnName="RunAsUser" />
+          <ScalarProperty Name="InstanceId" ColumnName="InstanceId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScriptParams">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ScriptParams">
+        <MappingFragment StoreEntitySet="ScriptParams">
+          <ScalarProperty Name="IsReferenceKey" ColumnName="IsReferenceKey" />
+          <ScalarProperty Name="DataType" ColumnName="DataType" />
+          <ScalarProperty Name="IsUnnamed" ColumnName="IsUnnamed" />
+          <ScalarProperty Name="IsSecret" ColumnName="IsSecret" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ParamType" ColumnName="ParamType" />
+          <ScalarProperty Name="IsMandatory" ColumnName="IsMandatory" />
+          <ScalarProperty Name="AllowedValues" ColumnName="AllowedValues" />
+          <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParamId" ColumnName="ParamId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SemanticCategory">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.SemanticCategory">
+        <MappingFragment StoreEntitySet="SemanticCategory">
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SemanticClusterName" ColumnName="SemanticClusterName" />
+          <ScalarProperty Name="SemanticClusterId" ColumnName="SemanticClusterId" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SemanticCluster">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.SemanticCluster">
+        <MappingFragment StoreEntitySet="SemanticCluster">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ClusterName" ColumnName="ClusterName" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SemanticNodeCluster">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.SemanticNodeCluster">
+        <MappingFragment StoreEntitySet="SemanticNodeCluster">
+          <ScalarProperty Name="IapNodeId" ColumnName="IapNodeId" />
+          <ScalarProperty Name="ClusterId" ColumnName="ClusterId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SuperAdmin">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.SuperAdmin">
+        <MappingFragment StoreEntitySet="SuperAdmin">
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tracks">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.Track">
+        <MappingFragment StoreEntitySet="Track">
+          <ScalarProperty Name="isdeleted" ColumnName="isdeleted" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TrackId" ColumnName="TrackId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionInstance">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.TransactionInstance">
+        <MappingFragment StoreEntitySet="TransactionInstance">
+          <ScalarProperty Name="BookMark" ColumnName="BookMark" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TransactionMetadata" ColumnName="TransactionMetadata" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="WorkflowPersistedStateId" ColumnName="WorkflowPersistedStateId" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ScriptVersion" ColumnName="ScriptVersion" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="WorkflowVersion" ColumnName="WorkflowVersion" />
+          <ScalarProperty Name="ReferenceKey" ColumnName="ReferenceKey" />
+          <ScalarProperty Name="OSDetails" ColumnName="OSDetails" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="TriggeredBy" ColumnName="TriggeredBy" />
+          <ScalarProperty Name="InitiatedBy" ColumnName="InitiatedBy" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="Executor" ColumnName="Executor" />
+          <ScalarProperty Name="CurrentState" ColumnName="CurrentState" />
+          <ScalarProperty Name="InstanceId" ColumnName="InstanceId" />
+          <ScalarProperty Name="ScriptId" ColumnName="ScriptId" />
+          <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Types">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.Type">
+        <MappingFragment StoreEntitySet="Type">
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="IsActiveGroup" ColumnName="IsActiveGroup" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="IsDL" ColumnName="IsDL" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkflowCategoryMaster">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.WorkflowCategoryMaster">
+        <MappingFragment StoreEntitySet="WorkflowCategoryMaster">
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkflowMaster">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.WorkflowMaster">
+        <MappingFragment StoreEntitySet="WorkflowMaster">
+          <ScalarProperty Name="SourceUrl" ColumnName="SourceUrl" />
+          <ScalarProperty Name="LicenseType" ColumnName="LicenseType" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+          <ScalarProperty Name="IdleStateTimeout" ColumnName="IdleStateTimeout" />
+          <ScalarProperty Name="IslongRunningWorkflow" ColumnName="IslongRunningWorkflow" />
+          <ScalarProperty Name="UsesUIAutomation" ColumnName="UsesUIAutomation" />
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="FileSizeKB" ColumnName="FileSizeKB" />
+          <ScalarProperty Name="SourceMachineName" ColumnName="SourceMachineName" />
+          <ScalarProperty Name="ClientVersion" ColumnName="ClientVersion" />
+          <ScalarProperty Name="Client" ColumnName="Client" />
+          <ScalarProperty Name="SourceIPAddress" ColumnName="SourceIPAddress" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="PublishedOn" ColumnName="PublishedOn" />
+          <ScalarProperty Name="ImageURI" ColumnName="ImageURI" />
+          <ScalarProperty Name="WorkflowURI" ColumnName="WorkflowURI" />
+          <ScalarProperty Name="WorkflowVer" ColumnName="WorkflowVer" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkflowParams">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.WorkflowParams">
+        <MappingFragment StoreEntitySet="WorkflowParams">
+          <ScalarProperty Name="IsReferenceKey" ColumnName="IsReferenceKey" />
+          <ScalarProperty Name="ParamType" ColumnName="ParamType" />
+          <ScalarProperty Name="IsSecret" ColumnName="IsSecret" />
+          <ScalarProperty Name="AllowedValues" ColumnName="AllowedValues" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsMandatory" ColumnName="IsMandatory" />
+          <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParamId" ColumnName="ParamId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkflowTrackingDetails">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.WorkflowTrackingDetails">
+        <MappingFragment StoreEntitySet="WorkflowTrackingDetails">
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="StatusDescription" ColumnName="StatusDescription" />
+          <ScalarProperty Name="EndedOn" ColumnName="EndedOn" />
+          <ScalarProperty Name="StartedOn" ColumnName="StartedOn" />
+          <ScalarProperty Name="ActivityState" ColumnName="ActivityState" />
+          <ScalarProperty Name="ActivityParameters" ColumnName="ActivityParameters" />
+          <ScalarProperty Name="ActivityDisplayName" ColumnName="ActivityDisplayName" />
+          <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+          <ScalarProperty Name="ActivityStepCount" ColumnName="ActivityStepCount" />
+          <ScalarProperty Name="WorkflowInstanceId" ColumnName="WorkflowInstanceId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkflowTrackingMaster">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.WorkflowTrackingMaster">
+        <MappingFragment StoreEntitySet="WorkflowTrackingMaster">
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="CompletedOn" ColumnName="CompletedOn" />
+          <ScalarProperty Name="RunAtMachineName" ColumnName="RunAtMachineName" />
+          <ScalarProperty Name="RunAtIPAddress" ColumnName="RunAtIPAddress" />
+          <ScalarProperty Name="StartedOn" ColumnName="StartedOn" />
+          <ScalarProperty Name="RequestorSourceIP" ColumnName="RequestorSourceIP" />
+          <ScalarProperty Name="RequestorId" ColumnName="RequestorId" />
+          <ScalarProperty Name="StatusDescription" ColumnName="StatusDescription" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="InstanceId" ColumnName="InstanceId" />
+          <ScalarProperty Name="WorkflowVer" ColumnName="WorkflowVer" />
+          <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegisterredNodes">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.RegisterredNodes">
+        <MappingFragment StoreEntitySet="RegisterredNodes">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="LastModifiedOn" ColumnName="LastModifiedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ExecutionEngineSupported" ColumnName="ExecutionEngineSupported" />
+          <ScalarProperty Name="DotNetVersion" ColumnName="DotNetVersion" />
+          <ScalarProperty Name="WorkflowServiceVersion" ColumnName="WorkflowServiceVersion" />
+          <ScalarProperty Name="Is64Bit" ColumnName="Is64Bit" />
+          <ScalarProperty Name="OSVersion" ColumnName="OSVersion" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="DomainName" ColumnName="DomainName" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="TcpPort" ColumnName="TcpPort" />
+          <ScalarProperty Name="HttpPort" ColumnName="HttpPort" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UnRegisteredOn" ColumnName="UnRegisteredOn" />
+          <ScalarProperty Name="RegisteredOn" ColumnName="RegisteredOn" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RowKey" ColumnName="RowKey" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScriptExecuteResponse">
+      <EntityTypeMapping TypeName="IAP_WorkflowExecutionStoreModel.ScriptExecuteResponse">
+        <MappingFragment StoreEntitySet="ScriptExecuteResponse">
+          <ScalarProperty Name="NotificationRemarks" ColumnName="NotificationRemarks" />
+          <ScalarProperty Name="IsNotified" ColumnName="IsNotified" />
+          <ScalarProperty Name="modifieddate" ColumnName="modifieddate" />
+          <ScalarProperty Name="modifiedby" ColumnName="modifiedby" />
+          <ScalarProperty Name="createddate" ColumnName="createddate" />
+          <ScalarProperty Name="createdby" ColumnName="createdby" />
+          <ScalarProperty Name="SourceTransactionId" ColumnName="SourceTransactionId" />
+          <ScalarProperty Name="LogData" ColumnName="LogData" />
+          <ScalarProperty Name="OutParameters" ColumnName="OutParameters" />
+          <ScalarProperty Name="inputcommand" ColumnName="inputcommand" />
+          <ScalarProperty Name="computername" ColumnName="computername" />
+          <ScalarProperty Name="errormessage" ColumnName="errormessage" />
+          <ScalarProperty Name="successmessage" ColumnName="successmessage" />
+          <ScalarProperty Name="currentstate" ColumnName="currentstate" />
+          <ScalarProperty Name="transactionId" ColumnName="transactionId" />
+          <ScalarProperty Name="scriptexecuteresponseid" ColumnName="scriptexecuteresponseid" />
+          <ScalarProperty Name="PartitionKey" ColumnName="PartitionKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

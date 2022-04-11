@@ -3,3 +3,8 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.AutomationEngine.Contracts\obj\Debug\Infosys.ATR.AutomationEngine.Contracts.csproj.CoreCompileInputs.cache
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.AutomationEngine.Contracts\obj\Debug\Infosys.ATR.AutomationEngine.Contracts.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.AutomationEngine.Contracts\obj\Debug\Infosys.ATR.AutomationEngine.Contracts.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.AutomationEngine.Contracts.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.AutomationEngine.Contracts.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.AutomationEngine.Contracts\obj\Debug\Infosys.ATR.AutomationEngine.Contracts.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.AutomationEngine.Contracts\obj\Debug\Infosys.ATR.AutomationEngine.Contracts.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.AutomationEngine.Contracts\obj\Debug\Infosys.ATR.AutomationEngine.Contracts.csproj.CoreCompileInputs.cache

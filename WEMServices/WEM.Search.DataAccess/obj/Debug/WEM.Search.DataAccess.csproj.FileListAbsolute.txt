@@ -1,0 +1,5 @@
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.Search.DataAccess\bin\Debug\WEM.Search.DataAccess.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.Search.DataAccess\bin\Debug\WEM.Search.DataAccess.pdb
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.Search.DataAccess\obj\Debug\WEM.Search.DataAccess.dll
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.Search.DataAccess\obj\Debug\WEM.Search.DataAccess.pdb
+D:\OSS\Git-KT\Script-Control-Center\WEMServices\WEM.Search.DataAccess\obj\Debug\WEM.Search.DataAccess.csproj.CoreCompileInputs.cache

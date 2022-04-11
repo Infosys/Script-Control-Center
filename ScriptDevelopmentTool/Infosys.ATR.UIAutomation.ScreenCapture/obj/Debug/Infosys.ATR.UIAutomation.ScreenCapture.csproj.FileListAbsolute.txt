@@ -5,3 +5,10 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.ScreenCapture\obj\Debug\Infosys.ATR.UIAutomation.ScreenCapture.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.ScreenCapture\obj\Debug\Infosys.ATR.UIAutomation.ScreenCapture.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.UIAutomation.ScreenCapture\obj\Debug\Infosys.ATR.UIAutomation.ScreenCapture.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.UIAutomation.ScreenCapture.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.UIAutomation.ScreenCapture.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.ScreenCapture\obj\Debug\Infosys.ATR.UIAutomation.ScreenCapture.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.ScreenCapture\obj\Debug\Infosys.ATR.UIAutomation.ScreenCapture.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.ScreenCapture\obj\Debug\Infosys.ATR.UIAutomation.ScreenCapture.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.ScreenCapture\obj\Debug\Infosys.ATR.UIAutomation.ScreenCapture.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.UIAutomation.ScreenCapture\obj\Debug\Infosys.ATR.UIAutomation.ScreenCapture.csproj.CopyComplete

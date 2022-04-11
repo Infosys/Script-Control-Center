@@ -9,3 +9,14 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\ScintillaNET\obj\Debug\ScintillaNET.csproj.CoreCompileInputs.cache
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\ScintillaNET\obj\Debug\ScintillaNET.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\ScintillaNET\obj\Debug\ScintillaNET.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\ScintillaNET.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\ScintillaNET.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ScintillaNET\obj\Debug\ScintillaNET.FindReplaceDialog.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ScintillaNET\obj\Debug\ScintillaNET.IncrementalSearcher.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ScintillaNET\obj\Debug\ScintillaNET.GoToDialog.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ScintillaNET\obj\Debug\ScintillaNET.Properties.Resources.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ScintillaNET\obj\Debug\ScintillaNET.SnippetChooser.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ScintillaNET\obj\Debug\ScintillaNET.csproj.GenerateResource.Cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ScintillaNET\obj\Debug\ScintillaNET.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ScintillaNET\obj\Debug\ScintillaNET.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ScintillaNET\obj\Debug\ScintillaNET.csproj.CoreCompileInputs.cache

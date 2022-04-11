@@ -5,3 +5,10 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Infrastructure.Interface\obj\Debug\Infrastructure.Interface.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Infrastructure.Interface\obj\Debug\IMSWorkBench.Infrastructure.Interface.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\FrontendAutomation\Infrastructure\Infrastructure.Interface\obj\Debug\IMSWorkBench.Infrastructure.Interface.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\IMSWorkBench.Infrastructure.Interface.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\IMSWorkBench.Infrastructure.Interface.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\FrontendAutomation\Infrastructure\Infrastructure.Interface\obj\Debug\IMSWorkBench.Infrastructure.Interface.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\FrontendAutomation\Infrastructure\Infrastructure.Interface\obj\Debug\IMSWorkBench.Infrastructure.Interface.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\FrontendAutomation\Infrastructure\Infrastructure.Interface\obj\Debug\Infrastructure.Interface.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\FrontendAutomation\Infrastructure\Infrastructure.Interface\obj\Debug\Infrastructure.Interface.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\FrontendAutomation\Infrastructure\Infrastructure.Interface\obj\Debug\Infrastructure.Interface.csproj.CopyComplete

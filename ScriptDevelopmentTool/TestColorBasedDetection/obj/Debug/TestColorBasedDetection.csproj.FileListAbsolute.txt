@@ -7,3 +7,12 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\TestColorBasedDetection\obj\Debug\TestColorBasedDetection.csproj.CoreCompileInputs.cache
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\TestColorBasedDetection\obj\Debug\TestColorBasedDetection.exe
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\TestColorBasedDetection\obj\Debug\TestColorBasedDetection.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestColorBasedDetection\bin\Debug\TestColorBasedDetection.exe.config
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestColorBasedDetection\bin\Debug\TestColorBasedDetection.exe
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestColorBasedDetection\bin\Debug\TestColorBasedDetection.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestColorBasedDetection\obj\Debug\TestColorBasedDetection.Form1.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestColorBasedDetection\obj\Debug\TestColorBasedDetection.Properties.Resources.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestColorBasedDetection\obj\Debug\TestColorBasedDetection.csproj.GenerateResource.Cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestColorBasedDetection\obj\Debug\TestColorBasedDetection.exe
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestColorBasedDetection\obj\Debug\TestColorBasedDetection.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\TestColorBasedDetection\obj\Debug\TestColorBasedDetection.csproj.CoreCompileInputs.cache

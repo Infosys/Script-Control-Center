@@ -5,3 +5,10 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\obj\Debug\Infosys.ATR.RemoteExecute.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\obj\Debug\Infosys.ATR.RemoteExecute.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\obj\Debug\Infosys.ATR.RemoteExecute.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.RemoteExecuteHanlder\bin\Debug\Infosys.ATR.RemoteExecute.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.RemoteExecuteHanlder\bin\Debug\Infosys.ATR.RemoteExecute.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\obj\Debug\Infosys.ATR.RemoteExecute.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\obj\Debug\Infosys.ATR.RemoteExecute.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\obj\Debug\Infosys.ATR.RemoteExecute.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\obj\Debug\Infosys.ATR.RemoteExecute.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\Infosys.ATR.RemoteExecuteHanlder\Infosys.ATR.RemoteExecuteHanlder\obj\Debug\Infosys.ATR.RemoteExecute.csproj.CopyComplete

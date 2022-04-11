@@ -7,3 +7,12 @@ D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTo
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\ModuleLoader\obj\Debug\Infosys.ATR.ModuleLoader.csproj.CopyComplete
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\ModuleLoader\obj\Debug\Infosys.ATR.ModuleLoader.dll
 D:\TFS\ManaExpertServices\Solutions\ScriptControlCenter\code\ScriptDevelopmentTool_OpenSource_branch\ModuleLoader\obj\Debug\Infosys.ATR.ModuleLoader.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.ModuleLoader.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\bin\Debug\Infosys.ATR.ModuleLoader.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ModuleLoader\obj\Debug\Infosys.ATR.ModuleLoader.Views.ModuleSelector.resources
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ModuleLoader\obj\Debug\Infosys.ATR.ModuleLoader.csproj.GenerateResource.Cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ModuleLoader\obj\Debug\Infosys.ATR.ModuleLoader.dll
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ModuleLoader\obj\Debug\Infosys.ATR.ModuleLoader.pdb
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ModuleLoader\obj\Debug\Infosys.ATR.ModuleLoader.csproj.AssemblyReference.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ModuleLoader\obj\Debug\Infosys.ATR.ModuleLoader.csproj.CoreCompileInputs.cache
+D:\OSS\Git-KT\Script-Control-Center\ScriptDevelopmentTool\ModuleLoader\obj\Debug\Infosys.ATR.ModuleLoader.csproj.CopyComplete

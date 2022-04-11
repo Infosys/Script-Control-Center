@@ -1,0 +1,852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IAP_WorkflowExecutionStoreModel.Store" Provider="Npgsql" ProviderManifestToken="11.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="PartitonKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitonKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="AccountId" Type="int4" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+    <Property Name="IsDeleted" Type="bool" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ActiveRegisteredNodes">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="MachineName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DomainName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyId" Type="int4" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CategoryId" Type="int4" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="text" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+    <Property Name="IsDeleted" Type="bool" Nullable="false" />
+    <Property Name="ParentId" Type="int4" />
+    <Property Name="CompanyId" Type="int4" />
+    <Property Name="ModuleID" Type="int4" />
+  </EntityType>
+  <EntityType Name="CategoryWorkflowMap">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CategoryId" Type="int4" Nullable="false" />
+    <Property Name="WorkflowId" Type="bpchar" MaxLength="36" Nullable="false" />
+    <Property Name="ActiveWorkflowVersion" Type="int4" Nullable="false" />
+    <Property Name="WorkflowName" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Companies">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CompanyId" Type="int4" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="text" />
+    <Property Name="CompanyURL" Type="text" />
+    <Property Name="LogoURL" Type="text" />
+    <Property Name="NormalizedName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="StorageBaseUrl" Type="text" Nullable="false" />
+    <Property Name="DeploymentBaseUrl" Type="text" />
+    <Property Name="Region" Type="varchar" MaxLength="15" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+    <Property Name="RemoteShareUrl" Type="text" />
+    <Property Name="EnableSecureTransactions" Type="bool" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExportConfigurationMaster">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int4" Nullable="false" />
+    <Property Name="TargetServerId" Type="int4" Nullable="false" />
+    <Property Name="TargetSystemUserId" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="TargetSystemPassword" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="ExportStatus" Type="int4" Nullable="false" />
+    <Property Name="CompletedOn" Type="timestamp" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="200" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+    <Property Name="IsDeleted" Type="bool" />
+    <Property Name="ScriptRepositoryBaseServerAddress" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="ExportJobProcessingHistory">
+    <Key>
+      <PropertyRef Name="JobId" />
+    </Key>
+    <Property Name="JobId" Type="int4" Nullable="false" />
+    <Property Name="ExportConfigurationId" Type="int4" Nullable="false" />
+    <Property Name="StartedOn" Type="timestamp" Nullable="false" />
+    <Property Name="CompletedOn" Type="timestamp" />
+    <Property Name="ProcessingSystemIp" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProcessingSystemName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ProcessedBy" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExportScriptConfigurationDetails">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int4" Nullable="false" />
+    <Property Name="ExportConfigurationId" Type="int4" Nullable="false" />
+    <Property Name="SourceCategoryId" Type="int4" Nullable="false" />
+    <Property Name="SourceScriptPath" Type="text" Nullable="false" />
+    <Property Name="TargetCategoryId" Type="int4" Nullable="false" />
+    <Property Name="TargetScriptPath" Type="text" Nullable="false" />
+    <Property Name="SourceScriptId" Type="int4" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="200" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+    <Property Name="IsDeleted" Type="bool" />
+  </EntityType>
+  <EntityType Name="ExportServerDetails">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int4" Nullable="false" />
+    <Property Name="DNSServer" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="CasServer" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="TargetSystemId" Type="int4" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="200" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+  </EntityType>
+  <EntityType Name="ExportSourceTargetMapping">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int4" Nullable="false" />
+    <Property Name="SourceInstanceAddr" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="SourceScriptCategoryId" Type="int4" Nullable="false" />
+    <Property Name="SourceScriptId" Type="int4" Nullable="false" />
+    <Property Name="SourceScriptVersion" Type="int4" Nullable="false" />
+    <Property Name="TargetInstanceId" Type="int4" Nullable="false" />
+    <Property Name="TargetScriptCategoryId" Type="int4" Nullable="false" />
+    <Property Name="TargetScriptId" Type="int4" Nullable="false" />
+    <Property Name="TargetScriptVersion" Type="int4" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="200" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+    <Property Name="IsActive" Type="bool" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExportTargetSystemDetails">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int4" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="APIType" Type="int4" Nullable="false" />
+    <Property Name="Protocol" Type="int4" Nullable="false" />
+    <Property Name="DefaultType" Type="bool" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExportTransactionDetails">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int4" Nullable="false" />
+    <Property Name="ExportScriptConfigurationId" Type="int4" Nullable="false" />
+    <Property Name="SourceCategoryId" Type="int4" Nullable="false" />
+    <Property Name="SourceScriptId" Type="int4" Nullable="false" />
+    <Property Name="SourceScriptVersion" Type="int4" Nullable="false" />
+    <Property Name="SourceScriptPath" Type="varchar" MaxLength="500" />
+    <Property Name="TargetCategoryId" Type="int4" Nullable="false" />
+    <Property Name="TargetScriptId" Type="int4" Nullable="false" />
+    <Property Name="TargetScriptVersion" Type="int4" Nullable="false" />
+    <Property Name="TargetScriptName" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="TargetScriptPath" Type="varchar" MaxLength="500" />
+    <Property Name="Status" Type="int2" Nullable="false" />
+    <Property Name="ExistReasonCode" Type="int2" />
+    <Property Name="Details" Type="text" />
+    <Property Name="Action" Type="int4" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="200" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+    <Property Name="isActive" Type="bool" Nullable="false" />
+    <Property Name="IsDeleted" Type="bool" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FailedNodes">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="MachineName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DomainName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Cause" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="bpchar" MaxLength="5" Nullable="false" />
+    <Property Name="RowKey" Type="bpchar" MaxLength="10" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" />
+    <Property Name="Id" Type="int4" Nullable="false" />
+    <Property Name="Name" Type="bpchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="bpchar" MaxLength="100" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+    <Property Name="IsActive" Type="bool" />
+    <Property Name="CompanyId" Type="int4" Nullable="false" />
+    <Property Name="ParentId" Type="int4" />
+  </EntityType>
+  <EntityType Name="GroupAccess">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="bpchar" MaxLength="10" Nullable="false" />
+    <Property Name="RowKey" Type="bpchar" MaxLength="10" Nullable="false" />
+    <Property Name="GroupId" Type="int4" Nullable="false" />
+    <Property Name="ParentId" Type="int4" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="IsActive" Type="bool" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Module">
+    <Key>
+      <PropertyRef Name="ModuleID" />
+    </Key>
+    <Property Name="ModuleID" Type="int4" Nullable="false" />
+    <Property Name="ModuleName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ObjectModelMaster">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CategoryId" Type="int4" Nullable="false" />
+    <Property Name="Id" Type="bpchar" MaxLength="36" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="text" />
+    <Property Name="ObjectModelVer" Type="int4" Nullable="false" />
+    <Property Name="ObjectModelUri" Type="text" Nullable="false" />
+    <Property Name="PublishedOn" Type="timestamp" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="SourceIPAddress" Type="varchar" MaxLength="50" />
+    <Property Name="Client" Type="varchar" MaxLength="100" />
+    <Property Name="ClientVersion" Type="varchar" MaxLength="10" />
+    <Property Name="SourceMachineName" Type="varchar" MaxLength="100" />
+    <Property Name="FileSizeKB" Type="int4" />
+    <Property Name="IsActive" Type="bool" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+  </EntityType>
+  <EntityType Name="Organization">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="OrgId" Type="int4" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+    <Property Name="IsDeleted" Type="bool" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ReferenceData">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamptz" Precision="6" Nullable="false" />
+    <Property Name="ReferenceType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ReferenceKey" Type="text" Nullable="false" />
+    <Property Name="ReferenceValue" Type="text" Nullable="false" />
+    <Property Name="Description" Type="text" />
+    <Property Name="IsDefault" Type="bool" />
+    <Property Name="IsActive" Type="bool" />
+    <Property Name="CreatedOn" Type="timestamptz" Precision="6" />
+    <Property Name="LastModifiedOn" Type="timestamptz" Precision="3" />
+  </EntityType>
+  <EntityType Name="RegisterredNodes">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="RegisteredOn" Type="timestamp" Nullable="false" />
+    <Property Name="UnRegisteredOn" Type="timestamp" />
+    <Property Name="IsActive" Type="bool" Nullable="false" />
+    <Property Name="HttpPort" Type="int4" />
+    <Property Name="TcpPort" Type="int4" />
+    <Property Name="MachineName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DomainName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="State" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="OSVersion" Type="varchar" MaxLength="200" />
+    <Property Name="Is64Bit" Type="bool" Nullable="false" />
+    <Property Name="WorkflowServiceVersion" Type="varchar" MaxLength="20" />
+    <Property Name="DotNetVersion" Type="varchar" MaxLength="50" />
+    <Property Name="ExecutionEngineSupported" Type="int4" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+    <Property Name="CompanyId" Type="int4" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RowKey" Type="bpchar" MaxLength="10" Nullable="false" />
+    <Property Name="Id" Type="int4" Nullable="false" />
+    <Property Name="Name" Type="bpchar" MaxLength="25" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="250" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LastModified" Type="timestamp" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="IsActive" Type="bool" />
+    <Property Name="CompanyId" Type="int4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ScheduledRequest">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+    <Property Name="Id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MachineName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CategoryId" Type="int4" Nullable="false" />
+    <Property Name="RequestVersion" Type="int4" />
+    <Property Name="InputParameters" Type="text" />
+    <Property Name="OutputParameters" Type="text" />
+    <Property Name="ExecuteOn" Type="timestamp" />
+    <Property Name="Message" Type="text" />
+    <Property Name="State" Type="int4" />
+    <Property Name="RequestType" Type="int4" Nullable="false" />
+    <Property Name="RequestId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Priority" Type="int4" Nullable="false" />
+    <Property Name="AssignedTo" Type="varchar" MaxLength="20" />
+    <Property Name="Executor" Type="varchar" MaxLength="20" />
+    <Property Name="ParentId" Type="varchar" MaxLength="50" />
+    <Property Name="StopType" Type="int4" />
+    <Property Name="IterationSetRoot" Type="varchar" MaxLength="50" />
+    <Property Name="IsIterationSetRoot" Type="bool" />
+    <Property Name="CompanyId" Type="int4" />
+  </EntityType>
+  <EntityType Name="ScheduledRequestActivities">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="Status" Type="int4" Nullable="false" />
+    <Property Name="ParentScheduledRequestId" Type="varchar" MaxLength="50" />
+    <Property Name="ScheduledRequestId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="IterationSetRoot" Type="varchar" MaxLength="50" />
+    <Property Name="CompanyId" Type="int4" />
+  </EntityType>
+  <EntityType Name="Script">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="ScriptId" Type="int4" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Description" Type="text" />
+    <Property Name="ScriptType" Type="varchar" MaxLength="50" />
+    <Property Name="TaskType" Type="varchar" MaxLength="10" />
+    <Property Name="TaskCmd" Type="text" />
+    <Property Name="ScriptURL" Type="varchar" MaxLength="500" />
+    <Property Name="ArgString" Type="text" />
+    <Property Name="WorkingDir" Type="varchar" MaxLength="200" />
+    <Property Name="BelongsToOrg" Type="varchar" MaxLength="5" />
+    <Property Name="BelongsToAccount" Type="varchar" MaxLength="5" />
+    <Property Name="BelongsToTrack" Type="varchar" MaxLength="5" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+    <Property Name="Version" Type="int4" Nullable="false" />
+    <Property Name="IsDeleted" Type="bool" Nullable="false" />
+    <Property Name="RunAsAdmin" Type="bool" />
+    <Property Name="CategoryId" Type="int4" Nullable="false" />
+    <Property Name="UsesUIAutomation" Type="bool" />
+    <Property Name="IfeaScriptName" Type="varchar" MaxLength="100" />
+    <Property Name="CallMethod" Type="varchar" MaxLength="100" />
+    <Property Name="Tags" Type="varchar" MaxLength="500" />
+    <Property Name="LicenseType" Type="varchar" MaxLength="100" />
+    <Property Name="SourceUrl" Type="varchar" MaxLength="500" />
+    <Property Name="ExternalReferences" Type="text" />
+  </EntityType>
+  <EntityType Name="ScriptExecuteRequest">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="scriptexecuterequestid" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="scriptexecuterequestid" Type="int8" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="transactionId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="scriptid" Type="int4" />
+    <Property Name="categoryid" Type="int4" />
+    <Property Name="scriptname" Type="varchar" MaxLength="100" />
+    <Property Name="inparams" Type="varchar" MaxLength="400" />
+    <Property Name="username" Type="varchar" MaxLength="100" />
+    <Property Name="remoteservernames" Type="varchar" MaxLength="500" />
+    <Property Name="remoteexecutionhost" Type="varchar" MaxLength="100" />
+    <Property Name="executionmodetype" Type="int4" />
+    <Property Name="scheduledpattern" Type="varchar" MaxLength="50" />
+    <Property Name="schedulestartdatetime" Type="timestamptz" Precision="3" />
+    <Property Name="scheduleenddatetime" Type="timestamptz" Precision="3" />
+    <Property Name="scheduleoccurences" Type="int4" />
+    <Property Name="scheduleonclusters" Type="varchar" MaxLength="500" />
+    <Property Name="iapnodetransport" Type="varchar" MaxLength="50" />
+    <Property Name="domain" Type="varchar" MaxLength="50" />
+    <Property Name="referencekey" Type="varchar" MaxLength="50" />
+    <Property Name="path" Type="varchar" MaxLength="500" />
+    <Property Name="ResponseNotificationCallbackURL" Type="text" />
+    <Property Name="createdby" Type="varchar" MaxLength="50" />
+    <Property Name="createddate" Type="timestamptz" Precision="3" />
+    <Property Name="modifiedby" Type="varchar" MaxLength="50" />
+    <Property Name="modifieddate" Type="timestamptz" Precision="3" />
+    <Property Name="schedulepriority" Type="int4" />
+  </EntityType>
+  <EntityType Name="ScriptExecuteResponse">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="scriptexecuteresponseid" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="scriptexecuteresponseid" Type="int8" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="transactionId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="currentstate" Type="varchar" MaxLength="10" />
+    <Property Name="successmessage" Type="varchar" MaxLength="500" />
+    <Property Name="errormessage" Type="varchar" MaxLength="500" />
+    <Property Name="computername" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="inputcommand" Type="varchar" MaxLength="500" />
+    <Property Name="OutParameters" Type="text" />
+    <Property Name="LogData" Type="text" />
+    <Property Name="SourceTransactionId" Type="varchar" MaxLength="100" />
+    <Property Name="createdby" Type="varchar" MaxLength="50" />
+    <Property Name="createddate" Type="timestamptz" Precision="3" />
+    <Property Name="modifiedby" Type="varchar" MaxLength="50" />
+    <Property Name="modifieddate" Type="timestamptz" Precision="3" />
+    <Property Name="IsNotified" Type="bool" />
+    <Property Name="NotificationRemarks" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="ScriptInstance">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="InstanceId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RunAsUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ArgString" Type="text" />
+    <Property Name="StartDateTime" Type="timestamp" Nullable="false" />
+    <Property Name="EndDateTime" Type="timestamp" Nullable="false" />
+    <Property Name="VerboseLog" Type="text" />
+    <Property Name="ExecutionStatus" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ScriptParams">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="ParamId" Type="int4" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+    <Property Name="DefaultValue" Type="text" />
+    <Property Name="AllowedValues" Type="text" />
+    <Property Name="IsMandatory" Type="bool" Nullable="false" />
+    <Property Name="ParamType" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+    <Property Name="IsDeleted" Type="bool" Nullable="false" />
+    <Property Name="IsSecret" Type="bool" Nullable="false" />
+    <Property Name="IsUnnamed" Type="bool" Nullable="false" />
+    <Property Name="DataType" Type="varchar" MaxLength="6" />
+    <Property Name="IsReferenceKey" Type="bool" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SemanticCategory">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="bpchar" MaxLength="10" Nullable="false" />
+    <Property Name="RowKey" Type="bpchar" MaxLength="20" Nullable="false" />
+    <Property Name="CategoryId" Type="int4" Nullable="false" />
+    <Property Name="SemanticClusterId" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="SemanticClusterName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IsActive" Type="bool" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CreatedDate" Type="timestamp" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="50" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+  </EntityType>
+  <EntityType Name="SemanticCluster">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+    <Property Name="IsDeleted" Type="bool" Nullable="false" />
+    <Property Name="ClusterName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Id" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Description" Type="text" />
+    <Property Name="Priority" Type="int4" />
+    <Property Name="CompanyId" Type="int4" />
+  </EntityType>
+  <EntityType Name="SemanticNodeCluster">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+    <Property Name="IsDeleted" Type="bool" Nullable="false" />
+    <Property Name="ClusterId" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IapNodeId" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SuperAdmin">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="bpchar" MaxLength="10" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="105" Nullable="false" />
+    <Property Name="Id" Type="int4" Nullable="false" />
+    <Property Name="Alias" Type="varchar" MaxLength="105" Nullable="false" />
+    <Property Name="CompanyId" Type="int4" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="105" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="105" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+  </EntityType>
+  <EntityType Name="Track">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="TrackId" Type="int4" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+    <Property Name="isdeleted" Type="bool" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionInstance">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CategoryId" Type="int4" Nullable="false" />
+    <Property Name="WorkflowId" Type="varchar" MaxLength="100" />
+    <Property Name="ScriptId" Type="varchar" MaxLength="100" />
+    <Property Name="InstanceId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CurrentState" Type="int4" Nullable="false" />
+    <Property Name="Executor" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MachineName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="InitiatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="TriggeredBy" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="IPAddress" Type="varchar" MaxLength="50" />
+    <Property Name="OSDetails" Type="text" />
+    <Property Name="ReferenceKey" Type="varchar" MaxLength="100" />
+    <Property Name="WorkflowVersion" Type="varchar" MaxLength="10" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="FileType" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ScriptVersion" Type="varchar" MaxLength="10" />
+    <Property Name="CategoryName" Type="varchar" MaxLength="100" />
+    <Property Name="WorkflowPersistedStateId" Type="varchar" MaxLength="100" />
+    <Property Name="ModuleName" Type="varchar" MaxLength="100" />
+    <Property Name="TransactionMetadata" Type="text" />
+    <Property Name="Description" Type="text" />
+    <Property Name="BookMark" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Type">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="bpchar" MaxLength="5" Nullable="false" />
+    <Property Name="RowKey" Type="bpchar" MaxLength="10" Nullable="false" />
+    <Property Name="Id" Type="int4" Nullable="false" />
+    <Property Name="Name" Type="bpchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedBy" Type="int4" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="int4" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+    <Property Name="IsActive" Type="bool" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="105" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CompanyId" Type="int4" Nullable="false" />
+    <Property Name="Alias" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Role" Type="int4" Nullable="false" />
+    <Property Name="CategoryId" Type="int4" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+    <Property Name="IsActive" Type="bool" />
+    <Property Name="Id" Type="int4" Nullable="false" />
+    <Property Name="DisplayName" Type="varchar" MaxLength="100" />
+    <Property Name="IsDL" Type="bool" />
+    <Property Name="GroupId" Type="int4" />
+    <Property Name="IsActiveGroup" Type="bool" />
+  </EntityType>
+  <EntityType Name="WorkflowCategoryMaster">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="Id" Type="int4" Nullable="false" />
+    <Property Name="CompanyId" Type="int4" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="text" />
+    <Property Name="Type" Type="int4" Nullable="false" />
+    <Property Name="IsActive" Type="bool" />
+    <Property Name="CreatedOn" Type="timestamp" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+    <Property Name="ParentId" Type="int4" />
+  </EntityType>
+  <EntityType Name="WorkflowMaster">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="CategoryId" Type="int4" Nullable="false" />
+    <Property Name="Id" Type="bpchar" MaxLength="36" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="text" />
+    <Property Name="WorkflowVer" Type="int4" Nullable="false" />
+    <Property Name="WorkflowURI" Type="text" Nullable="false" />
+    <Property Name="ImageURI" Type="text" />
+    <Property Name="PublishedOn" Type="timestamp" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="SourceIPAddress" Type="varchar" MaxLength="50" />
+    <Property Name="Client" Type="varchar" MaxLength="100" />
+    <Property Name="ClientVersion" Type="varchar" MaxLength="10" />
+    <Property Name="SourceMachineName" Type="varchar" MaxLength="100" />
+    <Property Name="FileSizeKB" Type="int4" />
+    <Property Name="IsActive" Type="bool" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+    <Property Name="UsesUIAutomation" Type="bool" />
+    <Property Name="IslongRunningWorkflow" Type="bool" Nullable="false" />
+    <Property Name="IdleStateTimeout" Type="int4" Nullable="false" />
+    <Property Name="Tags" Type="varchar" MaxLength="100" />
+    <Property Name="LicenseType" Type="varchar" MaxLength="100" />
+    <Property Name="SourceUrl" Type="varchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="WorkflowParams">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="ParamId" Type="int4" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DefaultValue" Type="text" />
+    <Property Name="IsMandatory" Type="bool" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreatedOn" Type="timestamp" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="100" />
+    <Property Name="ModifiedOn" Type="timestamp" />
+    <Property Name="IsDeleted" Type="bool" Nullable="false" />
+    <Property Name="AllowedValues" Type="text" />
+    <Property Name="IsSecret" Type="bool" Nullable="false" />
+    <Property Name="ParamType" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="IsReferenceKey" Type="bool" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WorkflowTrackingDetails">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="WorkflowInstanceId" Type="bpchar" MaxLength="36" />
+    <Property Name="ActivityStepCount" Type="numeric" Precision="8" Scale="4" />
+    <Property Name="ActivityId" Type="text" />
+    <Property Name="ActivityDisplayName" Type="text" />
+    <Property Name="ActivityParameters" Type="text" />
+    <Property Name="ActivityState" Type="varchar" MaxLength="50" />
+    <Property Name="StartedOn" Type="timestamp" />
+    <Property Name="EndedOn" Type="timestamp" />
+    <Property Name="StatusDescription" Type="text" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+  </EntityType>
+  <EntityType Name="WorkflowTrackingMaster">
+    <Key>
+      <PropertyRef Name="PartitionKey" />
+      <PropertyRef Name="RowKey" />
+    </Key>
+    <Property Name="PartitionKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RowKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" Nullable="false" />
+    <Property Name="WorkflowId" Type="bpchar" MaxLength="36" Nullable="false" />
+    <Property Name="WorkflowVer" Type="int4" Nullable="false" />
+    <Property Name="InstanceId" Type="bpchar" MaxLength="36" Nullable="false" />
+    <Property Name="State" Type="varchar" MaxLength="20" />
+    <Property Name="StatusDescription" Type="text" />
+    <Property Name="RequestorId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RequestorSourceIP" Type="varchar" MaxLength="50" />
+    <Property Name="StartedOn" Type="timestamp" />
+    <Property Name="RunAtIPAddress" Type="varchar" MaxLength="50" />
+    <Property Name="RunAtMachineName" Type="varchar" MaxLength="100" />
+    <Property Name="CompletedOn" Type="timestamp" />
+    <Property Name="LastModifiedOn" Type="timestamp" />
+  </EntityType>
+  <EntityContainer Name="IAP_WorkflowExecutionStoreModelStoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ActiveRegisteredNodes" EntityType="Self.ActiveRegisteredNodes" Schema="public" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="public" store:Type="Tables" />
+    <EntitySet Name="CategoryWorkflowMap" EntityType="Self.CategoryWorkflowMap" Schema="public" store:Type="Tables" />
+    <EntitySet Name="Companies" EntityType="Self.Companies" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ExportConfigurationMaster" EntityType="Self.ExportConfigurationMaster" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ExportJobProcessingHistory" EntityType="Self.ExportJobProcessingHistory" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ExportScriptConfigurationDetails" EntityType="Self.ExportScriptConfigurationDetails" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ExportServerDetails" EntityType="Self.ExportServerDetails" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ExportSourceTargetMapping" EntityType="Self.ExportSourceTargetMapping" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ExportTargetSystemDetails" EntityType="Self.ExportTargetSystemDetails" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ExportTransactionDetails" EntityType="Self.ExportTransactionDetails" Schema="public" store:Type="Tables" />
+    <EntitySet Name="FailedNodes" EntityType="Self.FailedNodes" Schema="public" store:Type="Tables" />
+    <EntitySet Name="Group" EntityType="Self.Group" Schema="public" store:Type="Tables" />
+    <EntitySet Name="GroupAccess" EntityType="Self.GroupAccess" Schema="public" store:Type="Tables" />
+    <EntitySet Name="Module" EntityType="Self.Module" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ObjectModelMaster" EntityType="Self.ObjectModelMaster" Schema="public" store:Type="Tables" />
+    <EntitySet Name="Organization" EntityType="Self.Organization" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ReferenceData" EntityType="Self.ReferenceData" Schema="public" store:Type="Tables" />
+    <EntitySet Name="RegisterredNodes" EntityType="Self.RegisterredNodes" Schema="public" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ScheduledRequest" EntityType="Self.ScheduledRequest" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ScheduledRequestActivities" EntityType="Self.ScheduledRequestActivities" Schema="public" store:Type="Tables" />
+    <EntitySet Name="Script" EntityType="Self.Script" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ScriptExecuteRequest" EntityType="Self.ScriptExecuteRequest" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ScriptExecuteResponse" EntityType="Self.ScriptExecuteResponse" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ScriptInstance" EntityType="Self.ScriptInstance" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ScriptParams" EntityType="Self.ScriptParams" Schema="public" store:Type="Tables" />
+    <EntitySet Name="SemanticCategory" EntityType="Self.SemanticCategory" Schema="public" store:Type="Tables" />
+    <EntitySet Name="SemanticCluster" EntityType="Self.SemanticCluster" Schema="public" store:Type="Tables" />
+    <EntitySet Name="SemanticNodeCluster" EntityType="Self.SemanticNodeCluster" Schema="public" store:Type="Tables" />
+    <EntitySet Name="SuperAdmin" EntityType="Self.SuperAdmin" Schema="public" store:Type="Tables" />
+    <EntitySet Name="Track" EntityType="Self.Track" Schema="public" store:Type="Tables" />
+    <EntitySet Name="TransactionInstance" EntityType="Self.TransactionInstance" Schema="public" store:Type="Tables" />
+    <EntitySet Name="Type" EntityType="Self.Type" Schema="public" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="public" store:Type="Tables" />
+    <EntitySet Name="WorkflowCategoryMaster" EntityType="Self.WorkflowCategoryMaster" Schema="public" store:Type="Tables" />
+    <EntitySet Name="WorkflowMaster" EntityType="Self.WorkflowMaster" Schema="public" store:Type="Tables" />
+    <EntitySet Name="WorkflowParams" EntityType="Self.WorkflowParams" Schema="public" store:Type="Tables" />
+    <EntitySet Name="WorkflowTrackingDetails" EntityType="Self.WorkflowTrackingDetails" Schema="public" store:Type="Tables" />
+    <EntitySet Name="WorkflowTrackingMaster" EntityType="Self.WorkflowTrackingMaster" Schema="public" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
