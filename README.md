@@ -8,4 +8,4 @@ Script Control Center is a centralized script repository and script execution en
 3.Navigate to the Script-Control-Center/ScriptDevelopmentTool/ path <br />
 4.Open visual studio cmd Prompt <br />
 5.Execute following command <br />
-	MSBuild ~/Script-Control-Center/ScriptDevelopmentTool/ATR.sln
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MSBuild ~/Script-Control-Center/ScriptDevelopmentTool/ATR.sln
