@@ -34,4 +34,5 @@ Script Control Center is a centralized script repository and script execution en
 
 # Release Instructions
 1.Follow the Build Instructions for ATR.sln <br/>
-2.Go to Script-Control-Center-main\ScriptDevelopmentTool\References and copy all the runtime files to the ScriptControlCenter directory
+2.Go to Script-Control-Center-main\ScriptDevelopmentTool\References and copy all the runtime files <br/>
+3.Copy them to the ScriptControlCenter directory ..\iapwemServices\bin
