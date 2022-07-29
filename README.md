@@ -31,3 +31,7 @@ Script Control Center is a centralized script repository and script execution en
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MSBuild ~/Script-Control-Center-main/ScriptDevelopmentTool/ATR.sln <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OR <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Right click on ATR.sln > Build Solution <br />
+
+# Release Instructions
+1.Follow the Build Instructions for ATR.sln <br/>
+2.Go to Script-Control-Center-main\ScriptDevelopmentTool\References and copy all the runtime files to the ScriptControlCenter directory
