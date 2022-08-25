@@ -4,35 +4,46 @@ Script Control Center is a centralized script repository and script execution en
 
 # Build Instructions
 1.Download source code <br />
-2.Right click the Zip file and remove/unblock the security note <br />
-3.Navigate to the Script-Control-Center/ScriptDevelopmentTool/ path <br />
-4.Open visual studio cmd Prompt <br />
-5.Open WorkflowExecutionManager solution <br />
-6.Execute following command <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MSBuild ~/Script-Control-Center-main/WEMServices/WorkflowExecutionManager.sln <br />
+2.Unblock the file by right click on the Zip file > Properties > Under General tab select Unblock > Apply > Ok  <br />
+3.Extract the files to any path <br />
+4.Open WorkflowExecutionManager solution in visual studio from the path ../WEMServices/WorkflowExecutionManager.sln <br />
+5.Open visual studio cmd Prompt and execute<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MSBuild ~/WEMServices/WorkflowExecutionManager.sln <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OR <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Right click on WorkflowExecutionManager.sln > Build Solution <br />
-7.Replace all the respective (list of all dlls) dlls after the latest build of WEMServices projects to Script-Control-Center/ScriptDevelopmentTool/References <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Script-Control-Center-main\Script-Control-Center-main\WEMServices\WEM.Host <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Businesscomponent.dll <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.BusinessEntity.dll <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Host.dll <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.ServiceImplementation.dll <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Script-Control-Center-main\Script-Control-Center-main\WEMServices\WEM.Host.ConsoleApp\bin\Debug <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Client.dll <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Export.DataAccess.dll <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Scripts.Contracts.dll <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Search.Contracts.dll <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.ScriptExecution.dll <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Scripts.DataAccess.dll <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.ServiceImplementation.dll <br />
-8.Open the solution ATR from Script-Control-Center/ScriptDevelopmentTool <br />
-9.Execute following command <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MSBuild ~/Script-Control-Center-main/ScriptDevelopmentTool/ATR.sln <br />
+6.Replace all the respective (list of all WEM dlls) dlls after the latest build of WEMServices projects to ../ScriptDevelopmentTool/References <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.AuotmationTracker.Contracts.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.BusinessComponent.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.BusinessEntity.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Client.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Common.contracts.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Contracts.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.DataAccess.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.DataEntity.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Export.Contracts.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Export.DataAccess.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Host.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.IDataAccess.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Infrastructure.Common.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Infrastructure.SecurityCore.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Nia.Contracts.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Node.Contracts.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Observer.Contracts.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.ScriptExecution.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.ScriptExecutionLibrary.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Scripts.Contracts.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Scripts.DataAccess.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Search.Contracts.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.Search.DataAccess.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.SecurityAccess.Contracts.dll <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEM.ServiceImplementation.dll <br />
+7.Open ATR solution in visual studio from the path ../ScriptDevelopmentTool/ATR.sln <br />
+8.In the visual studio command prompt execute the following command <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MSBuild ~/ScriptDevelopmentTool/ATR.sln <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OR <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Right click on ATR.sln > Build Solution <br />
 
 # Release Instructions
 1.Follow the Build Instructions for ATR.sln <br/>
-2.Go to Script-Control-Center-main\ScriptDevelopmentTool\References and copy all the runtime files <br/>
-3.Copy them to the ScriptControlCenter directory ..\iapwemServices\bin
+2.Go to ..\ScriptDevelopmentTool\bin\Debug and copy all the runtime files <br/>
+3.Copy them to the ScriptControlCenter release directory ..\iapwemServices\bin
