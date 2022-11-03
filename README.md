@@ -49,6 +49,12 @@ Script Control Center is a centralized script repository and script execution en
 3.Copy them to the ScriptControlCenter release directory ..\iapwemServices\bin
 
 # How To - Video's
+# Definition And Overview
+https://user-images.githubusercontent.com/103421849/199664643-2be461dc-38e7-4ad4-9d5f-344d23e7d40b.mp4
+# Integration with Super Bot
+https://user-images.githubusercontent.com/103421849/199665361-476ab06b-6107-47b0-99b8-1e3e8a740e07.mp4
+# Admin Explorer
+https://user-images.githubusercontent.com/103421849/199665495-1ffc8f4e-c26a-43a7-8515-fb846931d14a.mp4
 # Upload Script from Workbench Tool
 https://user-images.githubusercontent.com/103421849/199646453-b68cc748-46f8-42a2-84a3-a499f8605d78.mp4
 # Run Script from Workbench Tool
