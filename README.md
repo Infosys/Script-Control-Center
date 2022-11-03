@@ -47,3 +47,9 @@ Script Control Center is a centralized script repository and script execution en
 1.Follow the Build Instructions for ATR.sln <br/>
 2.Go to ..\ScriptDevelopmentTool\bin\Debug and copy all the runtime files <br/>
 3.Copy them to the ScriptControlCenter release directory ..\iapwemServices\bin
+
+# How To - Video's
+# Upload Script from Workbench Tool
+https://user-images.githubusercontent.com/103421849/199646453-b68cc748-46f8-42a2-84a3-a499f8605d78.mp4
+# Run Script from Workbench Tool
+https://user-images.githubusercontent.com/103421849/199646460-3bff47b1-083c-479a-acd5-b98d73f53720.mp4
